@@ -1,0 +1,18 @@
+name = "troop3-content"
+main = "index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# owner/repo of the site's repository.
+GITHUB_REPO = "hwfl850/troop3-website"
+GITHUB_BRANCH = "main"
+# Only these sites may call the Worker. Comma separated, no trailing slash.
+ALLOWED_ORIGINS = "https://troop3pensacola.org,https://www.troop3pensacola.org"
+
+# Secrets are NOT set here. Set them once, from the terminal:
+#
+#   npx wrangler secret put GITHUB_TOKEN      # fine-grained PAT, Contents: read & write
+#   npx wrangler secret put EDIT_PASSWORD     # the leadership password
+#   npx wrangler secret put PATROL_PASSWORDS  # optional, JSON: {"pw":"viper"}
+#
+# Then:  npx wrangler deploy

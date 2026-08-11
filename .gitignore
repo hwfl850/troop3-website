@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Worker tooling — the Worker source is committed, its build junk is not.
+worker/node_modules/
+worker/.wrangler/
+worker/.dev.vars
+worker/package-lock.json
+
+# Never commit a token or a password. Both belong in Cloudflare secrets.
+.env
+.env.*
+*.pem

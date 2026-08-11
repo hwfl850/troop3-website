@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "slug": "viper",
+  "name": "Viper Patrol",
+  "color": "#1F6F5C",
+  "emblem": "/img/patrols/viper.svg",
+  "yell": "Strike first, strike once.",
+  "flagImage": "",
+  "leadership": {
+    "pl": "Henry W.",
+    "apl": "Sam T.",
+    "scribe": "Chris B.",
+    "quartermaster": "Diego M."
+  },
+  "roster": ["Henry W.", "Sam T.", "Chris B.", "Diego M.", "Owen K.", "Jamal R.", "Theo P."],
+  "about": "Viper has held the quartermaster shift for two years running, which is why the trailer is organised and why nothing goes missing. Strongest patrol in the troop at pioneering, and they will tell you about it.",
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "Our goals this year",
+      "body": "Every member to First Class by the spring Court of Honor. National Honor Patrol by March. Win the cook-off at the Fall Shakedown — we have come second twice and that is enough."
+    },
+    {
+      "type": "linkList",
+      "heading": "Patrol gear and paperwork",
+      "links": [
+        { "label": "Patrol equipment checklist", "href": "/files/t3-patrol-equipment-checklist.pdf" },
+        { "label": "Duty roster template", "href": "/files/patrol-duty-roster.pdf" },
+        { "label": "National Honor Patrol checklist", "href": "/files/national-honor-patrol-checklist.pdf" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Patrol corner",
+      "body": "Back-left corner of the Scout Hut, under the flag. Patrol meetings are the second Tuesday of the month at 8:05 PM, right after announcements."
+    }
+  ],
+  "updated": "2026-08-08T18:02:00Z"
+}

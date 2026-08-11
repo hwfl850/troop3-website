@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "unit": {
+    "name": "Troop 3",
+    "longName": "Scouts BSA Troop 3, Pensacola",
+    "tagline": "Pensacola, Florida — founded 1937",
+    "founded": 1937,
+    "charterOrg": "Cokesbury United Methodist Church Men",
+    "council": "Gulf Coast Council",
+    "councilHref": "https://gulfcoastcouncil.org/"
+  },
+  "meeting": {
+    "night": "Tuesday",
+    "start": "18:30",
+    "end": "20:30",
+    "location": "Scout Hut, Cokesbury UMC",
+    "address": "9th Avenue, Pensacola, Florida",
+    "mapHref": "https://maps.google.com/?q=Cokesbury+United+Methodist+Church+Pensacola+FL",
+    "note": "Every Tuesday, year-round. Across from Pensacola State College."
+  },
+  "contact": {
+    "email": "bsatroop3pensacola@gmail.com",
+    "scoutmaster": "bsatroop3pensacola@gmail.com",
+    "webmaster": "bsatroop3pensacola@gmail.com"
+  },
+  "calendar": {
+    "googleCalendarId": "",
+    "embedHref": "",
+    "subscribeHref": "",
+    "icsHref": "",
+    "note": "Left blank on purpose. Filling in embedHref shows the Google Calendar on calendar.html; subscribeHref and icsHref switch on the subscribe buttons. Pushing this site's schedule into Google Calendar is a separate job and is not wired up yet."
+  },
+  "admin": {
+    "workerUrl": "",
+    "note": "The URL of the troop's Cloudflare Worker, which holds the GitHub token and does the committing. Until this is filled in, the editor stages changes but cannot publish."
+  },
+  "banner": {
+    "text": "Fall recruitment night is Tuesday 25 August — bring a friend who has never camped.",
+    "href": "/new-scouts.html",
+    "linkLabel": "New to Troop 3?"
+  },
+  "stats": [
+    {
+      "value": "1937",
+      "label": "Founded"
+    },
+    {
+      "value": "152",
+      "label": "Eagle Scouts"
+    },
+    {
+      "value": "2,600",
+      "label": "Days & nights camping"
+    },
+    {
+      "value": "2",
+      "label": "Trails we built"
+    }
+  ],
+  "theme": {
+    "primary": "#003F87",
+    "accent": "#CE1126",
+    "bg": "#F7F3E9"
+  },
+  "flags": {
+    "showEagleRoster": true,
+    "eagleRosterFullNames": false,
+    "gcalPush": false,
+    "showBanner": true
+  }
+}

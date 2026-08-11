@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "trails": [
+    {
+      "slug": "fort-pickens",
+      "name": "Fort Pickens Historical Trail",
+      "kind": "full",
+      "ours": true,
+      "established": "1982",
+      "length": "About 7 miles",
+      "duration": "3 hours of hard hiking — 5 to 6 if you stop and explore the batteries and the fort, which you should",
+      "surface": "Sand, paved road, boardwalk and beach",
+      "location": "Fort Pickens area, Gulf Islands National Seashore, Santa Rosa Island",
+      "mapHref": "https://maps.google.com/?q=Fort+Pickens+Gulf+Islands+National+Seashore",
+      "campingHref": "https://www.recreation.gov/camping/campgrounds/232488",
+      "blurb": "Troop 3 created this trail in 1982 with the Gulf Islands National Seashore and has maintained it ever since. It is the single best thing this troop has built.",
+      "intro": "The trail runs from the campground out through the coastal defence batteries — Battery Worth, Battery Cooper, Battery Langdon and the rest — to Fort Pickens itself, then back along the Gulf. It is a history lesson you walk through: brick casemates from the 1830s, concrete emplacements from the Endicott era, and a World War II battery buried under a sand berm, all within a few miles of each other on the same barrier island.",
+      "sections": [
+        {
+          "heading": "What you will see",
+          "body": "Fort Pickens was completed in 1834 and is one of four forts built to defend Pensacola Bay. It was held by Union forces through the entire Civil War — one of only a handful of Southern forts that never fell. Geronimo was imprisoned here in 1886. The later batteries scattered across the dunes track the whole arc of American coastal artillery from black powder to the 1940s, and then the whole idea becoming obsolete."
+        },
+        {
+          "heading": "Hiking it",
+          "body": "Bring a flashlight. The trail takes you from pitch-dark battery interiors straight back out onto white sand in full Gulf sun, and your eyes will not keep up. Closed-toe shoes, not sandals — there is broken concrete and there are sandspurs. Carry more water than you think you need; there is very little shade on the beach legs and none at all inside the batteries."
+        },
+        {
+          "heading": "Camping",
+          "body": "Group campsite reservations at Fort Pickens can be made up to six months ahead through the National Park Service. Book early — the group sites go first for spring and autumn weekends, and a Scout unit that waits until eight weeks out will not get one."
+        }
+      ],
+      "awards": {
+        "heading": "Patch and medal",
+        "note": "Both are ordered from Troop 3 directly. Cheques payable to \"BSA TROOP 3\". Contact the troop at bsatroop3pensacola@gmail.com for the current shipping address before you send anything.",
+        "items": [
+          { "label": "Patch", "price": "$4.00" },
+          { "label": "Medal", "price": "$8.00" },
+          { "label": "Patch and medal together", "price": "$10.00" },
+          { "label": "Shipping", "price": "$7.50" }
+        ]
+      },
+      "links": [
+        { "label": "Gulf Islands National Seashore — Fort Pickens", "href": "https://www.nps.gov/guis/planyourvisit/fort-pickens.htm" },
+        { "label": "Campground reservations (Recreation.gov)", "href": "https://www.recreation.gov/camping/campgrounds/232488" }
+      ]
+    },
+    {
+      "slug": "nas-pensacola",
+      "name": "NAS Pensacola Historical Trail",
+      "kind": "full",
+      "ours": true,
+      "established": "May 1976",
+      "length": "About 10 miles round trip",
+      "duration": "A full day",
+      "surface": "Pavement, grass and sand",
+      "location": "Naval Air Station Pensacola",
+      "mapHref": "https://maps.google.com/?q=National+Naval+Aviation+Museum+Pensacola",
+      "blurb": "Established in the Bicentennial year and still one of the best history hikes in Northwest Florida — ten miles ending at the National Naval Aviation Museum.",
+      "intro": "The trail crosses the grounds of the oldest naval air station in the United States and finishes at the National Naval Aviation Museum, which alone is worth the day. Along the way it passes through the old Navy Yard, the historic district, and Fort Barrancas.",
+      "sections": [
+        {
+          "heading": "The history you are walking through",
+          "body": "The Pensacola Navy Yard was established in the 1820s on a deepwater bay the Spanish, French and British had each wanted in turn. It built and repaired ships through the nineteenth century, was burned and rebuilt around the Civil War, and was nearly abandoned before naval aviation arrived in 1914 and made it the place where every American naval aviator has trained since. Fort Barrancas and the Advanced Redoubt sit on the same ground, older than the Navy Yard and worth the detour."
+        },
+        {
+          "heading": "Before you go",
+          "body": "Base access rules change. Check current visitor requirements with NAS Pensacola before planning a unit hike — adults will need identification, and access has been restricted at times in recent years. Plan a full day and start early; ten miles on pavement in Florida heat is longer than ten miles sounds."
+        }
+      ],
+      "awards": {
+        "heading": "Patch and medal",
+        "note": "Patches and medals for this trail are available through the Gulf Coast Council Scout Shop, 9440 University Parkway, Pensacola. Confirm current pricing and stock with the shop before your hike.",
+        "items": []
+      },
+      "links": [
+        { "label": "National Naval Aviation Museum", "href": "https://www.navalaviationmuseum.org/" },
+        { "label": "Gulf Coast Council", "href": "https://gulfcoastcouncil.org/" }
+      ]
+    },
+    {
+      "slug": "pensacola-historical",
+      "name": "Pensacola Historical Trail",
+      "kind": "card",
+      "ours": false,
+      "established": "August 1977",
+      "length": "About 4 miles",
+      "location": "Downtown Pensacola",
+      "blurb": "A four-mile downtown loop through the City of Five Flags, established in 1977 as an Eagle Scout project. Seaville Square, Historic Pensacola Village, and about twenty numbered points of interest along the way.",
+      "links": [
+        { "label": "Historic Pensacola", "href": "https://historicpensacola.org/" }
+      ]
+    },
+    {
+      "slug": "jackson-red-ground",
+      "name": "Jackson Red Ground Trail",
+      "kind": "card",
+      "ours": false,
+      "length": "About 21 miles",
+      "location": "Blackwater River State Forest",
+      "blurb": "A section of the Florida National Scenic Trail running through Blackwater River State Forest. Longleaf pine, clear creeks, and the closest thing to real backpacking within an hour of Pensacola.",
+      "links": [
+        { "label": "Florida Hikes — Jackson Red Ground Trail", "href": "https://floridahikes.com/floridatrail/florida-trail-jackson-red-ground" }
+      ]
+    },
+    {
+      "slug": "blackwater-paddling",
+      "name": "Blackwater Paddling Trail",
+      "kind": "card",
+      "ours": false,
+      "location": "Blackwater River State Forest",
+      "blurb": "One of the cleanest sand-bottom rivers in the country, and Troop 3 paddles it most springs. Sandbar camping, easy current, and no whitewater to worry about.",
+      "links": [
+        { "label": "Blackwater paddling guide (PDF)", "href": "/files/blackwater-paddling-guide.pdf" },
+        { "label": "Blackwater River State Park", "href": "https://www.floridastateparks.org/parks-and-trails/blackwater-river-state-park" }
+      ]
+    }
+  ]
+}

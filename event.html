@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Details for a Troop 3 campout or event: when to be there, what it costs, and what to pack." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Event — Troop 3 Pensacola" />
+  <meta property="og:description" content="Details for a Troop 3 campout or event: when to be there, what it costs, and what to pack." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://troop3pensacola.org/event.html" />
+  <link rel="canonical" href="https://troop3pensacola.org/event.html" />
+  <title>Event — Troop 3 Pensacola</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css?v=dev" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo-area" href="index.html" aria-label="Troop 3 Pensacola — home">
+    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M32 4c4.6 6.6 6.6 13.6 6 21.2-.2 2.6-.7 5-1.4 7.2h-4.6z"/><path d="M32 4c-4.6 6.6-6.6 13.6-6 21.2.2 2.6.7 5 1.4 7.2h4.6z"/><path d="M33.6 32.4c1.6-4.4 4.6-8.4 8.8-10.8 4.6-2.6 8.6-1.4 9.4 2.4.9 4.2-2.4 8.6-8 10.6-2.4.9-5 1.3-7.6 1.3z"/><path d="M30.4 32.4c-1.6-4.4-4.6-8.4-8.8-10.8-4.6-2.6-8.6-1.4-9.4 2.4-.9 4.2 2.4 8.6 8 10.6 2.4.9 5 1.3 7.6 1.3z"/><rect x="21" y="34.6" width="22" height="5.2" rx="2.6"/><path d="M29.4 41.4h5.2c.4 6.6 2.4 12.6 6 18.2h-17.2c3.6-5.6 5.6-11.6 6-18.2z"/><path d="M27.4 41.4c-1.2 5.6-4.6 10.6-9.6 14 .6-5.4 2.6-10.2 5.8-14z"/><path d="M36.6 41.4c1.2 5.6 4.6 10.6 9.6 14-.6-5.4-2.6-10.2-5.8-14z"/></g></svg></span>
+    <span class="logo-text">
+      <span class="unit">Troop 3</span>
+      <span class="place">Pensacola, Florida</span>
+    </span>
+  </a>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" aria-label="Main">
+    <a href="meetings.html">Meetings</a>
+    <a href="calendar.html">Calendar</a>
+
+    <div class="nav-dd" id="nav-patrols">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="nav-patrols-panel">Patrols<span class="caret" aria-hidden="true"></span></button>
+      <div class="nav-dd-mobile">
+        <a href="patrols.html">Patrols</a>
+        <button type="button" aria-label="Show the patrol list" aria-expanded="false" aria-controls="nav-patrols-panel"><span class="caret" aria-hidden="true"></span></button>
+      </div>
+      <div class="nav-panel" id="nav-patrols-panel" role="menu" aria-label="Patrols"></div>
+    </div>
+
+    <a href="advancement.html">Advancement</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div id="site-banner" class="banner-wrap"></div>
+
+
+<main id="main" class="page">
+
+  <p class="loading" id="e-loading">Loading&hellip;</p>
+
+  <div class="notfound is-hidden" id="e-notfound">
+    <h2>No such event</h2>
+    <p>That link does not match anything on the schedule.</p>
+    <a class="btn btn-primary btn-sm" href="meetings.html">See what is coming up</a>
+  </div>
+
+  <div class="is-hidden" id="e-detail">
+    <div class="detail-head">
+      <div class="d-date" id="e-date"></div>
+      <h1 id="e-title"></h1>
+      <div class="detail-meta" id="e-meta"></div>
+    </div>
+
+    <div class="detail-grid">
+      <div>
+        <div id="e-status-notice"></div>
+
+        <div class="block is-hidden" id="e-about-block">
+          <h2>About</h2>
+          <div class="prose" id="e-about"></div>
+        </div>
+
+        <div class="block is-hidden" id="e-pack-block">
+          <h2>Packing list</h2>
+          <ul class="checklist" id="e-pack"></ul>
+        </div>
+
+        <div class="block is-hidden" id="e-mats-block">
+          <h2>Files and forms</h2>
+          <div id="e-mats"></div>
+        </div>
+
+        <div class="block is-hidden" id="e-notes-block">
+          <h2>Notes</h2>
+          <div class="prose" id="e-notes"></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="sidebar-card">
+          <h3>The facts</h3>
+          <dl class="kv" id="e-kv"></dl>
+        </div>
+        <div class="sidebar-card">
+          <h3>Questions</h3>
+          <p style="font-size:.9rem;margin-bottom:.75rem;color:var(--text-muted)">
+            Ask your patrol leader first. If it is a permission-slip or money question, email the troop.
+          </p>
+          <a class="btn btn-outline btn-sm btn-full" data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">Email the troop</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-unit">Scouts BSA Troop 3</div>
+      <p style="margin-top:.55rem;max-width:38ch;">Chartered by Cokesbury United Methodist Church Men, Pensacola, Florida. One of the oldest troops in Northwest Florida.</p>
+      <p class="footer-motto">Founded 1937 &middot; Youth led</p>
+    </div>
+    <div>
+      <h4>Meetings</h4>
+      <ul>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
+        <li><a href="meetings.html">Program year</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="new-scouts.html">New to Troop 3?</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="trails.html">Our trails</a></li>
+        <li><a href="eagle.html">Life to Eagle</a></li>
+        <li><a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">bsatroop3pensacola@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="slot-year">2026</span> Scouts BSA Troop 3, Pensacola &middot; Gulf Coast Council</span>
+    <span><a href="admin.html">Leadership sign-in</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=dev"></script>
+<script>
+
+window.onSiteReady = function () {
+  var E = T3.esc;
+  var want = T3.qs('e');
+
+  T3.loadJSON('data/events.json').then(function (data) {
+    var list = (data && data.events) || [];
+    var ev = null;
+    list.forEach(function (x) { if (x.slug === want) ev = x; });
+    T3.hide('e-loading');
+    if (!ev) { T3.show('e-notfound'); T3.setPageTitle('Event not found'); return; }
+    render(ev);
+    T3.show('e-detail');
+  }).catch(function () {
+    T3.hide('e-loading');
+    T3.show('e-notfound');
+  });
+
+  function render(e) {
+    var status = e.status || 'scheduled';
+    T3.setPageTitle(e.title || 'Event', e.summary || '');
+
+    T3.el('e-date').textContent = T3.fmtDateRange(e.date, e.endDate);
+    T3.el('e-title').textContent = e.title || 'Event';
+
+    var meta = [];
+    meta.push('<span class="badge badge-deep">' + E(T3.KIND[e.kind] || 'Event') + '</span>');
+    if (T3.statusBadge(status)) meta.push(T3.statusBadge(status));
+    if (e.location) meta.push('<span class="dm">' + E(e.location) + '</span>');
+    if (e.departure) meta.push('<span class="dm">Leave <strong>' + E(T3.fmtTime(e.departure)) + '</strong></span>');
+    var chips = T3.patrolChips(e.patrols, T3.patrols);
+    if (chips) meta.push(chips);
+    T3.el('e-meta').innerHTML = meta.join('');
+
+    if (status === 'cancelled') {
+      T3.el('e-status-notice').innerHTML =
+        '<div class="notice notice-error"><strong>This event is cancelled.</strong> ' +
+        E(e.statusNote || '') + '</div>';
+    } else if (status === 'moved') {
+      T3.el('e-status-notice').innerHTML =
+        '<div class="notice notice-warn"><strong>Details have changed.</strong> ' +
+        E(e.statusNote || '') + '</div>';
+    } else if (e.signupDeadline && e.signupDeadline >= T3.today()) {
+      T3.el('e-status-notice').innerHTML =
+        '<div class="notice notice-info"><strong>Sign up by ' +
+        E(T3.fmtDate(e.signupDeadline, 'long')) + '.</strong> ' +
+        'Late sign-ups make it hard to buy food and plan drivers.</div>';
+    }
+
+    if (e.summary || e.description) {
+      T3.el('e-about').innerHTML = para(e.description || e.summary);
+      T3.show('e-about-block');
+    }
+
+    if (e.packingList && e.packingList.length) {
+      T3.el('e-pack').innerHTML = e.packingList.map(function (p) { return '<li>' + E(p) + '</li>'; }).join('');
+      T3.show('e-pack-block');
+    }
+
+    var mats = T3.materialsList(e.materials);
+    if (mats) { T3.el('e-mats').innerHTML = mats; T3.show('e-mats-block'); }
+
+    if (e.notes) { T3.el('e-notes').innerHTML = para(e.notes); T3.show('e-notes-block'); }
+
+    var kv = '';
+    kv += '<dt>When</dt><dd>' + E(T3.fmtDateRange(e.date, e.endDate)) + '</dd>';
+    if (e.departure) kv += '<dt>Leave</dt><dd>' + E(T3.fmtTime(e.departure)) + '</dd>';
+    if (e.returnTime) kv += '<dt>Back</dt><dd>' + E(T3.fmtTime(e.returnTime)) + '</dd>';
+    if (e.location) kv += '<dt>Where</dt><dd>' + E(e.location) + '</dd>';
+    if (e.cost) kv += '<dt>Cost</dt><dd>' + E(e.cost) + '</dd>';
+    if (e.signupDeadline) kv += '<dt>Sign up by</dt><dd>' + E(T3.fmtDate(e.signupDeadline, 'numeric')) + '</dd>';
+    if (e.driversNeeded) kv += '<dt>Drivers needed</dt><dd>' + E(String(e.driversNeeded)) + '</dd>';
+    if (e.uniform && T3.UNIFORM[e.uniform]) kv += '<dt>Uniform</dt><dd>' + E(T3.UNIFORM[e.uniform]) + '</dd>';
+    T3.el('e-kv').innerHTML = kv;
+  }
+
+  function para(text) {
+    return String(text).split(/\n{2,}/).map(function (p) {
+      return '<p>' + E(p).replace(/\n/g, '<br />') + '</p>';
+    }).join('');
+  }
+};
+</script>
+</body>
+</html>

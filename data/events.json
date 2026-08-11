@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "events": [
+    {
+      "slug": "fall-shakedown",
+      "date": "2026-08-28",
+      "endDate": "2026-08-30",
+      "title": "Fall Shakedown Campout",
+      "kind": "campout",
+      "status": "scheduled",
+      "location": "Camp Euchee, Defuniak Springs",
+      "uniform": "activity",
+      "cost": "$25",
+      "signupDeadline": "2026-08-18",
+      "driversNeeded": 4,
+      "summary": "First campout of the program year and the shakedown for everything after it. New scouts camp with their patrol for the first time and earn the troop neckerchief.",
+      "packingList": [
+        "Full Scout uniform for travel",
+        "Sleeping bag and pad",
+        "Mess kit",
+        "Rain gear — it is August in Florida",
+        "Two full water bottles"
+      ],
+      "materials": [
+        {
+          "label": "Outdoor equipment list",
+          "type": "pdf",
+          "href": "/files/outdoor-equipment-list.pdf"
+        }
+      ],
+      "catchUp": "",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "slug": "fort-pickens-campout",
+      "date": "2026-10-02",
+      "endDate": "2026-10-04",
+      "title": "Fort Pickens Campout & Historical Trail",
+      "kind": "campout",
+      "status": "scheduled",
+      "location": "Fort Pickens Group Camp, Gulf Islands National Seashore",
+      "uniform": "activity",
+      "cost": "$30",
+      "signupDeadline": "2026-09-22",
+      "driversNeeded": 6,
+      "summary": "The troop's own trail, hiked by the troop that built it. Seven miles through the batteries and out onto the beach, plus the fort tour on Saturday afternoon.",
+      "packingList": [
+        "Day pack",
+        "Flashlight — the batteries are genuinely dark",
+        "Closed-toe hiking shoes, not sandals",
+        "Sun protection",
+        "Three litres of water capacity"
+      ],
+      "materials": [
+        {
+          "label": "Fort Pickens Historical Trail",
+          "type": "link",
+          "href": "/trail.html?t=fort-pickens"
+        },
+        {
+          "label": "Recreation.gov — Fort Pickens",
+          "type": "link",
+          "href": "https://www.recreation.gov/camping/campgrounds/232488"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "slug": "fall-court-of-honor",
+      "date": "2026-11-03",
+      "title": "Fall Court of Honor",
+      "kind": "court-of-honor",
+      "status": "scheduled",
+      "location": "Cokesbury UMC Fellowship Hall",
+      "start": "19:00",
+      "end": "20:30",
+      "uniform": "field",
+      "summary": "Ranks and merit badges earned since May. Families welcome — this one is for them. Dessert afterwards, brought by the patrol on rotation.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "slug": "oa-fall-fellowship",
+      "date": "2026-11-13",
+      "endDate": "2026-11-15",
+      "title": "OA Fall Fellowship",
+      "kind": "oa",
+      "status": "scheduled",
+      "location": "Gulf Coast Council camp",
+      "summary": "Order of the Arrow members only. Ordeal candidates from this year's election should plan to attend.",
+      "materials": [
+        {
+          "label": "Gulf Coast Council",
+          "type": "link",
+          "href": "https://gulfcoastcouncil.org/"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "slug": "scouting-for-food",
+      "date": "2026-12-05",
+      "title": "Scouting for Food",
+      "kind": "service",
+      "status": "scheduled",
+      "location": "Neighbourhoods around Cokesbury UMC",
+      "start": "08:00",
+      "end": "12:00",
+      "uniform": "field",
+      "summary": "Bag drop the week before, collection on the Saturday. Counts toward service hours for rank. Meet at the Scout Hut.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "slug": "blackwater-paddle",
+      "date": "2027-03-12",
+      "endDate": "2027-03-14",
+      "title": "Blackwater River Paddling Trek",
+      "kind": "campout",
+      "status": "scheduled",
+      "location": "Blackwater River State Forest",
+      "uniform": "activity",
+      "cost": "$45",
+      "signupDeadline": "2027-02-23",
+      "summary": "Two days on the Blackwater with a sandbar camp in between. Swimmer classification required — get it done at the pool night in February.",
+      "materials": [
+        {
+          "label": "Blackwater paddling guide",
+          "type": "pdf",
+          "href": "/files/blackwater-paddling-guide.pdf"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "slug": "summer-camp-2027",
+      "date": "2027-06-20",
+      "endDate": "2027-06-26",
+      "title": "Summer Camp 2027",
+      "kind": "summer-camp",
+      "status": "scheduled",
+      "location": "Southern Appalachians — camp confirmed at the January PLC",
+      "cost": "$425 early, $475 after 1 April",
+      "signupDeadline": "2027-04-01",
+      "summary": "A week of merit badges, a mountain, and the best cooking any patrol does all year. Deposit at the January Court of Honor holds a spot.",
+      "materials": [
+        {
+          "label": "Summer camp checklist",
+          "type": "pdf",
+          "href": "/files/summer-camp-checklist.pdf"
+        },
+        {
+          "label": "Annual health and medical record",
+          "type": "link",
+          "href": "https://www.scouting.org/health-and-safety/ahmr/"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    }
+  ]
+}

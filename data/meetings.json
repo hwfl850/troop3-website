@@ -1,0 +1,394 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "meetings": [
+    {
+      "date": "2026-07-28",
+      "title": "Summer Camp Debrief",
+      "status": "happened",
+      "uniform": "activity",
+      "summary": "Gear back in the trailer, merit badge partials sorted, and the patrols told the rest of the troop what actually happened at camp.",
+      "advancement": [
+        "Merit badge partials logged"
+      ],
+      "catchUp": "If you came home with a partial, email the counselor's name and what is left to bsatroop3pensacola@gmail.com so it does not get lost before next summer.",
+      "notes": "Trailer inventory is short two dining flies and one Dutch oven lid. Quartermasters are on it.",
+      "gcalEventId": "",
+      "updated": "2026-07-29T02:10:00Z"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Program Year Planning",
+      "status": "happened",
+      "uniform": "field",
+      "summary": "The Patrol Leaders' Council set the themes for the next twelve months and the troop voted on the spring high-adventure destination.",
+      "runOfShow": [
+        {
+          "time": "18:30",
+          "item": "Opening / flags",
+          "who": "SPL"
+        },
+        {
+          "time": "18:40",
+          "item": "PLC presents the year",
+          "who": "PLC"
+        },
+        {
+          "time": "19:15",
+          "item": "Patrol corners — pick your campouts",
+          "who": "Patrol Leaders"
+        },
+        {
+          "time": "20:10",
+          "item": "Scoutmaster minute / closing",
+          "who": "Scoutmaster"
+        }
+      ],
+      "advancement": [
+        "Scout 6",
+        "Tenderfoot 6"
+      ],
+      "catchUp": "The year is set: Fort Pickens in October, Blackwater paddling in March, and summer camp in the southern Appalachians. Ask your patrol leader which campouts you signed up for and get the dates on your family calendar now.",
+      "notes": "Turnout was 41 scouts. Highest planning-night turnout in four years.",
+      "gcalEventId": "",
+      "updated": "2026-08-05T01:44:00Z"
+    },
+    {
+      "date": "2026-08-11",
+      "title": "Knots & Lashings",
+      "status": "scheduled",
+      "uniform": "field",
+      "summary": "Square lashing, shear lashing and the taut-line hitch, then patrol corners to build something that has to hold your weight.",
+      "runOfShow": [
+        {
+          "time": "18:30",
+          "item": "Opening / flags",
+          "who": "SPL"
+        },
+        {
+          "time": "18:45",
+          "item": "Skill instruction — three lashings",
+          "who": "ASPL"
+        },
+        {
+          "time": "19:20",
+          "item": "Patrol build-off",
+          "who": "Patrol Leaders"
+        },
+        {
+          "time": "20:05",
+          "item": "Announcements",
+          "who": "SPL"
+        },
+        {
+          "time": "20:20",
+          "item": "Scoutmaster minute / closing",
+          "who": "Scoutmaster"
+        }
+      ],
+      "advancement": [
+        "Tenderfoot 4a",
+        "First Class 3b"
+      ],
+      "materials": [
+        {
+          "label": "Animated Knots — reference",
+          "type": "link",
+          "href": "https://www.animatedknots.com/"
+        }
+      ],
+      "bringWith": [
+        "Handbook",
+        "Two 6 ft lengths of rope",
+        "Water bottle"
+      ],
+      "catchUp": "",
+      "notes": "",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-08-18",
+      "title": "Map & Compass",
+      "status": "scheduled",
+      "uniform": "field",
+      "summary": "Declination, bearings, and a compass course around the church grounds. Prep for the October Fort Pickens hike.",
+      "advancement": [
+        "First Class 4a",
+        "First Class 4b"
+      ],
+      "materials": [
+        {
+          "label": "Orienteering merit badge pamphlet",
+          "type": "link",
+          "href": "https://www.scouting.org/merit-badges/orienteering/"
+        }
+      ],
+      "bringWith": [
+        "Handbook",
+        "Compass if you own one"
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Recruitment Night",
+      "status": "scheduled",
+      "uniform": "field",
+      "summary": "Bring a friend. Patrols run stations — fire building, first aid, camp cooking — and parents get fifteen minutes with the Scoutmaster in the back room.",
+      "runOfShow": [
+        {
+          "time": "18:30",
+          "item": "Opening / flags",
+          "who": "SPL"
+        },
+        {
+          "time": "18:40",
+          "item": "Station rotation",
+          "who": "Patrol Leaders"
+        },
+        {
+          "time": "19:30",
+          "item": "Parent briefing",
+          "who": "Scoutmaster"
+        },
+        {
+          "time": "20:10",
+          "item": "Cracker barrel",
+          "who": "Quartermaster"
+        }
+      ],
+      "materials": [
+        {
+          "label": "Youth application",
+          "type": "pdf",
+          "href": "/files/youth-application-524-406a.pdf"
+        },
+        {
+          "label": "New to Troop 3?",
+          "type": "link",
+          "href": "/new-scouts.html"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "First Aid Basics",
+      "status": "scheduled",
+      "uniform": "activity",
+      "summary": "Hurry cases, bandaging, and building a personal first aid kit that actually fits in a day pack.",
+      "advancement": [
+        "Tenderfoot 8",
+        "Second Class 6",
+        "First Class 7"
+      ],
+      "bringWith": [
+        "Handbook",
+        "Your first aid kit if you have one"
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "Patrol Cooking & Menu Planning",
+      "status": "scheduled",
+      "uniform": "activity",
+      "summary": "Each patrol plans and costs a full weekend menu for the Fort Pickens campout, then a duty roster that spreads the work evenly.",
+      "advancement": [
+        "Second Class 2",
+        "First Class 2"
+      ],
+      "materials": [
+        {
+          "label": "Patrol menu planner",
+          "type": "pdf",
+          "href": "/files/menu-planner.pdf"
+        },
+        {
+          "label": "Patrol duty roster",
+          "type": "pdf",
+          "href": "/files/patrol-duty-roster.pdf"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Viper Patrol — Trailer & Gear Night",
+      "status": "scheduled",
+      "uniform": "activity",
+      "patrols": [
+        "viper"
+      ],
+      "summary": "Viper takes the quartermaster shift: full trailer inventory, tent pole repair, and stove maintenance before the October campout.",
+      "materials": [
+        {
+          "label": "Outdoor equipment list",
+          "type": "pdf",
+          "href": "/files/outdoor-equipment-list.pdf"
+        },
+        {
+          "label": "Tent pole repair guide",
+          "type": "pdf",
+          "href": "/files/tent-pole-repair.pdf"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Board of Review & Scoutmaster Conferences",
+      "status": "scheduled",
+      "uniform": "field",
+      "summary": "Full Class A. If you have finished a rank, sign up with the Advancement Chair by the Tuesday before.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Fort Pickens Campout Prep",
+      "status": "scheduled",
+      "uniform": "activity",
+      "summary": "Packing check, tent assignments, and the trail briefing for the Fort Pickens Historical Trail hike.",
+      "materials": [
+        {
+          "label": "Fort Pickens Historical Trail",
+          "type": "link",
+          "href": "/trail.html?t=fort-pickens"
+        },
+        {
+          "label": "Tent assignment sheet",
+          "type": "pdf",
+          "href": "/files/tent-assignment-sheet.pdf"
+        }
+      ],
+      "bringWith": [
+        "Packed pack — we are checking it"
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Flaming Arrow Patrol — Cooking Practice",
+      "status": "scheduled",
+      "uniform": "activity",
+      "patrols": [
+        "flaming-arrow"
+      ],
+      "summary": "Dutch oven practice in the church lot ahead of the patrol cook-off.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Fort Pickens Debrief & Court of Honor Prep",
+      "status": "scheduled",
+      "uniform": "field",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Pioneering — Build Night",
+      "status": "scheduled",
+      "uniform": "activity",
+      "summary": "Everything from August, scaled up. Each patrol builds a structure and then stands on it.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "No Meeting — Fall Break",
+      "status": "cancelled",
+      "summary": "Escambia County schools are out and the Scout Hut is closed. Back on 3 November.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Court of Honor",
+      "status": "moved",
+      "start": "19:00",
+      "end": "20:30",
+      "location": "Cokesbury UMC Fellowship Hall",
+      "summary": "Moved out of the Scout Hut into the Fellowship Hall so families fit. Ranks, merit badges, and cake. Starts at 7:00, not 6:30.",
+      "uniform": "field",
+      "materials": [
+        {
+          "label": "Court of Honor checklist",
+          "type": "pdf",
+          "href": "/files/ecoh-checklist.pdf"
+        }
+      ],
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Winter Camping & Cold Weather Gear"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Citizenship in the Community",
+      "status": "scheduled",
+      "uniform": "field",
+      "summary": "Merit badge session one. Bring the workbook, started.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "No Meeting — Thanksgiving Week",
+      "status": "cancelled",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-12-01",
+      "title": "Elections — SPL and Patrol Leaders",
+      "status": "scheduled",
+      "uniform": "field",
+      "summary": "Youth leadership elections. Every scout votes. Candidates speak for two minutes each.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-12-08",
+      "title": "Holiday Service Project",
+      "status": "scheduled",
+      "uniform": "activity",
+      "summary": "Food drive sorting for Manna Food Pantries. Service hours count toward rank.",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-12-15",
+      "title": "Cracker Barrel & Year in Review",
+      "status": "scheduled",
+      "uniform": "activity",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-12-22",
+      "title": "No Meeting — Winter Break",
+      "status": "cancelled",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    },
+    {
+      "date": "2026-12-29",
+      "title": "No Meeting — Winter Break",
+      "status": "cancelled",
+      "gcalEventId": "",
+      "updated": "2026-08-08T18:02:00Z"
+    }
+  ]
+}

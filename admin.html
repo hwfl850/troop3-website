@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Editing console for Troop 3 leadership." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Leadership sign-in — Troop 3 Pensacola" />
+  <meta property="og:description" content="Editing console for Troop 3 leadership." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://troop3pensacola.org/admin.html" />
+  <link rel="canonical" href="https://troop3pensacola.org/admin.html" />
+  <title>Leadership sign-in — Troop 3 Pensacola</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css?v=dev" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo-area" href="index.html" aria-label="Troop 3 Pensacola — home">
+    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M32 4c4.6 6.6 6.6 13.6 6 21.2-.2 2.6-.7 5-1.4 7.2h-4.6z"/><path d="M32 4c-4.6 6.6-6.6 13.6-6 21.2.2 2.6.7 5 1.4 7.2h4.6z"/><path d="M33.6 32.4c1.6-4.4 4.6-8.4 8.8-10.8 4.6-2.6 8.6-1.4 9.4 2.4.9 4.2-2.4 8.6-8 10.6-2.4.9-5 1.3-7.6 1.3z"/><path d="M30.4 32.4c-1.6-4.4-4.6-8.4-8.8-10.8-4.6-2.6-8.6-1.4-9.4 2.4-.9 4.2 2.4 8.6 8 10.6 2.4.9 5 1.3 7.6 1.3z"/><rect x="21" y="34.6" width="22" height="5.2" rx="2.6"/><path d="M29.4 41.4h5.2c.4 6.6 2.4 12.6 6 18.2h-17.2c3.6-5.6 5.6-11.6 6-18.2z"/><path d="M27.4 41.4c-1.2 5.6-4.6 10.6-9.6 14 .6-5.4 2.6-10.2 5.8-14z"/><path d="M36.6 41.4c1.2 5.6 4.6 10.6 9.6 14-.6-5.4-2.6-10.2-5.8-14z"/></g></svg></span>
+    <span class="logo-text">
+      <span class="unit">Troop 3</span>
+      <span class="place">Pensacola, Florida</span>
+    </span>
+  </a>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" aria-label="Main">
+    <a href="meetings.html">Meetings</a>
+    <a href="calendar.html">Calendar</a>
+
+    <div class="nav-dd" id="nav-patrols">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="nav-patrols-panel">Patrols<span class="caret" aria-hidden="true"></span></button>
+      <div class="nav-dd-mobile">
+        <a href="patrols.html">Patrols</a>
+        <button type="button" aria-label="Show the patrol list" aria-expanded="false" aria-controls="nav-patrols-panel"><span class="caret" aria-hidden="true"></span></button>
+      </div>
+      <div class="nav-panel" id="nav-patrols-panel" role="menu" aria-label="Patrols"></div>
+    </div>
+
+    <a href="advancement.html">Advancement</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+
+<main id="main" class="page">
+
+  <!-- ── Sign in ─────────────────────────────────────────────────────────── -->
+  <div class="password-card" id="gate">
+    <h1>Leadership sign-in</h1>
+    <p>For the Scoutmaster, the committee and the PLC. Everything you change here is
+       published to the live site.</p>
+
+    <div class="notice notice-error is-hidden" id="gate-error">
+      That password is not right.
+    </div>
+
+    <form id="gate-form" autocomplete="off">
+      <div class="field">
+        <label for="gate-pw">Password</label>
+        <input type="password" id="gate-pw" name="password" autocomplete="current-password" required />
+      </div>
+      <button class="btn btn-primary btn-full" type="submit">Sign in</button>
+    </form>
+
+    <p style="margin-top:1.25rem;font-size:.82rem">
+      Forgotten it? Ask the Scoutmaster. Do not put it in a group chat.
+    </p>
+  </div>
+
+  <!-- ── Console ─────────────────────────────────────────────────────────── -->
+  <div class="is-hidden" id="console">
+    <div class="detail-head" style="margin-bottom:1.5rem">
+      <div class="d-date">Signed in</div>
+      <h1>Troop 3 editor</h1>
+      <div class="detail-meta">
+        <span class="dm">Editing as <strong id="who">leadership</strong></span>
+        <span class="dm"><button class="btn btn-ghost btn-sm" type="button" id="sign-out">Sign out</button></span>
+      </div>
+    </div>
+
+    <div id="load-status"></div>
+
+    <div class="admin-shell">
+      <nav class="admin-nav" aria-label="Editor sections">
+        <button type="button" data-tab="catchup" aria-current="true">Post a catch-up</button>
+        <button type="button" data-tab="meetings">Meetings</button>
+        <button type="button" data-tab="events">Events &amp; campouts</button>
+        <button type="button" data-tab="patrols">Patrols</button>
+        <button type="button" data-tab="site">Banner &amp; site</button>
+        <button type="button" data-tab="help">How this works</button>
+      </nav>
+
+      <div>
+        <!-- Post a catch-up ------------------------------------------------ -->
+        <section data-panel="catchup">
+          <h2 class="section-title" style="font-size:1.35rem">Post a catch-up</h2>
+          <p class="section-sub">
+            The single most useful thing on the site. Two or three sentences on what the
+            patrol actually did, and what someone who was not there should do about it.
+          </p>
+          <div class="field">
+            <label for="cu-meeting">Which meeting</label>
+            <select id="cu-meeting"></select>
+          </div>
+          <div class="field">
+            <label for="cu-text">What we did</label>
+            <textarea id="cu-text" rows="6" placeholder="We finished the first aid requirements for Tenderfoot 12a and 12b. If you missed it, find a Troop Guide next week — it takes ten minutes to make up."></textarea>
+            <p class="field-hint">Plain text. A blank line starts a new paragraph.</p>
+          </div>
+          <button class="btn btn-primary" type="button" id="cu-apply">Stage this catch-up</button>
+        </section>
+
+        <!-- Meetings -------------------------------------------------------- -->
+        <section data-panel="meetings" class="is-hidden">
+          <h2 class="section-title" style="font-size:1.35rem">Meetings</h2>
+          <p class="section-sub">Newest first. A meeting needs a date and a title; everything else is optional.</p>
+          <div class="pill-row" style="margin-bottom:1.25rem">
+            <button class="btn btn-primary btn-sm" type="button" id="m-add">Add a meeting</button>
+            <button class="btn btn-outline btn-sm" type="button" id="m-dup">Duplicate the last one</button>
+          </div>
+          <div class="editor-list" id="m-list"></div>
+          <div class="is-hidden" id="m-form"></div>
+        </section>
+
+        <!-- Events ---------------------------------------------------------- -->
+        <section data-panel="events" class="is-hidden">
+          <h2 class="section-title" style="font-size:1.35rem">Events and campouts</h2>
+          <p class="section-sub">Anything that is not a Tuesday meeting.</p>
+          <div class="pill-row" style="margin-bottom:1.25rem">
+            <button class="btn btn-primary btn-sm" type="button" id="e-add">Add an event</button>
+          </div>
+          <div class="editor-list" id="e-list"></div>
+          <div class="is-hidden" id="e-form"></div>
+        </section>
+
+        <!-- Patrols --------------------------------------------------------- -->
+        <section data-panel="patrols" class="is-hidden">
+          <h2 class="section-title" style="font-size:1.35rem">Patrols</h2>
+          <p class="section-sub">
+            Patrol leaders can edit their own patrol. First name and last initial only &mdash;
+            this is a public page.
+          </p>
+          <div class="field" style="max-width:320px">
+            <label for="p-pick">Patrol</label>
+            <select id="p-pick"></select>
+          </div>
+          <div id="p-form"></div>
+        </section>
+
+        <!-- Site ------------------------------------------------------------ -->
+        <section data-panel="site" class="is-hidden">
+          <h2 class="section-title" style="font-size:1.35rem">Banner and site details</h2>
+          <p class="section-sub">
+            The banner sits at the top of every page until someone dismisses it. Use it for
+            "no meeting this week", not for decoration.
+          </p>
+          <div id="s-form"></div>
+        </section>
+
+        <!-- Help ------------------------------------------------------------ -->
+        <section data-panel="help" class="is-hidden">
+          <h2 class="section-title" style="font-size:1.35rem">How this works</h2>
+          <div class="prose">
+            <p>
+              Changes are staged in your browser first. Nothing is public until you press
+              <strong>Publish</strong> in the bar at the bottom &mdash; and the bar tells you
+              exactly which files will change.
+            </p>
+            <p>
+              Publishing writes the JSON files in the site's repository and the live site
+              updates within a minute or two. If you have made a mess, do not panic: every
+              save is a commit, and the previous version can be restored.
+            </p>
+            <h3>Rules the editor enforces</h3>
+            <ul>
+              <li>If the current content could not be loaded, saving is blocked. A failed read
+                  followed by a save is how sites get wiped.</li>
+              <li>If a save would delete a large part of a file, you have to confirm it twice
+                  &mdash; once here and once on the server.</li>
+              <li>Youth are listed by first name and last initial. Do not paste full names,
+                  phone numbers or addresses into any field.</li>
+            </ul>
+            <h3>Google Calendar</h3>
+            <p>
+              Pushing this schedule to the public Google Calendar is not wired up yet. Every
+              meeting and event already carries an empty <code>gcalEventId</code> field ready
+              for it, so nothing has to be re-entered when it is switched on.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Save bar. Hidden until something is staged. -->
+<div class="save-bar is-hidden" id="save-bar">
+  <span class="sb-status" id="sb-status">No changes staged.</span>
+  <button class="btn btn-ghost btn-sm" type="button" id="sb-diff">Preview changes</button>
+  <button class="btn btn-outline btn-sm" type="button" id="sb-discard">Discard</button>
+  <button class="btn btn-primary btn-sm" type="button" id="sb-publish">Publish</button>
+</div>
+
+<div class="page is-hidden" id="diff-wrap" style="padding-top:0">
+  <h3 style="margin-bottom:.6rem">Staged changes</h3>
+  <pre class="diff" id="diff"></pre>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-unit">Scouts BSA Troop 3</div>
+      <p style="margin-top:.55rem;max-width:38ch;">Chartered by Cokesbury United Methodist Church Men, Pensacola, Florida. One of the oldest troops in Northwest Florida.</p>
+      <p class="footer-motto">Founded 1937 &middot; Youth led</p>
+    </div>
+    <div>
+      <h4>Meetings</h4>
+      <ul>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
+        <li><a href="meetings.html">Program year</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="new-scouts.html">New to Troop 3?</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="trails.html">Our trails</a></li>
+        <li><a href="eagle.html">Life to Eagle</a></li>
+        <li><a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">bsatroop3pensacola@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="slot-year">2026</span> Scouts BSA Troop 3, Pensacola &middot; Gulf Coast Council</span>
+    <span><a href="admin.html">Leadership sign-in</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=dev"></script>
+<script src="assets/admin.js?v=dev"></script>
+</body>
+</html>

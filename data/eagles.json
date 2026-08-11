@@ -1,0 +1,436 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "note": "Names are stored as first name + last initial only, per the troop's policy for a public youth site. Full names are deliberately not in this repository; publishing them is a committee decision, not a default.",
+  "totalKnown": 152,
+  "claimed": "135+",
+  "years": [
+    {
+      "year": 2026,
+      "scouts": [
+        "Sebastian C.",
+        "Aiden M.",
+        "Andrew Y."
+      ]
+    },
+    {
+      "year": 2025,
+      "scouts": [
+        "Alex P.",
+        "Jaydon M."
+      ]
+    },
+    {
+      "year": 2024,
+      "scouts": [
+        "Clayton K.",
+        "Mason A.",
+        "Andrew G.",
+        "Gus B."
+      ]
+    },
+    {
+      "year": 2023,
+      "scouts": [
+        "Nathanael R.",
+        "Landon K.",
+        "Jarrett W.",
+        "Ward O.",
+        "Everett R.",
+        "Will S.",
+        "Nicholas J."
+      ]
+    },
+    {
+      "year": 2022,
+      "scouts": [
+        "Bryant W.",
+        "Jason H.",
+        "Westin R."
+      ]
+    },
+    {
+      "year": 2021,
+      "scouts": [
+        "Samuel T.",
+        "Gabriel S."
+      ]
+    },
+    {
+      "year": 2020,
+      "scouts": [
+        "Kelton W.",
+        "Shane F.",
+        "TJ P.",
+        "Wil W."
+      ]
+    },
+    {
+      "year": 2019,
+      "scouts": [
+        "Sam J.",
+        "Logan P.",
+        "Owen G.",
+        "Ben S.",
+        "Will B.",
+        "Andrew W.",
+        "Kody K."
+      ]
+    },
+    {
+      "year": 2018,
+      "scouts": [
+        "Tad S.",
+        "Claude S.",
+        "Aidan P.",
+        "Kynan R.",
+        "Asher K.",
+        "Daishan D."
+      ]
+    },
+    {
+      "year": 2017,
+      "scouts": [
+        "Xavier B.",
+        "Skyler F.",
+        "Jordan I.",
+        "Kenny O.",
+        "Nuriel M.",
+        "Nathan S."
+      ]
+    },
+    {
+      "year": 2016,
+      "scouts": [
+        "Michael C."
+      ]
+    },
+    {
+      "year": 2015,
+      "scouts": [
+        "Seth S.",
+        "Ian P."
+      ]
+    },
+    {
+      "year": 2014,
+      "scouts": [
+        "Easton P."
+      ]
+    },
+    {
+      "year": 2010,
+      "scouts": [
+        "Alex F.",
+        "Sid J."
+      ]
+    },
+    {
+      "year": 2009,
+      "scouts": [
+        "Jason D.",
+        "Alex J."
+      ]
+    },
+    {
+      "year": 2008,
+      "scouts": [
+        "Frankie L.",
+        "Mark C."
+      ]
+    },
+    {
+      "year": 2007,
+      "scouts": [
+        "Kevin M.",
+        "Andy O.",
+        "Tyler M."
+      ]
+    },
+    {
+      "year": 2006,
+      "scouts": [
+        "Gabriel F."
+      ]
+    },
+    {
+      "year": 2003,
+      "scouts": [
+        "Wilson B.",
+        "Judd E.",
+        "Jonathan S.",
+        "Chad T."
+      ]
+    },
+    {
+      "year": 2002,
+      "scouts": [
+        "Jonathan M.",
+        "Taylor L."
+      ]
+    },
+    {
+      "year": 2000,
+      "scouts": [
+        "Richard W."
+      ]
+    },
+    {
+      "year": 1999,
+      "scouts": [
+        "Travis S.",
+        "Stephen S.",
+        "Eric C."
+      ]
+    },
+    {
+      "year": 1997,
+      "scouts": [
+        "Robert G.",
+        "Daniel B."
+      ]
+    },
+    {
+      "year": 1996,
+      "scouts": [
+        "Jason C."
+      ]
+    },
+    {
+      "year": 1995,
+      "scouts": [
+        "Ryan K.",
+        "Mike E."
+      ]
+    },
+    {
+      "year": 1994,
+      "scouts": [
+        "Todd M.",
+        "Marvin R.",
+        "Bryan C."
+      ]
+    },
+    {
+      "year": 1993,
+      "scouts": [
+        "Chip S.",
+        "Royce R.",
+        "Sean D.",
+        "Chris H.",
+        "Bryan C."
+      ]
+    },
+    {
+      "year": 1992,
+      "scouts": [
+        "Steven D.",
+        "James D.",
+        "Scott M.",
+        "Matthew B."
+      ]
+    },
+    {
+      "year": 1991,
+      "scouts": [
+        "Jim M.",
+        "David E.",
+        "Jay O."
+      ]
+    },
+    {
+      "year": 1990,
+      "scouts": [
+        "Mark G.",
+        "Jon E.",
+        "Matt K.",
+        "Chris S."
+      ]
+    },
+    {
+      "year": 1989,
+      "scouts": [
+        "Vance C."
+      ]
+    },
+    {
+      "year": 1987,
+      "scouts": [
+        "Tony D.",
+        "Trey G."
+      ]
+    },
+    {
+      "year": 1986,
+      "scouts": [
+        "Tim G.",
+        "James B.",
+        "Gene M.",
+        "John B.",
+        "Philip G."
+      ]
+    },
+    {
+      "year": 1985,
+      "scouts": [
+        "Jeff B.",
+        "Mike G.",
+        "Gene C.",
+        "John P.",
+        "Buck P.",
+        "Ronnie H."
+      ]
+    },
+    {
+      "year": 1984,
+      "scouts": [
+        "Mike V.",
+        "Mike C."
+      ]
+    },
+    {
+      "year": 1983,
+      "scouts": [
+        "Kenneth C.",
+        "Robert G.",
+        "Steven H."
+      ]
+    },
+    {
+      "year": 1982,
+      "scouts": [
+        "Tom A.",
+        "Mike P.",
+        "Jack H."
+      ]
+    },
+    {
+      "year": 1981,
+      "scouts": [
+        "Chris C.",
+        "William M."
+      ]
+    },
+    {
+      "year": 1980,
+      "scouts": [
+        "Tim P.",
+        "Scott B.",
+        "Oscar W."
+      ]
+    },
+    {
+      "year": 1979,
+      "scouts": [
+        "Ken D.",
+        "David H.",
+        "Mark G."
+      ]
+    },
+    {
+      "year": 1978,
+      "scouts": [
+        "A.H. G.",
+        "C. F."
+      ]
+    },
+    {
+      "year": 1977,
+      "scouts": [
+        "Kevin L."
+      ]
+    },
+    {
+      "year": 1976,
+      "scouts": [
+        "M. F.",
+        "B. P.",
+        "S. R."
+      ]
+    },
+    {
+      "year": 1975,
+      "scouts": [
+        "D. M.",
+        "Keith L."
+      ]
+    },
+    {
+      "year": 1973,
+      "scouts": [
+        "Mike H."
+      ]
+    },
+    {
+      "year": 1972,
+      "scouts": [
+        "P. E.",
+        "D. B."
+      ]
+    },
+    {
+      "year": 1971,
+      "scouts": [
+        "S.W. B."
+      ]
+    },
+    {
+      "year": 1970,
+      "scouts": [
+        "R. H."
+      ]
+    },
+    {
+      "year": 1968,
+      "scouts": [
+        "C. S."
+      ]
+    },
+    {
+      "year": 1967,
+      "scouts": [
+        "G. H."
+      ]
+    },
+    {
+      "year": 1964,
+      "scouts": [
+        "W. J."
+      ]
+    },
+    {
+      "year": 1963,
+      "scouts": [
+        "H.R. S.",
+        "M. B."
+      ]
+    },
+    {
+      "year": 1953,
+      "scouts": [
+        "Otis F.",
+        "James L.",
+        "Jack H."
+      ]
+    },
+    {
+      "year": 1950,
+      "scouts": [
+        "Donald M.",
+        "Bill F.",
+        "James M.",
+        "Richard S.",
+        "Jack T."
+      ]
+    },
+    {
+      "year": 1949,
+      "scouts": [
+        "Alex G.",
+        "Jimmie M.",
+        "Otis F.",
+        "Sam A."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A Troop 3 patrol: leadership, roster, and what they are working on." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Patrol — Troop 3 Pensacola" />
+  <meta property="og:description" content="A Troop 3 patrol: leadership, roster, and what they are working on." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://troop3pensacola.org/patrol.html" />
+  <link rel="canonical" href="https://troop3pensacola.org/patrol.html" />
+  <title>Patrol — Troop 3 Pensacola</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css?v=dev" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo-area" href="index.html" aria-label="Troop 3 Pensacola — home">
+    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M32 4c4.6 6.6 6.6 13.6 6 21.2-.2 2.6-.7 5-1.4 7.2h-4.6z"/><path d="M32 4c-4.6 6.6-6.6 13.6-6 21.2.2 2.6.7 5 1.4 7.2h4.6z"/><path d="M33.6 32.4c1.6-4.4 4.6-8.4 8.8-10.8 4.6-2.6 8.6-1.4 9.4 2.4.9 4.2-2.4 8.6-8 10.6-2.4.9-5 1.3-7.6 1.3z"/><path d="M30.4 32.4c-1.6-4.4-4.6-8.4-8.8-10.8-4.6-2.6-8.6-1.4-9.4 2.4-.9 4.2 2.4 8.6 8 10.6 2.4.9 5 1.3 7.6 1.3z"/><rect x="21" y="34.6" width="22" height="5.2" rx="2.6"/><path d="M29.4 41.4h5.2c.4 6.6 2.4 12.6 6 18.2h-17.2c3.6-5.6 5.6-11.6 6-18.2z"/><path d="M27.4 41.4c-1.2 5.6-4.6 10.6-9.6 14 .6-5.4 2.6-10.2 5.8-14z"/><path d="M36.6 41.4c1.2 5.6 4.6 10.6 9.6 14-.6-5.4-2.6-10.2-5.8-14z"/></g></svg></span>
+    <span class="logo-text">
+      <span class="unit">Troop 3</span>
+      <span class="place">Pensacola, Florida</span>
+    </span>
+  </a>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" aria-label="Main">
+    <a href="meetings.html">Meetings</a>
+    <a href="calendar.html">Calendar</a>
+
+    <div class="nav-dd" id="nav-patrols">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="nav-patrols-panel">Patrols<span class="caret" aria-hidden="true"></span></button>
+      <div class="nav-dd-mobile">
+        <a href="patrols.html">Patrols</a>
+        <button type="button" aria-label="Show the patrol list" aria-expanded="false" aria-controls="nav-patrols-panel"><span class="caret" aria-hidden="true"></span></button>
+      </div>
+      <div class="nav-panel" id="nav-patrols-panel" role="menu" aria-label="Patrols"></div>
+    </div>
+
+    <a href="advancement.html">Advancement</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div id="site-banner" class="banner-wrap"></div>
+
+
+<main id="main" class="page patrol-page">
+
+  <p class="loading" id="pd-loading">Loading&hellip;</p>
+
+  <div class="notfound is-hidden" id="pd-notfound">
+    <h2>No such patrol</h2>
+    <p>That link does not match any patrol in the troop.</p>
+    <a class="btn btn-primary btn-sm" href="patrols.html">All patrols</a>
+  </div>
+
+  <div class="is-hidden" id="pd-detail">
+    <div class="patrol-head">
+      <div class="patrol-emblem" id="pd-emblem" aria-hidden="true"></div>
+      <div>
+        <h1 id="pd-name"></h1>
+        <p class="patrol-yell is-hidden" id="pd-yell"></p>
+      </div>
+    </div>
+
+    <div class="detail-grid">
+      <div>
+        <div class="block is-hidden" id="pd-about-block">
+          <h2>About the patrol</h2>
+          <div class="prose" id="pd-about"></div>
+        </div>
+
+        <div id="pd-blocks"></div>
+
+        <div class="block is-hidden" id="pd-meetings-block">
+          <h2>Coming up for this patrol</h2>
+          <div id="pd-meetings"></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="sidebar-card is-hidden" id="pd-lead-card">
+          <h3>Patrol leadership</h3>
+          <dl class="kv" id="pd-lead"></dl>
+        </div>
+        <div class="sidebar-card is-hidden" id="pd-roster-card">
+          <h3>Roster</h3>
+          <ul class="roster-list" id="pd-roster"></ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Everything else</h3>
+          <a class="btn btn-outline btn-sm btn-full" href="patrols.html" style="margin-bottom:.5rem">Other patrols</a>
+          <a class="btn btn-ghost btn-sm btn-full" href="meetings.html">Program year</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-unit">Scouts BSA Troop 3</div>
+      <p style="margin-top:.55rem;max-width:38ch;">Chartered by Cokesbury United Methodist Church Men, Pensacola, Florida. One of the oldest troops in Northwest Florida.</p>
+      <p class="footer-motto">Founded 1937 &middot; Youth led</p>
+    </div>
+    <div>
+      <h4>Meetings</h4>
+      <ul>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
+        <li><a href="meetings.html">Program year</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="new-scouts.html">New to Troop 3?</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="trails.html">Our trails</a></li>
+        <li><a href="eagle.html">Life to Eagle</a></li>
+        <li><a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">bsatroop3pensacola@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="slot-year">2026</span> Scouts BSA Troop 3, Pensacola &middot; Gulf Coast Council</span>
+    <span><a href="admin.html">Leadership sign-in</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=dev"></script>
+<script>
+
+window.onSiteReady = function () {
+  var E = T3.esc;
+  var want = T3.qs('p');
+
+  // Only slugs listed in the patrol index are ever fetched — the query string
+  // never becomes part of a path on its own.
+  var meta = null;
+  T3.patrols.forEach(function (p) { if (p.slug === want) meta = p; });
+
+  if (!meta) {
+    T3.hide('pd-loading');
+    T3.show('pd-notfound');
+    T3.setPageTitle('Patrol not found');
+    return;
+  }
+
+  document.documentElement.style.setProperty('--patrol', T3.cssColor(meta.color));
+
+  T3.loadJSON('data/patrols/' + meta.slug + '.json').then(function (p) {
+    render(p);
+    T3.hide('pd-loading');
+    T3.show('pd-detail');
+    loadPatrolDates(meta.slug);
+  }).catch(function () {
+    T3.hide('pd-loading');
+    T3.show('pd-notfound');
+  });
+
+  function render(p) {
+    var name = p.name || meta.name || meta.slug;
+    T3.setPageTitle(name, p.about || ('The ' + name + ' of Scouts BSA Troop 3, Pensacola.'));
+    T3.el('pd-name').textContent = name;
+
+    var em = T3.el('pd-emblem');
+    if (p.emblem) {
+      em.innerHTML = '<img src="' + E(T3.safeHref(p.emblem)) + '" alt="" />';
+    } else {
+      em.textContent = name.slice(0, 1).toUpperCase();
+    }
+
+    if (p.yell) { T3.el('pd-yell').textContent = '“' + p.yell + '”'; T3.show('pd-yell'); }
+
+    if (p.about) { T3.el('pd-about').innerHTML = para(p.about); T3.show('pd-about-block'); }
+
+    var POS = {
+      pl: 'Patrol Leader', apl: 'Assistant Patrol Leader', scribe: 'Scribe',
+      quartermaster: 'Quartermaster', grubmaster: 'Grubmaster', cheermaster: 'Cheermaster',
+      instructor: 'Instructor'
+    };
+    var lead = p.leadership || {};
+    var rows = Object.keys(lead).filter(function (k) { return lead[k]; }).map(function (k) {
+      return '<dt>' + E(POS[k] || k) + '</dt><dd>' + E(lead[k]) + '</dd>';
+    });
+    if (rows.length) {
+      T3.el('pd-lead').innerHTML = rows.join('');
+      T3.show('pd-lead-card');
+    }
+
+    if (p.roster && p.roster.length) {
+      T3.el('pd-roster').innerHTML = p.roster.map(function (r) {
+        return '<li>' + E(typeof r === 'string' ? r : (r.name || '')) + '</li>';
+      }).join('');
+      T3.show('pd-roster-card');
+    }
+
+    T3.el('pd-blocks').innerHTML = (p.blocks || []).map(block).join('');
+  }
+
+  function block(b) {
+    if (!b || !b.type) return '';
+    if (b.type === 'text') {
+      return '<div class="block"><h2>' + E(b.heading || '') + '</h2>' +
+             '<div class="prose">' + para(b.body || '') + '</div></div>';
+    }
+    if (b.type === 'linkList') {
+      return '<div class="block"><h2>' + E(b.heading || '') + '</h2>' +
+             T3.materialsList(b.links || []) + '</div>';
+    }
+    if (b.type === 'checklist') {
+      return '<div class="block"><h2>' + E(b.heading || '') + '</h2><ul class="checklist">' +
+             (b.items || []).map(function (i) { return '<li>' + E(i) + '</li>'; }).join('') +
+             '</ul></div>';
+    }
+    return '';
+  }
+
+  function loadPatrolDates(slug) {
+    var t = T3.today();
+    Promise.all([
+      T3.loadJSON('data/meetings.json').catch(function () { return { meetings: [] }; }),
+      T3.loadJSON('data/events.json').catch(function () { return { events: [] }; })
+    ]).then(function (r) {
+      var rows = T3.mergedStream((r[0] && r[0].meetings) || [], (r[1] && r[1].events) || [])
+        .filter(function (x) {
+          return (x.data.endDate || x.date) >= t &&
+                 (x.data.patrols || []).indexOf(slug) > -1;
+        }).slice(0, 5);
+      if (!rows.length) return;
+
+      T3.el('pd-meetings').innerHTML = '<div class="upnext">' + rows.map(function (x) {
+        var it = x.data;
+        var href = x.kind === 'event'
+          ? 'event.html?e=' + encodeURIComponent(it.slug || '')
+          : 'meeting.html?d=' + encodeURIComponent(it.date);
+        return '<a class="upnext-item" href="' + E(href) + '">' +
+          '<span class="u-date">' + E(T3.fmtDate(it.date, 'short')) + '</span>' +
+          '<span class="u-title">' + E(it.title || '') + '</span>' +
+        '</a>';
+      }).join('') + '</div>';
+      T3.show('pd-meetings-block');
+    });
+  }
+
+  function para(text) {
+    return String(text).split(/\n{2,}/).map(function (p) {
+      return '<p>' + E(p).replace(/\n/g, '<br />') + '</p>';
+    }).join('');
+  }
+};
+</script>
+</body>
+</html>

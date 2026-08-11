@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "note": "Youth are listed by first name and last initial only. Adult contact is role-based email only — no personal numbers, no home addresses.",
+  "youth": [
+    { "position": "Senior Patrol Leader", "abbr": "SPL", "name": "Henry W.", "about": "Runs the meeting, runs the PLC, answers to the troop." },
+    { "position": "Assistant Senior Patrol Leader", "abbr": "ASPL", "name": "Marcus L.", "about": "Skill instruction and standing in for the SPL." },
+    { "position": "Patrol Leader — Viper", "abbr": "PL", "name": "Henry W.", "about": "" },
+    { "position": "Patrol Leader — Flaming Arrow", "abbr": "PL", "name": "Marcus L.", "about": "" },
+    { "position": "Troop Guide", "abbr": "TG", "name": "Sam T.", "about": "Works with the newest scouts through their first year." },
+    { "position": "Quartermaster", "abbr": "QM", "name": "Diego M.", "about": "The trailer, the tents, the stoves." },
+    { "position": "Scribe", "abbr": "", "name": "Chris B.", "about": "Attendance, minutes, and this website's meeting notes." },
+    { "position": "Historian", "abbr": "", "name": "Nathan D.", "about": "" },
+    { "position": "Order of the Arrow Representative", "abbr": "OA", "name": "Owen K.", "about": "" }
+  ],
+  "adults": [
+    { "position": "Scoutmaster", "email": "bsatroop3pensacola@gmail.com", "about": "Sets the vision, coaches the youth leaders, signs the conferences." },
+    { "position": "Assistant Scoutmasters", "email": "bsatroop3pensacola@gmail.com", "about": "Several, split across the patrols and the outdoor program." },
+    { "position": "Committee Chair", "email": "bsatroop3pensacola@gmail.com", "about": "Runs the troop committee — the adults who make the program possible without running it." },
+    { "position": "Advancement Chair", "email": "bsatroop3pensacola@gmail.com", "about": "Boards of review, records, and Scoutbook." },
+    { "position": "Treasurer", "email": "bsatroop3pensacola@gmail.com", "about": "Dues, campout fees, and the summer camp ledger." },
+    { "position": "Chartered Organization Representative", "email": "bsatroop3pensacola@gmail.com", "about": "The link between Troop 3 and Cokesbury United Methodist Church Men." }
+  ]
+}

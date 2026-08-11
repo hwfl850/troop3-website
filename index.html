@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Scouts BSA Troop 3, Pensacola, Florida. Meeting every Tuesday 6:30-8:30 PM at the Scout Hut, Cokesbury UMC. Program year, campouts, patrols and catch-up notes." />
+  <meta property="og:title" content="Troop 3 Pensacola — Scouts BSA since 1937" />
+  <meta property="og:description" content="Scouts BSA Troop 3, Pensacola, Florida. Meeting every Tuesday 6:30-8:30 PM at the Scout Hut, Cokesbury UMC. Program year, campouts, patrols and catch-up notes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://troop3pensacola.org/" />
+  <link rel="canonical" href="https://troop3pensacola.org/" />
+  <title>Troop 3 Pensacola — Scouts BSA since 1937</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css?v=dev" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo-area" href="index.html" aria-label="Troop 3 Pensacola — home">
+    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M32 4c4.6 6.6 6.6 13.6 6 21.2-.2 2.6-.7 5-1.4 7.2h-4.6z"/><path d="M32 4c-4.6 6.6-6.6 13.6-6 21.2.2 2.6.7 5 1.4 7.2h4.6z"/><path d="M33.6 32.4c1.6-4.4 4.6-8.4 8.8-10.8 4.6-2.6 8.6-1.4 9.4 2.4.9 4.2-2.4 8.6-8 10.6-2.4.9-5 1.3-7.6 1.3z"/><path d="M30.4 32.4c-1.6-4.4-4.6-8.4-8.8-10.8-4.6-2.6-8.6-1.4-9.4 2.4-.9 4.2 2.4 8.6 8 10.6 2.4.9 5 1.3 7.6 1.3z"/><rect x="21" y="34.6" width="22" height="5.2" rx="2.6"/><path d="M29.4 41.4h5.2c.4 6.6 2.4 12.6 6 18.2h-17.2c3.6-5.6 5.6-11.6 6-18.2z"/><path d="M27.4 41.4c-1.2 5.6-4.6 10.6-9.6 14 .6-5.4 2.6-10.2 5.8-14z"/><path d="M36.6 41.4c1.2 5.6 4.6 10.6 9.6 14-.6-5.4-2.6-10.2-5.8-14z"/></g></svg></span>
+    <span class="logo-text">
+      <span class="unit">Troop 3</span>
+      <span class="place">Pensacola, Florida</span>
+    </span>
+  </a>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" aria-label="Main">
+    <a href="meetings.html">Meetings</a>
+    <a href="calendar.html">Calendar</a>
+
+    <div class="nav-dd" id="nav-patrols">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="nav-patrols-panel">Patrols<span class="caret" aria-hidden="true"></span></button>
+      <div class="nav-dd-mobile">
+        <a href="patrols.html">Patrols</a>
+        <button type="button" aria-label="Show the patrol list" aria-expanded="false" aria-controls="nav-patrols-panel"><span class="caret" aria-hidden="true"></span></button>
+      </div>
+      <div class="nav-panel" id="nav-patrols-panel" role="menu" aria-label="Patrols"></div>
+    </div>
+
+    <a href="advancement.html">Advancement</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div id="site-banner" class="banner-wrap"></div>
+
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-eyebrow">Pensacola, Florida &middot; Since 1937</span>
+    <h1>Scouts BSA <em>Troop&nbsp;3</em></h1>
+    <p class="hero-lede">
+      We meet every Tuesday night in the Scout Hut at Cokesbury United Methodist Church,
+      and we camp at least one weekend a month. Ninety years of it. If you missed a
+      meeting, everything you need to catch up is below.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="meetings.html">See the program year</a>
+      <a class="btn btn-onDark" href="new-scouts.html">New to Troop 3?</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats" id="home-stats">
+  <div class="stat"><span class="v">1937</span><span class="l">Founded</span></div>
+  <div class="stat"><span class="v">152</span><span class="l">Eagle Scouts</span></div>
+  <div class="stat"><span class="v">2,600</span><span class="l">Days &amp; nights camping</span></div>
+  <div class="stat"><span class="v">2</span><span class="l">Trails we built</span></div>
+</div>
+
+<main id="main">
+  <section class="section">
+    <div class="section-inner">
+      <div class="home-grid">
+
+        <!-- Next meeting. Static shell; JS fills it in. -->
+        <div>
+          <div class="next-card" id="next-card">
+            <div class="nc-head">
+              <span id="next-label">Next meeting</span>
+              <span id="next-countdown"></span>
+            </div>
+            <div class="nc-body" id="next-body">
+              <p class="loading" style="padding:1rem 0">Loading the next meeting&hellip;</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Missed it? -->
+        <div id="catchup-slot"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Coming up</span>
+      <h2 class="section-title">The next few things</h2>
+      <div class="section-line"></div>
+      <div class="upnext" id="upnext">
+        <p class="loading" style="text-align:left;padding:1rem 0">Loading&hellip;</p>
+      </div>
+      <p style="margin-top:1.5rem;">
+        <a class="btn btn-ghost btn-sm" href="meetings.html">Full program year</a>
+        <a class="btn btn-ghost btn-sm" href="calendar.html">Calendar</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cards cards-2">
+        <a class="card card-topline" href="new-scouts.html">
+          <h3>New to Troop 3?</h3>
+          <p>What the first month looks like, what to wear, what to bring, and what
+             it costs. Visit any Tuesday &mdash; no appointment, no uniform needed.</p>
+        </a>
+        <a class="card card-topline" href="trails.html">
+          <h3>The trails we built</h3>
+          <p>Troop 3 created the Fort Pickens Historical Trail in 1982 and the NAS
+             Pensacola Historical Trail in 1976, and still maintains both.</p>
+        </a>
+        <a class="card card-topline" href="advancement.html">
+          <h3>Advancement</h3>
+          <p>Scout to Eagle, merit badges, blue cards, and how boards of review
+             actually work around here.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-unit">Scouts BSA Troop 3</div>
+      <p style="margin-top:.55rem;max-width:38ch;">Chartered by Cokesbury United Methodist Church Men, Pensacola, Florida. One of the oldest troops in Northwest Florida.</p>
+      <p class="footer-motto">Founded 1937 &middot; Youth led</p>
+    </div>
+    <div>
+      <h4>Meetings</h4>
+      <ul>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
+        <li><a href="meetings.html">Program year</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="new-scouts.html">New to Troop 3?</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="trails.html">Our trails</a></li>
+        <li><a href="eagle.html">Life to Eagle</a></li>
+        <li><a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">bsatroop3pensacola@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="slot-year">2026</span> Scouts BSA Troop 3, Pensacola &middot; Gulf Coast Council</span>
+    <span><a href="admin.html">Leadership sign-in</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=dev"></script>
+<script>
+
+window.onSiteReady = function () {
+  var E = T3.esc;
+
+  Promise.all([
+    T3.loadJSON('data/meetings.json').catch(function () { return null; }),
+    T3.loadJSON('data/events.json').catch(function () { return null; })
+  ]).then(function (r) {
+    var meetings = (r[0] && r[0].meetings) || [];
+    var events   = (r[1] && r[1].events)   || [];
+    renderStats();
+    renderNext(meetings, events);
+    renderCatchUp(meetings);
+    renderUpNext(meetings, events);
+  });
+
+  function renderStats() {
+    var s = T3.site.stats;
+    if (!s || !s.length) return;
+    T3.el('home-stats').innerHTML = s.map(function (x) {
+      return '<div class="stat"><span class="v">' + E(x.value) + '</span>' +
+             '<span class="l">' + E(x.label) + '</span></div>';
+    }).join('');
+  }
+
+  function renderNext(meetings, events) {
+    var body = T3.el('next-body');
+    var m = T3.nextMeeting(meetings);
+    var isEvent = false;
+
+    if (!m) {
+      // No meeting on the books — fall back to the next event.
+      var t = T3.today(), best = null;
+      events.forEach(function (e) {
+        if (e.date >= t && e.status !== 'cancelled' && (!best || e.date < best.date)) best = e;
+      });
+      m = best; isEvent = true;
+    }
+
+    if (!m) {
+      T3.el('next-label').textContent = 'Meetings';
+      body.innerHTML = '<h2>Nothing on the calendar yet</h2>' +
+        '<p class="nc-summary">The program year has not been posted. We still meet every ' +
+        'Tuesday night &mdash; check back, or email us.</p>' +
+        '<div class="nc-actions"><a class="btn btn-outline btn-sm" href="about.html">How to find us</a></div>';
+      return;
+    }
+
+    var d = T3.withDefaults(m, T3.site);
+    T3.el('next-label').textContent = isEvent ? 'Next event' : 'Next meeting';
+
+    var days = daysUntil(m.date);
+    T3.el('next-countdown').textContent =
+      days === 0 ? 'Tonight' : days === 1 ? 'Tomorrow' : 'In ' + days + ' days';
+
+    var href = isEvent
+      ? 'event.html?e=' + encodeURIComponent(m.slug || '')
+      : 'meeting.html?d=' + encodeURIComponent(m.date);
+
+    var meta = [];
+    if (d.start) meta.push('<span><strong>' + E(T3.fmtTimeRange(d.start, d.end)) + '</strong></span>');
+    if (d.location) meta.push('<span>' + E(d.location) + '</span>');
+    if (m.uniform && T3.UNIFORM[m.uniform]) meta.push('<span>' + E(T3.UNIFORM[m.uniform]) + '</span>');
+
+    body.innerHTML =
+      '<div class="nc-date">' + E(T3.fmtDate(m.date, 'long')) + '</div>' +
+      '<h2>' + E(m.title || 'Troop meeting') + '</h2>' +
+      (T3.statusBadge(m.status) ? '<p style="margin-bottom:.6rem">' + T3.statusBadge(m.status) + '</p>' : '') +
+      (meta.length ? '<div class="nc-meta">' + meta.join('') + '</div>' : '') +
+      (m.summary ? '<p class="nc-summary">' + E(m.summary) + '</p>' : '') +
+      (m.bringWith && m.bringWith.length
+        ? '<p class="nc-summary"><strong>Bring:</strong> ' + E(m.bringWith.join(', ')) + '</p>' : '') +
+      '<div class="nc-actions">' +
+        '<a class="btn btn-primary btn-sm" href="' + E(href) + '">Details</a>' +
+        '<a class="btn btn-ghost btn-sm" href="calendar.html">Calendar</a>' +
+      '</div>';
+  }
+
+  function renderCatchUp(meetings) {
+    var slot = T3.el('catchup-slot');
+    var m = T3.lastCatchUp(meetings);
+    if (!m) {
+      slot.innerHTML =
+        '<div class="catchup-card">' +
+          '<div class="cu-label">Missed it?</div>' +
+          '<h2>Nothing to catch up on</h2>' +
+          '<p class="cu-text" style="margin-top:.6rem">No catch-up has been posted since the last meeting. ' +
+          'Ask your patrol leader, or check the program year.</p>' +
+          '<a class="btn btn-ghost btn-sm" href="meetings.html">Program year</a>' +
+        '</div>';
+      return;
+    }
+    slot.innerHTML =
+      '<div class="catchup-card">' +
+        '<div class="cu-label">Missed it?</div>' +
+        '<h2>' + E(m.title || 'Last meeting') + '</h2>' +
+        '<div class="cu-when">' + E(T3.fmtDate(m.date, 'long')) + '</div>' +
+        '<p class="cu-text">' + E(m.catchUp) + '</p>' +
+        '<a class="btn btn-primary btn-sm" href="meeting.html?d=' + encodeURIComponent(m.date) + '">What we did</a>' +
+      '</div>';
+  }
+
+  function renderUpNext(meetings, events) {
+    var host = T3.el('upnext');
+    var t = T3.today();
+    var stream = T3.mergedStream(meetings, events).filter(function (x) {
+      return x.date >= t && (x.data.status || 'scheduled') !== 'cancelled';
+    }).slice(0, 6);
+
+    if (!stream.length) {
+      host.innerHTML = '<p style="color:var(--text-muted)">Nothing scheduled yet.</p>';
+      return;
+    }
+
+    host.innerHTML = stream.map(function (x) {
+      var it = x.data;
+      var href = x.kind === 'event'
+        ? 'event.html?e=' + encodeURIComponent(it.slug || '')
+        : 'meeting.html?d=' + encodeURIComponent(it.date);
+      var when = x.kind === 'event'
+        ? T3.fmtDateRange(it.date, it.endDate)
+        : T3.fmtDate(it.date, 'short');
+      var sub = [];
+      if (x.kind === 'event') sub.push(T3.KIND[it.kind] || 'Event');
+      if (it.location) sub.push(it.location);
+      return '<a class="upnext-item" href="' + E(href) + '">' +
+        '<span class="u-date">' + E(when) + '</span>' +
+        '<span class="u-title">' + E(it.title || '') +
+          (sub.length ? '<span class="u-sub">' + E(sub.join(' · ')) + '</span>' : '') +
+        '</span>' +
+        (T3.statusBadge(it.status) || '') +
+      '</a>';
+    }).join('');
+  }
+
+  function daysUntil(iso) {
+    var a = T3.parseISO(T3.today()), b = T3.parseISO(iso);
+    if (!a || !b) return 0;
+    return Math.round((b - a) / 86400000);
+  }
+};
+</script>
+</body>
+</html>

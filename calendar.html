@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Month-by-month calendar of Troop 3 meetings, campouts, courts of honour and service projects." />
+  <meta property="og:title" content="Calendar — Troop 3 Pensacola" />
+  <meta property="og:description" content="Month-by-month calendar of Troop 3 meetings, campouts, courts of honour and service projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://troop3pensacola.org/calendar.html" />
+  <link rel="canonical" href="https://troop3pensacola.org/calendar.html" />
+  <title>Calendar — Troop 3 Pensacola</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css?v=dev" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo-area" href="index.html" aria-label="Troop 3 Pensacola — home">
+    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M32 4c4.6 6.6 6.6 13.6 6 21.2-.2 2.6-.7 5-1.4 7.2h-4.6z"/><path d="M32 4c-4.6 6.6-6.6 13.6-6 21.2.2 2.6.7 5 1.4 7.2h4.6z"/><path d="M33.6 32.4c1.6-4.4 4.6-8.4 8.8-10.8 4.6-2.6 8.6-1.4 9.4 2.4.9 4.2-2.4 8.6-8 10.6-2.4.9-5 1.3-7.6 1.3z"/><path d="M30.4 32.4c-1.6-4.4-4.6-8.4-8.8-10.8-4.6-2.6-8.6-1.4-9.4 2.4-.9 4.2 2.4 8.6 8 10.6 2.4.9 5 1.3 7.6 1.3z"/><rect x="21" y="34.6" width="22" height="5.2" rx="2.6"/><path d="M29.4 41.4h5.2c.4 6.6 2.4 12.6 6 18.2h-17.2c3.6-5.6 5.6-11.6 6-18.2z"/><path d="M27.4 41.4c-1.2 5.6-4.6 10.6-9.6 14 .6-5.4 2.6-10.2 5.8-14z"/><path d="M36.6 41.4c1.2 5.6 4.6 10.6 9.6 14-.6-5.4-2.6-10.2-5.8-14z"/></g></svg></span>
+    <span class="logo-text">
+      <span class="unit">Troop 3</span>
+      <span class="place">Pensacola, Florida</span>
+    </span>
+  </a>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" aria-label="Main">
+    <a href="meetings.html">Meetings</a>
+    <a href="calendar.html">Calendar</a>
+
+    <div class="nav-dd" id="nav-patrols">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="nav-patrols-panel">Patrols<span class="caret" aria-hidden="true"></span></button>
+      <div class="nav-dd-mobile">
+        <a href="patrols.html">Patrols</a>
+        <button type="button" aria-label="Show the patrol list" aria-expanded="false" aria-controls="nav-patrols-panel"><span class="caret" aria-hidden="true"></span></button>
+      </div>
+      <div class="nav-panel" id="nav-patrols-panel" role="menu" aria-label="Patrols"></div>
+    </div>
+
+    <a href="advancement.html">Advancement</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div id="site-banner" class="banner-wrap"></div>
+
+
+<section class="hero page-hero">
+  <div class="hero-content">
+    <span class="hero-eyebrow">Calendar</span>
+    <h1>Everything, month by month</h1>
+    <p class="hero-lede">
+      Meetings, campouts, courts of honour and service projects. This calendar is the
+      troop's own &mdash; it is what the site is built from, and it is always current.
+    </p>
+  </div>
+</section>
+
+<main id="main" class="page">
+  <div class="cal-head">
+    <h2 id="cal-month">&nbsp;</h2>
+    <div class="cal-nav">
+      <button class="btn btn-outline btn-sm" type="button" id="cal-prev" aria-label="Previous month">&larr;</button>
+      <button class="btn btn-outline btn-sm" type="button" id="cal-today">Today</button>
+      <button class="btn btn-outline btn-sm" type="button" id="cal-next" aria-label="Next month">&rarr;</button>
+    </div>
+  </div>
+
+  <p class="loading" id="cal-loading">Loading the calendar&hellip;</p>
+
+  <div class="notice notice-error is-hidden" id="cal-error">
+    The calendar could not be loaded. Refresh the page, or
+    <a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">email us</a>.
+  </div>
+
+  <div class="cal-grid is-hidden" id="cal-grid"></div>
+
+  <div class="cal-legend">
+    <span><i style="background:var(--band);border-left:3px solid var(--navy)"></i> Troop meeting</span>
+    <span><i style="background:var(--tan-pale);border-left:3px solid var(--red)"></i> Campout or event</span>
+    <span><i style="box-shadow:inset 0 0 0 2px var(--red)"></i> Today</span>
+  </div>
+
+  <section class="section section-tight" style="padding-inline:0;margin-top:2.5rem;border-top:1px solid var(--border)">
+    <h2 class="section-title" style="font-size:1.3rem">Put it on your phone</h2>
+    <p class="section-sub">
+      Subscribing means the troop calendar shows up in your own calendar app and stays
+      up to date on its own.
+    </p>
+    <div class="pill-row" id="cal-subscribe">
+      <span style="color:var(--text-muted);font-size:.92rem">
+        Subscription links have not been set up yet. Until then, this page is the calendar.
+      </span>
+    </div>
+  </section>
+
+  <section class="is-hidden" id="cal-embed-wrap" style="margin-top:2.5rem">
+    <h2 class="section-title" style="font-size:1.3rem">Google Calendar</h2>
+    <div id="cal-embed" style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-unit">Scouts BSA Troop 3</div>
+      <p style="margin-top:.55rem;max-width:38ch;">Chartered by Cokesbury United Methodist Church Men, Pensacola, Florida. One of the oldest troops in Northwest Florida.</p>
+      <p class="footer-motto">Founded 1937 &middot; Youth led</p>
+    </div>
+    <div>
+      <h4>Meetings</h4>
+      <ul>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
+        <li><a href="meetings.html">Program year</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="new-scouts.html">New to Troop 3?</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="trails.html">Our trails</a></li>
+        <li><a href="eagle.html">Life to Eagle</a></li>
+        <li><a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">bsatroop3pensacola@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="slot-year">2026</span> Scouts BSA Troop 3, Pensacola &middot; Gulf Coast Council</span>
+    <span><a href="admin.html">Leadership sign-in</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=dev"></script>
+<script>
+
+window.onSiteReady = function () {
+  var E = T3.esc;
+  var byDate = {};
+  var view = null;
+
+  Promise.all([
+    T3.loadJSON('data/meetings.json'),
+    T3.loadJSON('data/events.json').catch(function () { return { events: [] }; })
+  ]).then(function (r) {
+    index((r[0] && r[0].meetings) || [], (r[1] && r[1].events) || []);
+    T3.hide('cal-loading');
+    T3.show('cal-grid');
+    var t = T3.parseISO(T3.today());
+    view = { y: t.getFullYear(), m: t.getMonth() };
+    draw();
+  }).catch(function () {
+    T3.hide('cal-loading');
+    T3.show('cal-error');
+  });
+
+  subscribeLinks();
+
+  function index(meetings, events) {
+    meetings.forEach(function (m) {
+      push(m.date, {
+        title: m.title || 'Troop meeting',
+        href: 'meeting.html?d=' + encodeURIComponent(m.date),
+        cls: '',
+        status: m.status || 'scheduled'
+      });
+    });
+    events.forEach(function (e) {
+      var d = T3.parseISO(e.date), end = T3.parseISO(e.endDate || e.date);
+      if (!d) return;
+      if (!end || end < d) end = d;
+      for (var c = new Date(d); c <= end; c.setDate(c.getDate() + 1)) {
+        push(iso(c), {
+          title: e.title || 'Event',
+          href: 'event.html?e=' + encodeURIComponent(e.slug || ''),
+          cls: 'is-event',
+          status: e.status || 'scheduled'
+        });
+      }
+    });
+  }
+
+  function push(date, item) {
+    if (!date) return;
+    (byDate[date] = byDate[date] || []).push(item);
+  }
+
+  function iso(d) {
+    var mm = d.getMonth() + 1, dd = d.getDate();
+    return d.getFullYear() + '-' + (mm < 10 ? '0' : '') + mm + '-' + (dd < 10 ? '0' : '') + dd;
+  }
+
+  function draw() {
+    var first = new Date(view.y, view.m, 1, 12);
+    T3.el('cal-month').textContent = T3.MONTHS[view.m] + ' ' + view.y;
+
+    var start = new Date(first);
+    start.setDate(1 - first.getDay());          // back up to Sunday
+    var today = T3.today();
+
+    var html = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(function (d) {
+      return '<div class="cal-dow">' + d + '</div>';
+    }).join('');
+
+    var cur = new Date(start);
+    for (var i = 0; i < 42; i++) {
+      var key = iso(cur);
+      var out = cur.getMonth() !== view.m;
+      var cls = 'cal-cell' + (out ? ' out' : '') + (key === today ? ' today' : '');
+      var items = (byDate[key] || []).map(function (it) {
+        return '<a class="cal-ev ' + it.cls + (it.status === 'cancelled' ? ' is-cancelled' : '') +
+               '" href="' + E(it.href) + '">' + E(it.title) + '</a>';
+      }).join('');
+      html += '<div class="' + cls + '"><span class="cal-num">' + cur.getDate() + '</span>' + items + '</div>';
+      cur.setDate(cur.getDate() + 1);
+      if (i >= 34 && cur.getMonth() !== view.m) break;   // skip an all-trailing final row
+    }
+    T3.el('cal-grid').innerHTML = html;
+  }
+
+  T3.el('cal-prev').addEventListener('click', function () { step(-1); });
+  T3.el('cal-next').addEventListener('click', function () { step(1); });
+  T3.el('cal-today').addEventListener('click', function () {
+    var t = T3.parseISO(T3.today());
+    view = { y: t.getFullYear(), m: t.getMonth() };
+    draw();
+  });
+
+  function step(n) {
+    if (!view) return;
+    var d = new Date(view.y, view.m + n, 1, 12);
+    view = { y: d.getFullYear(), m: d.getMonth() };
+    draw();
+  }
+
+  /* Subscribe + embed. Both are optional — the page works with neither.
+     (The Google Calendar push itself is not wired up yet.) */
+  function subscribeLinks() {
+    var c = T3.site.calendar || {};
+    var out = [];
+    if (c.subscribeHref) {
+      out.push('<a class="btn btn-primary btn-sm" href="' + E(T3.safeHref(c.subscribeHref)) +
+               '" target="_blank" rel="noopener">Add to Google Calendar</a>');
+    }
+    if (c.icsHref) {
+      out.push('<a class="btn btn-outline btn-sm" href="' + E(T3.safeHref(c.icsHref)) + '">Apple / Outlook (.ics)</a>');
+    }
+    if (out.length) T3.el('cal-subscribe').innerHTML = out.join('');
+
+    if (c.embedHref) {
+      T3.el('cal-embed').innerHTML =
+        '<iframe title="Troop 3 Google Calendar" src="' + E(T3.safeHref(c.embedHref)) +
+        '" style="border:0;width:100%;height:620px" loading="lazy"></iframe>';
+      T3.show('cal-embed-wrap');
+    }
+  }
+};
+</script>
+</body>
+</html>

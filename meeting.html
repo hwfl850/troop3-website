@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Details for a single Troop 3 meeting: what we are doing, what to bring, and what you missed." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Meeting — Troop 3 Pensacola" />
+  <meta property="og:description" content="Details for a single Troop 3 meeting: what we are doing, what to bring, and what you missed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://troop3pensacola.org/meeting.html" />
+  <link rel="canonical" href="https://troop3pensacola.org/meeting.html" />
+  <title>Meeting — Troop 3 Pensacola</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css?v=dev" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <a class="logo-area" href="index.html" aria-label="Troop 3 Pensacola — home">
+    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M32 4c4.6 6.6 6.6 13.6 6 21.2-.2 2.6-.7 5-1.4 7.2h-4.6z"/><path d="M32 4c-4.6 6.6-6.6 13.6-6 21.2.2 2.6.7 5 1.4 7.2h4.6z"/><path d="M33.6 32.4c1.6-4.4 4.6-8.4 8.8-10.8 4.6-2.6 8.6-1.4 9.4 2.4.9 4.2-2.4 8.6-8 10.6-2.4.9-5 1.3-7.6 1.3z"/><path d="M30.4 32.4c-1.6-4.4-4.6-8.4-8.8-10.8-4.6-2.6-8.6-1.4-9.4 2.4-.9 4.2 2.4 8.6 8 10.6 2.4.9 5 1.3 7.6 1.3z"/><rect x="21" y="34.6" width="22" height="5.2" rx="2.6"/><path d="M29.4 41.4h5.2c.4 6.6 2.4 12.6 6 18.2h-17.2c3.6-5.6 5.6-11.6 6-18.2z"/><path d="M27.4 41.4c-1.2 5.6-4.6 10.6-9.6 14 .6-5.4 2.6-10.2 5.8-14z"/><path d="M36.6 41.4c1.2 5.6 4.6 10.6 9.6 14-.6-5.4-2.6-10.2-5.8-14z"/></g></svg></span>
+    <span class="logo-text">
+      <span class="unit">Troop 3</span>
+      <span class="place">Pensacola, Florida</span>
+    </span>
+  </a>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" aria-label="Main">
+    <a href="meetings.html">Meetings</a>
+    <a href="calendar.html">Calendar</a>
+
+    <div class="nav-dd" id="nav-patrols">
+      <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="nav-patrols-panel">Patrols<span class="caret" aria-hidden="true"></span></button>
+      <div class="nav-dd-mobile">
+        <a href="patrols.html">Patrols</a>
+        <button type="button" aria-label="Show the patrol list" aria-expanded="false" aria-controls="nav-patrols-panel"><span class="caret" aria-hidden="true"></span></button>
+      </div>
+      <div class="nav-panel" id="nav-patrols-panel" role="menu" aria-label="Patrols"></div>
+    </div>
+
+    <a href="advancement.html">Advancement</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div id="site-banner" class="banner-wrap"></div>
+
+
+<main id="main" class="page">
+
+  <p class="loading" id="m-loading">Loading&hellip;</p>
+
+  <div class="notfound is-hidden" id="m-notfound">
+    <h2>No meeting on that date</h2>
+    <p>Either the link is wrong or that meeting is not on the schedule.</p>
+    <a class="btn btn-primary btn-sm" href="meetings.html">See the program year</a>
+  </div>
+
+  <div class="is-hidden" id="m-detail">
+    <div class="detail-head">
+      <div class="d-date" id="m-date"></div>
+      <h1 id="m-title"></h1>
+      <div class="detail-meta" id="m-meta"></div>
+    </div>
+
+    <div class="detail-grid">
+      <div>
+        <div id="m-status-notice"></div>
+
+        <div class="block is-hidden" id="m-catchup-block">
+          <h2>If you missed it</h2>
+          <div class="catchup-block" id="m-catchup"></div>
+        </div>
+
+        <div class="block is-hidden" id="m-summary-block">
+          <h2>What we are doing</h2>
+          <div class="prose" id="m-summary"></div>
+        </div>
+
+        <div class="block is-hidden" id="m-run-block">
+          <h2>Run of show</h2>
+          <ul class="ros" id="m-run"></ul>
+        </div>
+
+        <div class="block is-hidden" id="m-mats-block">
+          <h2>Handouts and files</h2>
+          <div id="m-mats"></div>
+        </div>
+
+        <div class="block is-hidden" id="m-notes-block">
+          <h2>Notes</h2>
+          <div class="prose" id="m-notes"></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="sidebar-card">
+          <h3>Details</h3>
+          <dl class="kv" id="m-kv"></dl>
+        </div>
+        <div class="sidebar-card is-hidden" id="m-bring-card">
+          <h3>Bring with you</h3>
+          <ul class="checklist" id="m-bring"></ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Elsewhere</h3>
+          <p style="font-size:.9rem;margin-bottom:.75rem;color:var(--text-muted)">
+            Every meeting and event is on the troop calendar.
+          </p>
+          <a class="btn btn-outline btn-sm btn-full" href="calendar.html">Troop calendar</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="prevnext" id="m-prevnext"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-unit">Scouts BSA Troop 3</div>
+      <p style="margin-top:.55rem;max-width:38ch;">Chartered by Cokesbury United Methodist Church Men, Pensacola, Florida. One of the oldest troops in Northwest Florida.</p>
+      <p class="footer-motto">Founded 1937 &middot; Youth led</p>
+    </div>
+    <div>
+      <h4>Meetings</h4>
+      <ul>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
+        <li><a href="meetings.html">Program year</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="new-scouts.html">New to Troop 3?</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="trails.html">Our trails</a></li>
+        <li><a href="eagle.html">Life to Eagle</a></li>
+        <li><a data-slot="email" href="mailto:bsatroop3pensacola@gmail.com">bsatroop3pensacola@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="slot-year">2026</span> Scouts BSA Troop 3, Pensacola &middot; Gulf Coast Council</span>
+    <span><a href="admin.html">Leadership sign-in</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=dev"></script>
+<script>
+
+window.onSiteReady = function () {
+  var E = T3.esc;
+  var want = T3.qs('d');
+
+  T3.loadJSON('data/meetings.json').then(function (data) {
+    var list = (data && data.meetings) || [];
+    list.sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+    var i = -1;
+    for (var k = 0; k < list.length; k++) if (list[k].date === want) { i = k; break; }
+    T3.hide('m-loading');
+    if (i === -1) { T3.show('m-notfound'); T3.setPageTitle('Meeting not found'); return; }
+    render(list[i], list[i - 1], list[i + 1]);
+    T3.show('m-detail');
+  }).catch(function () {
+    T3.hide('m-loading');
+    T3.show('m-notfound');
+  });
+
+  function render(m, prev, next) {
+    var d = T3.withDefaults(m, T3.site);
+    var status = m.status || 'scheduled';
+
+    T3.setPageTitle((m.title || 'Meeting') + ' — ' + T3.fmtDate(m.date, 'numeric'),
+                    m.summary || m.catchUp || '');
+
+    T3.el('m-date').textContent = T3.fmtDate(m.date, 'long');
+    T3.el('m-title').textContent = m.title || 'Troop meeting';
+
+    var meta = [];
+    if (d.start) meta.push('<span class="dm"><strong>' + E(T3.fmtTimeRange(d.start, d.end)) + '</strong></span>');
+    if (d.location) meta.push('<span class="dm">' + E(d.location) + '</span>');
+    if (m.uniform && T3.UNIFORM[m.uniform]) meta.push('<span class="dm">' + E(T3.UNIFORM[m.uniform]) + '</span>');
+    var chips = T3.patrolChips(m.patrols, T3.patrols);
+    if (chips) meta.push(chips);
+    T3.el('m-meta').innerHTML = meta.join('');
+
+    if (status === 'cancelled') {
+      T3.el('m-status-notice').innerHTML =
+        '<div class="notice notice-error"><strong>This meeting is cancelled.</strong> ' +
+        E(m.statusNote || 'Nothing is happening at the Scout Hut this night.') + '</div>';
+    } else if (status === 'moved') {
+      T3.el('m-status-notice').innerHTML =
+        '<div class="notice notice-warn"><strong>Time or place has changed.</strong> ' +
+        E(m.statusNote || 'Check the details in the sidebar before you head out.') + '</div>';
+    }
+
+    if (m.catchUp) {
+      T3.el('m-catchup').innerHTML = para(m.catchUp);
+      T3.show('m-catchup-block');
+    }
+    if (m.summary) {
+      T3.el('m-summary').innerHTML = para(m.summary);
+      T3.show('m-summary-block');
+    }
+
+    if (m.runOfShow && m.runOfShow.length) {
+      T3.el('m-run').innerHTML = m.runOfShow.map(function (r) {
+        return '<li>' +
+          '<span class="r-time">' + E(r.time ? T3.fmtTime(r.time) : '') + '</span>' +
+          '<span class="r-item">' + E(r.item || '') + '</span>' +
+          (r.who ? '<span class="r-who">' + E(r.who) + '</span>' : '') +
+        '</li>';
+      }).join('');
+      T3.show('m-run-block');
+    }
+
+    var mats = T3.materialsList(m.materials);
+    if (mats) { T3.el('m-mats').innerHTML = mats; T3.show('m-mats-block'); }
+
+    if (m.notes) { T3.el('m-notes').innerHTML = para(m.notes); T3.show('m-notes-block'); }
+
+    var kv = '';
+    kv += '<dt>Date</dt><dd>' + E(T3.fmtDate(m.date, 'long')) + '</dd>';
+    if (d.start) kv += '<dt>Time</dt><dd>' + E(T3.fmtTimeRange(d.start, d.end)) + '</dd>';
+    if (d.location) kv += '<dt>Where</dt><dd>' + E(d.location) + '</dd>';
+    if (m.uniform && T3.UNIFORM[m.uniform]) kv += '<dt>Uniform</dt><dd>' + E(T3.UNIFORM[m.uniform]) + '</dd>';
+    if (status !== 'scheduled' && status !== 'happened') {
+      kv += '<dt>Status</dt><dd>' + (status === 'cancelled' ? 'Cancelled' : 'Changed') + '</dd>';
+    }
+    T3.el('m-kv').innerHTML = kv;
+
+    if (m.bringWith && m.bringWith.length) {
+      T3.el('m-bring').innerHTML = m.bringWith.map(function (b) {
+        return '<li>' + E(b) + '</li>';
+      }).join('');
+      T3.show('m-bring-card');
+    }
+
+    var pn = '';
+    pn += prev
+      ? '<a href="meeting.html?d=' + encodeURIComponent(prev.date) + '">&larr; ' + E(prev.title || T3.fmtDate(prev.date, 'short')) + '</a>'
+      : '<span></span>';
+    pn += next
+      ? '<a href="meeting.html?d=' + encodeURIComponent(next.date) + '">' + E(next.title || T3.fmtDate(next.date, 'short')) + ' &rarr;</a>'
+      : '<span></span>';
+    T3.el('m-prevnext').innerHTML = pn;
+  }
+
+  function para(text) {
+    return String(text).split(/\n{2,}/).map(function (p) {
+      return '<p>' + E(p).replace(/\n/g, '<br />') + '</p>';
+    }).join('');
+  }
+};
+</script>
+</body>
+</html>

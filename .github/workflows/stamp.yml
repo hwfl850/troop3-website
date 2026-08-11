@@ -1,0 +1,45 @@
+name: Stamp asset versions
+
+# Every page loads styles.css and site.js with a ?v= query string. This rewrites
+# that to the commit SHA on every push, so a browser can never serve a stale
+# stylesheet against a new page. Nobody has to remember to bump anything.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'assets/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stamp
+  cancel-in-progress: false
+
+jobs:
+  stamp:
+    # Do not react to the commit this job makes itself.
+    if: "!contains(github.event.head_commit.message, '[skip stamp]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rewrite ?v= to the commit SHA
+        run: |
+          SHA="${GITHUB_SHA::8}"
+          find . -name '*.html' -not -path './.git/*' -print0 \
+            | xargs -0 sed -i -E "s/(assets\/[a-z.]+\.(css|js))\?v=[A-Za-z0-9._-]*/\1?v=${SHA}/g"
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to stamp."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "Stamp assets with ${GITHUB_SHA::8} [skip stamp]"
+          git push

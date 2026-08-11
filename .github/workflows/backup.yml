@@ -1,0 +1,52 @@
+name: Back up content
+
+# Every night, copy data/ onto a separate branch. Git history already protects
+# against a bad edit, but this makes recovery something you can do from the
+# GitHub website in two minutes, without knowing any git.
+
+on:
+  schedule:
+    - cron: '17 7 * * *'      # 07:17 UTC — about 1:17 AM in Pensacola
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Refuse to back up an empty or broken data folder
+        run: |
+          test -f data/site.json
+          test -f data/meetings.json
+          for f in data/*.json data/patrols/*.json; do
+            python3 -c "import json,sys; json.load(open('$f'))" || exit 1
+          done
+          echo "data/ looks intact."
+
+      - name: Copy data/ to the content-backup branch
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          mkdir -p /tmp/snapshot
+          cp -R data /tmp/snapshot/
+
+          git fetch origin content-backup || true
+          git checkout -B content-backup origin/content-backup 2>/dev/null || git checkout --orphan content-backup
+          git rm -rf . > /dev/null 2>&1 || true
+          cp -R /tmp/snapshot/data ./data
+          echo "Nightly snapshot of data/ from main. Do not edit this branch." > README.md
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No content changes since the last snapshot."
+            exit 0
+          fi
+          git commit -m "Content snapshot $(date -u +%Y-%m-%d)"
+          git push origin content-backup

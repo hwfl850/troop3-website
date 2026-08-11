@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "groups": [
+    {
+      "id": "advancement",
+      "heading": "Advancement",
+      "blurb": "Ranks, merit badges, and the paperwork that goes with them.",
+      "links": [
+        { "label": "Scoutbook", "href": "https://advancements.scouting.org/", "note": "Where your advancement records actually live." },
+        { "label": "Merit badges — full list", "href": "https://www.scouting.org/skills/merit-badges/all/", "note": "Requirements for every current badge." },
+        { "label": "Scouts BSA advancement and awards", "href": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/", "note": "" },
+        { "label": "Guide to Advancement", "href": "https://www.scouting.org/resources/guide-to-advancement/", "note": "The rulebook. Mostly for adults." }
+      ]
+    },
+    {
+      "id": "eagle",
+      "heading": "Eagle",
+      "blurb": "Life to Eagle, start to finish.",
+      "links": [
+        { "label": "Eagle Scout Rank Application and workbook", "href": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/", "note": "Always download the current version — do not reuse an old PDF." },
+        { "label": "Life to Eagle packet (Troop 3)", "href": "/files/life-to-eagle-packet.pdf", "note": "How Troop 3 runs the process." },
+        { "label": "Eagle Court of Honor checklist", "href": "/files/ecoh-checklist.pdf", "note": "" },
+        { "label": "NESA — National Eagle Scout Association", "href": "https://www.nesa.org/", "note": "" }
+      ]
+    },
+    {
+      "id": "forms",
+      "heading": "Forms",
+      "blurb": "Everything you might be asked to bring signed.",
+      "links": [
+        { "label": "Annual Health and Medical Record", "href": "https://www.scouting.org/health-and-safety/ahmr/", "note": "Parts A and B every year. Part C with a physician for anything over 72 hours." },
+        { "label": "Youth application", "href": "/files/youth-application-524-406a.pdf", "note": "" },
+        { "label": "Adult application", "href": "/files/adult-application-524-501.pdf", "note": "" },
+        { "label": "Youth Protection Training", "href": "https://www.scouting.org/training/youth-protection/", "note": "Required for every registered adult, renewed every two years." },
+        { "label": "All Troop 3 forms", "href": "/forms.html", "note": "" }
+      ]
+    },
+    {
+      "id": "camping",
+      "heading": "Camping guides",
+      "blurb": "Troop 3 handouts, refined over a lot of weekends.",
+      "links": [
+        { "label": "Outdoor equipment list", "href": "/files/outdoor-equipment-list.pdf", "note": "Start here if it is your first campout." },
+        { "label": "Summer camp checklist", "href": "/files/summer-camp-checklist.pdf", "note": "" },
+        { "label": "Cold weather personal gear list", "href": "/files/cold-weather-personal-gear-list.pdf", "note": "Yes, Florida gets cold enough to need this." },
+        { "label": "Ultralight backpacking strategies", "href": "/files/ultralight-backpacking-strategies.pdf", "note": "" },
+        { "label": "Freezer bag recipes", "href": "/files/freezer-bag-recipes.pdf", "note": "" },
+        { "label": "Blackwater paddling guide", "href": "/files/blackwater-paddling-guide.pdf", "note": "" },
+        { "label": "Tent pole repair", "href": "/files/tent-pole-repair.pdf", "note": "" }
+      ]
+    },
+    {
+      "id": "patrol",
+      "heading": "Patrol and gear",
+      "blurb": "For patrol leaders and quartermasters.",
+      "links": [
+        { "label": "Patrol equipment checklist", "href": "/files/t3-patrol-equipment-checklist.pdf", "note": "" },
+        { "label": "Patrol duty roster", "href": "/files/patrol-duty-roster.pdf", "note": "" },
+        { "label": "Patrol menu planner", "href": "/files/menu-planner.pdf", "note": "" },
+        { "label": "National Honor Patrol checklist", "href": "/files/national-honor-patrol-checklist.pdf", "note": "" },
+        { "label": "Gear sign-out form", "href": "/files/gear-signout-troop3.pdf", "note": "" },
+        { "label": "Gear repair and replacement form", "href": "/files/gear-repair-replacement-form.pdf", "note": "" },
+        { "label": "Tent assignment sheet", "href": "/files/tent-assignment-sheet.pdf", "note": "" }
+      ]
+    },
+    {
+      "id": "trails",
+      "heading": "Trails",
+      "blurb": "Including the two Troop 3 built and maintains.",
+      "links": [
+        { "label": "Fort Pickens Historical Trail", "href": "/trail.html?t=fort-pickens", "note": "Ours since 1982." },
+        { "label": "NAS Pensacola Historical Trail", "href": "/trail.html?t=nas-pensacola", "note": "Ours since 1976." },
+        { "label": "Florida Hikes — Jackson Red Ground", "href": "https://floridahikes.com/floridatrail/florida-trail-jackson-red-ground", "note": "" },
+        { "label": "Recreation.gov — Fort Pickens camping", "href": "https://www.recreation.gov/camping/campgrounds/232488", "note": "" }
+      ]
+    },
+    {
+      "id": "council",
+      "heading": "Council and shops",
+      "blurb": "",
+      "links": [
+        { "label": "Gulf Coast Council", "href": "https://gulfcoastcouncil.org/", "note": "Camps, training, and the council calendar." },
+        { "label": "Scout Shop", "href": "https://www.scoutshop.org/", "note": "Uniforms, handbooks, insignia." },
+        { "label": "Gulf Coast Council Scout Shop", "href": "https://maps.google.com/?q=9440+University+Pkwy+Pensacola+FL", "note": "9440 University Parkway, Pensacola." },
+        { "label": "Scouting America", "href": "https://www.scouting.org/", "note": "" },
+        { "label": "Order of the Arrow", "href": "https://oa-bsa.org/", "note": "" }
+      ]
+    },
+    {
+      "id": "skills",
+      "heading": "Skills",
+      "blurb": "",
+      "links": [
+        { "label": "Animated Knots", "href": "https://www.animatedknots.com/", "note": "The best knot reference there is." },
+        { "label": "Leave No Trace", "href": "https://lnt.org/", "note": "" },
+        { "label": "Tread Lightly", "href": "https://www.treadlightly.org/", "note": "" }
+      ]
+    }
+  ]
+}
