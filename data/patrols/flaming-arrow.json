@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "slug": "flaming-arrow",
+  "name": "Flaming Arrow Patrol",
+  "color": "#9A3412",
+  "emblem": "/img/patrols/flaming-arrow.svg",
+  "yell": "Nock, draw, loose!",
+  "flagImage": "",
+  "leadership": {
+    "pl": "Marcus L.",
+    "apl": "Ava G.",
+    "scribe": "Nathan D.",
+    "quartermaster": ""
+  },
+  "roster": ["Marcus L.", "Ava G.", "Nathan D.", "Ellie S.", "Wyatt H.", "Priya N."],
+  "about": "The newest patrol in the troop and the one that cooks best. Formed in 2025 out of a crossover class that refused to be split up.",
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "What we are working on",
+      "body": "Cooking merit badge as a patrol, then the Dutch oven cook-off in October. Half the patrol is going for Second Class before Thanksgiving."
+    },
+    {
+      "type": "linkList",
+      "heading": "Cooking",
+      "links": [
+        { "label": "Patrol menu planner", "href": "/files/menu-planner.pdf" },
+        { "label": "Freezer bag recipes", "href": "/files/freezer-bag-recipes.pdf" }
+      ]
+    }
+  ],
+  "updated": "2026-08-08T18:02:00Z"
+}

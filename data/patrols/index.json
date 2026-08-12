@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "updated": "2026-08-11T12:00:00Z",
+  "patrols": [
+    { "slug": "viper", "name": "Viper Patrol", "color": "#1F6F5C" },
+    { "slug": "flaming-arrow", "name": "Flaming Arrow Patrol", "color": "#9A3412" }
+  ]
+}
