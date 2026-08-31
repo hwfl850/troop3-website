@@ -6,8 +6,9 @@ name: Google Calendar sync
 #   schedule        the calendar's edits reach the site
 #
 # The job commits with GITHUB_TOKEN, and GitHub does not re-trigger workflows on
-# those commits, so a sync can never set off another sync. Pages serves from the
-# branch, so a pulled change is live as soon as the commit lands.
+# those commits, so a sync can never set off another sync; the author check on
+# the job below says the same thing a second way. Pages serves from the branch,
+# so a pulled change is live as soon as the commit lands.
 
 on:
   push:
@@ -34,8 +35,11 @@ concurrency:
 
 jobs:
   sync:
-    # Nothing to do on the commit this job makes itself.
-    if: "!contains(github.event.head_commit.message, '[calendar sync]')"
+    # Nothing to do on a commit this repository's own automation made — this
+    # job's pulls, or the stamp workflow's. Matching on the author rather than
+    # on the message means a commit that merely *mentions* the sync does not
+    # get skipped by accident.
+    if: github.event_name != 'push' || github.event.head_commit.author.name != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
