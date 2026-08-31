@@ -240,8 +240,9 @@ window.onSiteReady = function () {
     draw();
   }
 
-  /* Subscribe + embed. Both are optional — the page works with neither.
-     (The Google Calendar push itself is not wired up yet.) */
+  /* Subscribe + embed. Both are optional — the page works with neither. All three
+     hrefs are derived from site.calendar.googleCalendarId in site.js, so setting
+     that one field lights up this whole block. */
   function subscribeLinks() {
     var c = T3.site.calendar || {};
     var out = [];

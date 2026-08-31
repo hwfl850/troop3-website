@@ -150,6 +150,11 @@ This is why a stylesheet change is never served stale, and why nobody has to
 remember to bump a version number. The `[skip stamp]` marker is what stops it
 triggering itself.
 
+**`gcal-sync.yml`** — reconciles the schedule with the troop's Google Calendar
+every fifteen minutes and after any push touching `data/`. See below. It is off
+until `flags.gcalSync` is true, and skips its own commits by their
+`[calendar sync]` marker.
+
 **`backup.yml`** — nightly, validates every JSON file and copies `data/` onto a
 `content-backup` branch. To recover: browse to that branch on GitHub, open the
 file, copy it back. It refuses to snapshot data that fails to parse, so a broken
@@ -159,21 +164,83 @@ file cannot overwrite a good backup.
 
 ## Google Calendar
 
-**Not wired up, on purpose.**
+The site and the troop's Google Calendar are **two way**. An edit in the editor
+reaches the calendar; an edit on the calendar comes back into `data/`. The
+reconcile runs in GitHub Actions, not in the Worker, because it needs to read
+Google as well as write it and it needs a service account key.
 
-- `data/site.json` → `calendar.*` is blank. Filling in `embedHref` makes the
-  embed appear on `calendar.html`; `subscribeHref` / `icsHref` switch on the
-  subscribe buttons. All three are hidden while blank, so the page shows an
-  honest "not set up yet" state rather than dead links.
-- `pushToGoogleCalendar()` in `worker/index.js` is a documented stub.
-- Every meeting and event already carries an empty `gcalEventId`, and the editor
-  round-trips it, so nothing has to be re-entered when this is switched on.
+### What each side owns
 
-The direction is one way: **this site is the source of truth**, Google Calendar
-is a downstream copy. When it is built it belongs in the Worker with a Google
-service account — a browser cannot hold that credential.
+The calendar only knows what a calendar can express: **title, when, where,
+cancelled**. Those four round trip. Everything else — the summary, the patrol
+tags, the attached files, the catch-up notes — lives only on the site, and the
+sync never touches it. The event description on Google is generated from the
+site each time and is not read back; editing it there does nothing.
 
----
+**Deleting on Google Calendar does not delete anything here.** The sync never
+deletes a record. To call something off, set its status to cancelled — either in
+the editor or by cancelling the event on Google — and both sides will say
+cancelled. This is on purpose: a calendar app makes deletion one click away, and
+one stray click should not remove a campout from the website.
+
+If the same entry is edited in both places between runs, **the more recent edit
+wins**, judged by Google's `updated` timestamp against the site's last commit
+time for that file.
+
+### Turning it on
+
+1. **Google Cloud.** Create a project, enable the **Google Calendar API**, then
+   create a **service account** under IAM & Admin. Give it no roles. Make a
+   **JSON key** and download it.
+2. **Share the calendar with it.** In Google Calendar → the troop calendar →
+   Settings and sharing → *Share with specific people* → add the service account
+   address (`something@….iam.gserviceaccount.com`) with **Make changes to
+   events**. This is the step everybody forgets; without it every write returns
+   403.
+3. **Make the calendar public** if you want the embed and the subscribe buttons
+   to work for people who are not signed in: same settings page → *Access
+   permissions* → **Make available to public**, "See all event details".
+4. **Two repository secrets** (Settings → Secrets and variables → Actions):
+   - `GCAL_CALENDAR_ID` — from *Integrate calendar → Calendar ID*, ending in
+     `@group.calendar.google.com`.
+   - `GCAL_SA_JSON` — the whole downloaded JSON key file, pasted in as is.
+5. **In the editor**, under *Site details → Google Calendar*: paste the same
+   calendar ID, tick **Keep Google Calendar in step with this schedule**, and
+   publish. That writes `calendar.googleCalendarId` and `flags.gcalSync: true`
+   into `data/site.json`.
+
+The calendar ID is doing double duty: it is also what builds the embed, the
+"Add to Google Calendar" button and the `.ics` link on `calendar.html`. One
+field, four things — see `calendarLinks()` in `assets/site.js`.
+
+### Checking it
+
+Actions → **Google Calendar sync** → *Run workflow* has a **dry run** box. Tick
+it and it will print every change it would make and write nothing, to either
+side. Do that first. The unit tests (`scripts/test_gcal_sync.py`, 14 of them)
+run as part of the same job and the sync is skipped if they fail.
+
+### Switching it off
+
+Untick the box in the editor, or set `flags.gcalSync` to `false` in
+`data/site.json` by hand. The job still runs and immediately exits. Nothing
+already on the calendar is removed; the two sides simply stop talking. Leadership
+can do this without access to GitHub or to Google Cloud, which is the point.
+
+### How it does not loop
+
+Two guards. The workflow skips any push whose commit message contains
+`[calendar sync]`, which is the message its own commits carry. And commits made
+by `GITHUB_TOKEN` inside Actions do not trigger workflows at all, so the belt
+and the braces are independent. On top of that each record stores
+`gcalSyncedHash` — a digest of the four shared fields as of the last agreed
+state — so a run that changes nothing writes nothing and makes no commit.
+
+### `data/` fields the sync owns
+
+`gcalEventId` (the Google event id) and `gcalSyncedHash`. Both are written by
+the job and round-tripped by the editor. Do not edit them by hand. Clearing
+`gcalEventId` makes the next run create a **second** copy on the calendar.
 
 ## Things that will look like bugs but are not
 

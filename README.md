@@ -26,11 +26,17 @@ does.
 /            pages          /data     content (JSON)
 /assets      css + js       /files    PDFs
 /worker      write path     /img      logos, emblems, trail images
-/docs        the docs       /.github  stamp + nightly backup
+/scripts     calendar sync  /.github  stamp, backup, calendar sync
+/docs        the docs
 ```
 
+The schedule is kept in step with the troop's Google Calendar both ways, by a
+GitHub Action rather than by the Worker — `scripts/gcal_sync.py`. Title, date,
+time, place and cancellation cross over; nothing else does, and nothing is ever
+deleted.
+
 Everything else — hosting, the custom domain, the Worker, the token, password
-rotation, and why Google Calendar is intentionally blank — is in
+rotation, and setting up the calendar sync — is in
 [`docs/operations.md`](docs/operations.md).
 
 ## Local preview

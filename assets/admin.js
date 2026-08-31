@@ -400,6 +400,7 @@
     var copy = JSON.parse(JSON.stringify(last));
     copy.date = plusDays(last.date, 7);
     copy.gcalEventId = '';
+    delete copy.gcalSyncedHash;   // a copy is a new event to Google, not an edit of the old one
     delete copy.catchUp;
     delete copy.status;
     list.push(copy);
@@ -665,9 +666,7 @@
     host.innerHTML =
       '<div class="sidebar-card">' +
         '<h3>Announcement banner</h3>' +
-        '<div class="field"><label style="display:inline-flex;gap:.5rem;align-items:center">' +
-          '<input type="checkbox" id="s-banner-on" style="width:auto"' + (flags.showBanner ? ' checked' : '') + ' />' +
-          ' Show the banner on every page</label></div>' +
+        check('Show the banner on every page', 's-banner-on', !!flags.showBanner) +
         area('Banner text', 's-banner-text', b.text || '', 2,
              'Keep it to one sentence. "No meeting 25 November — Thanksgiving."') +
         row(
@@ -694,11 +693,12 @@
       '<div class="sidebar-card">' +
         '<h3>Google Calendar</h3>' +
         fld('Calendar ID', 's-gcal-id', 'text', (s.calendar || {}).googleCalendarId || '') +
-        fld('Public embed URL', 's-gcal-embed', 'text', (s.calendar || {}).embedHref || '') +
-        fld('Subscribe URL', 's-gcal-sub', 'text', (s.calendar || {}).subscribeHref || '') +
-        '<p class="field-hint">Filling these in shows the calendar and the subscribe buttons. ' +
-        'Automatically pushing this schedule into Google Calendar is a separate job and is not ' +
-        'switched on yet.</p>' +
+        '<p class="field-hint">The calendar\'s address, ending in <code>@group.calendar.google.com</code>. ' +
+        'That one line switches on the embed and both subscribe buttons on the calendar page.</p>' +
+        check('Keep Google Calendar in step with this schedule', 's-gcal-sync', !!(s.flags || {}).gcalSync) +
+        '<p class="field-hint">While this is on, changes here appear on the Google Calendar within about ' +
+        'fifteen minutes, and changes made on the Google Calendar come back here. Turning it off stops ' +
+        'both directions; nothing already on the calendar is removed.</p>' +
       '</div>' +
 
       '<div class="pill-row"><button class="btn btn-primary btn-sm" type="button" id="s-save">Stage these changes</button></div>';
@@ -719,8 +719,7 @@
 
       s.calendar = s.calendar || {};
       s.calendar.googleCalendarId = el('s-gcal-id').value.trim();
-      s.calendar.embedHref = el('s-gcal-embed').value.trim();
-      s.calendar.subscribeHref = el('s-gcal-sub').value.trim();
+      s.flags.gcalSync = el('s-gcal-sync').checked;
 
       touch('site');
       flash('Site details staged.');
@@ -915,6 +914,12 @@
     return '<div class="field"><label for="' + id + '">' + esc(label) + '</label>' +
       '<input type="' + type + '" id="' + id + '" value="' + esc(String(value == null ? '' : value)) + '" />' +
       (hint ? '<p class="field-hint">' + esc(hint) + '</p>' : '') + '</div>';
+  }
+
+  function check(label, id, on) {
+    return '<div class="field"><label style="display:inline-flex;gap:.5rem;align-items:center">' +
+      '<input type="checkbox" id="' + id + '" style="width:auto"' + (on ? ' checked' : '') + ' /> ' +
+      esc(label) + '</label></div>';
   }
 
   function area(label, id, value, rows, hint) {

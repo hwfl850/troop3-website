@@ -1,0 +1,72 @@
+name: Google Calendar sync
+
+# Both directions run the same reconcile pass (scripts/gcal_sync.py):
+#
+#   push to data/   the site's edits reach the calendar, usually within a minute
+#   schedule        the calendar's edits reach the site
+#
+# The job commits with GITHUB_TOKEN, and GitHub does not re-trigger workflows on
+# those commits, so a sync can never set off another sync. Pages serves from the
+# branch, so a pulled change is live as soon as the commit lands.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/meetings.json'
+      - 'data/events.json'
+      - 'data/site.json'
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Report what would change, change nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gcal-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # Nothing to do on the commit this job makes itself.
+    if: "!contains(github.event.head_commit.message, '[calendar sync]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --quiet google-auth requests pytest
+
+      - name: Test the sync rules
+        working-directory: scripts
+        run: python -m pytest -q
+
+      - name: Reconcile
+        env:
+          GCAL_CALENDAR_ID: ${{ secrets.GCAL_CALENDAR_ID }}
+          GCAL_SA_JSON: ${{ secrets.GCAL_SA_JSON }}
+        run: |
+          python scripts/gcal_sync.py \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+
+      - name: Commit anything the calendar changed
+        run: |
+          if git diff --quiet -- data/; then
+            echo "The site already matched the calendar."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/
+          git commit -m "Calendar sync [calendar sync]"
+          git push

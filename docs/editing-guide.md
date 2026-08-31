@@ -86,6 +86,30 @@ saved until you press Publish.
 
 ---
 
+## The Google Calendar
+
+The troop's Google Calendar and this schedule are the same schedule. You can
+work in whichever one is in front of you.
+
+**What crosses over:** the title, the date, the time, the place, and whether
+something is cancelled. A change here reaches the calendar within about fifteen
+minutes. A change made on the calendar comes back here on its own.
+
+**What does not:** the summary, the patrol tags, the attached files, the
+catch-up notes. A calendar has nowhere to put those, so they live only on the
+site. The description Google shows is written from the site each time — editing
+it there has no effect and will be overwritten.
+
+**Do not delete events on the Google Calendar.** Deleting there does not remove
+anything here, and the two will disagree until somebody notices. Cancel it
+instead — either mark it cancelled in the editor, or cancel the event in Google
+— and both sides will show it as cancelled, with a line through it on the site.
+
+If the same meeting gets edited in both places at once, the later edit wins. So
+if you and somebody else are both fixing the same thing, agree who is doing it.
+
+---
+
 ## The safety nets
 
 You are going to be nervous about wrecking something. Don't be — here is what

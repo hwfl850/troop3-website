@@ -17,3 +17,12 @@ worker/package-lock.json
 .env
 .env.*
 *.pem
+
+# Python bytecode and pytest scratch from scripts/.
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# A Google service account key belongs in a GitHub secret, never in the repo.
+*-service-account.json
+gcal-sa.json

@@ -196,7 +196,28 @@
         out[k] = v;
       }
     }
+    out.calendar = calendarLinks(out.calendar);
     return out;
+  }
+
+  /* One field switches the calendar on. googleCalendarId is all anyone should
+     have to paste; the embed, the Google subscribe link and the .ics feed are
+     the same id in three shapes. An explicit href in site.json still wins. */
+  function calendarLinks(cal) {
+    var c = cal || {};
+    var id = String(c.googleCalendarId || '').trim();
+    if (!id) return c;
+    var enc = encodeURIComponent(id);
+    return {
+      googleCalendarId: id,
+      embedHref: c.embedHref ||
+        'https://calendar.google.com/calendar/embed?src=' + enc + '&ctz=America%2FChicago',
+      subscribeHref: c.subscribeHref ||
+        'https://calendar.google.com/calendar/render?cid=' + enc,
+      icsHref: c.icsHref ||
+        'https://calendar.google.com/calendar/ical/' + enc + '/public/basic.ics',
+      note: c.note
+    };
   }
 
   /* ══════════════════════════════════════════════════════════════════════════

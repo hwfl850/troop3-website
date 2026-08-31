@@ -301,17 +301,14 @@ function encodeBase64(text) {
   return btoa(bin);
 }
 
-/* ─────────────────────────────────────────── Google Calendar (stub) ────── */
+/* ───────────────────────────────────────────────── Google Calendar ────── */
 
-/* Not wired up yet, on purpose. Every meeting and event in the data files
-   already carries an empty `gcalEventId`, so switching this on later is a
-   matter of filling in the round trip rather than re-entering the schedule.
-   When it is switched on it belongs here, in the Worker, using a service
-   account — never in the browser. */
-// eslint-disable-next-line no-unused-vars
-async function pushToGoogleCalendar(/* entries, env */) {
-  return { ok: false, skipped: true, reason: 'Google Calendar push is not configured' };
-}
+/* Deliberately not here. The calendar sync runs in GitHub Actions
+   (`.github/workflows/gcal-sync.yml` → `scripts/gcal_sync.py`), because it has
+   to read as well as write, and it needs a Google service account key. Keeping
+   it out of the Worker means this file has exactly one job and exactly one
+   credential. A commit from the editor lands in the repo, the workflow sees it
+   and reconciles both sides. Nothing to do here. */
 
 /* ────────────────────────────────────────────────────────── plumbing ───── */
 
