@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "updated": "2026-08-11T12:00:00Z",
+  "url": "https://troop3pensacola.org",
   "unit": {
     "name": "Troop 3",
     "longName": "Scouts BSA Troop 3, Pensacola",
@@ -29,7 +30,7 @@
     "embedHref": "",
     "subscribeHref": "",
     "icsHref": "",
-    "note": "Left blank on purpose. Filling in embedHref shows the Google Calendar on calendar.html; subscribeHref and icsHref switch on the subscribe buttons. Pushing this site's schedule into Google Calendar is a separate job and is not wired up yet."
+    "note": "Paste the calendar id (Google Calendar → Settings → Integrate calendar) into googleCalendarId and the embed, subscribe and .ics links build themselves. Set any of them explicitly to override. Two-way sync with that calendar runs in .github/workflows/gcal-sync.yml; see docs/operations.md for the two secrets it needs."
   },
   "admin": {
     "workerUrl": "",
@@ -66,7 +67,7 @@
   "flags": {
     "showEagleRoster": true,
     "eagleRosterFullNames": false,
-    "gcalPush": false,
-    "showBanner": true
+    "showBanner": true,
+    "gcalSync": false
   }
 }
