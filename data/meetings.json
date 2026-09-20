@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-09-20T20:25:49.245Z",
+  "updated": "2026-09-20T20:28:54Z",
   "meetings": [
     {
       "date": "2026-07-07",
@@ -72,8 +72,8 @@
       "date": "2026-09-22",
       "title": "Troop Meeting",
       "status": "scheduled",
-      "updated": "2026-07-04T17:10:38Z",
-      "catchUp": "We are looking forward to see everyone there!!!"
+      "summary": "We are looking forward to see everyone there!!!",
+      "updated": "2026-07-04T17:10:38Z"
     },
     {
       "date": "2026-09-29",
