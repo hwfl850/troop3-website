@@ -29,7 +29,7 @@
     "note": "The troop publishes its own feed at /calendar.ics, built from data/ by scripts/build_ics.py. The subscribe links on calendar.html are derived from site.url — there is nothing to paste and no account to connect. Set icsHref, downloadHref, subscribeHref or embedHref here only to override one."
   },
   "admin": {
-    "workerUrl": "",
+    "workerUrl": "https://troop3-content.hwfl850.workers.dev",
     "note": "The URL of the troop's Cloudflare Worker, which holds the GitHub token and does the committing. Until this is filled in, the editor stages changes but cannot publish."
   },
   "banner": {
