@@ -7,10 +7,11 @@ compatibility_date = "2025-01-01"
 GITHUB_REPO = "hwfl850/troop3-website"
 GITHUB_BRANCH = "main"
 # Only these sites may call the Worker. Comma separated, no trailing slash.
-# hwfl850.github.io is the Pages default domain. It is here so the admin
-# page works before the custom domain cuts over from GoDaddy. Drop it
-# once troop3pensacola.org resolves to Pages.
-ALLOWED_ORIGINS = "https://troop3pensacola.org,https://www.troop3pensacola.org,https://hwfl850.github.io"
+# troop3-website.pages.dev is where Cloudflare Pages serves the site. It
+# stays listed after the custom domain cuts over: it is the address that
+# still works if DNS ever breaks, and the admin page has to reach the
+# Worker from whatever origin it was loaded on.
+ALLOWED_ORIGINS = "https://troop3pensacola.org,https://www.troop3pensacola.org,https://troop3-website.pages.dev"
 
 # Secrets are NOT set here. Set them once, from the terminal:
 #
