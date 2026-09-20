@@ -1,0 +1,1621 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Troop 3 Pensacola//Schedule//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Troop 3 Pensacola, Florida
+X-WR-CALDESC:Meetings, campouts, courts of honour and service projects.
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:event-summer-camp-camp-rainey-mtn@troop3pensacola.org
+DTSTAMP:20260107T224114Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260712
+SUMMARY:Summer Camp - Camp Rainey Mtn
+LOCATION:Camp Rainey Mountain\, 1494 Rainey Mountain Road\, Clayton\, GA 30
+ 525\, USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=summer-camp-camp-raine
+ y-mtn
+URL:https://troop3pensacola.org/event.html?e=summer-camp-camp-rainey-mtn
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2026-07-02@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20260703T000000Z
+DTEND:20260703T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2026-07-02
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2026-07-02
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2026-07-05@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260706
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2026-07-05
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2026-07-05
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-07-07@troop3pensacola.org
+DTSTAMP:20260704T171049Z
+DTSTART:20260707T233000Z
+DTEND:20260708T010000Z
+SUMMARY:No Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-07-07
+URL:https://troop3pensacola.org/meeting.html?d=2026-07-07
+STATUS:CANCELLED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-07-14@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260714T233000Z
+DTEND:20260715T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-07-14
+URL:https://troop3pensacola.org/meeting.html?d=2026-07-14
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2026-07-14@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20260715T000000Z
+DTEND:20260715T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2026-07-14
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2026-07-
+ 14
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-flag-placement-avenue-of-flags-2026-07-18@troop3pensacola.org
+DTSTAMP:20260513T024832Z
+DTSTART:20260718T130000Z
+DTEND:20260718T143000Z
+SUMMARY:Flag Placement - Avenue of Flags
+DESCRIPTION:https://troop3pensacola.org/event.html?e=flag-placement-avenue-
+ of-flags-2026-07-18
+URL:https://troop3pensacola.org/event.html?e=flag-placement-avenue-of-flags
+ -2026-07-18
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-07-21@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260721T233000Z
+DTEND:20260722T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-07-21
+URL:https://troop3pensacola.org/meeting.html?d=2026-07-21
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2026-07-23@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20260723T223000Z
+DTEND:20260724T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2026-07-23
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2026-07-23
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-07-28@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260728T233000Z
+DTEND:20260729T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-07-28
+URL:https://troop3pensacola.org/meeting.html?d=2026-07-28
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2026-08-02@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20260802
+DTEND;VALUE=DATE:20260803
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2026-08-02
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2026-08-02
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-schedule-6-month-event-calendar-due-2026-08-03@troop3pensac
+ ola.org
+DTSTAMP:20161012T023730Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:Troop Schedule - 6 month event calendar due
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-schedule-6-month
+ -event-calendar-due-2026-08-03
+URL:https://troop3pensacola.org/event.html?e=troop-schedule-6-month-event-c
+ alendar-due-2026-08-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-08-04@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260804T233000Z
+DTEND:20260805T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-08-04
+URL:https://troop3pensacola.org/meeting.html?d=2026-08-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2026-08-06@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20260807T000000Z
+DTEND:20260807T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2026-08-06
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2026-08-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-isaac-bailey@troop3pensacola.org
+DTSTAMP:20260729T021641Z
+DTSTART:20260808T153000Z
+DTEND:20260808T183000Z
+SUMMARY:Eagle Project - Isaac Bailey
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=eagle-project-isaac-ba
+ iley
+URL:https://troop3pensacola.org/event.html?e=eagle-project-isaac-bailey
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-patrol-elections@troop3pensacola.org
+DTSTAMP:20260729T021416Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Patrol Elections
+DESCRIPTION:https://troop3pensacola.org/event.html?e=patrol-elections
+URL:https://troop3pensacola.org/event.html?e=patrol-elections
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-08-11@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260811T233000Z
+DTEND:20260812T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-08-11
+URL:https://troop3pensacola.org/meeting.html?d=2026-08-11
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2026-08-11@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20260812T000000Z
+DTEND:20260812T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2026-08-11
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2026-08-
+ 11
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-08-18@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260818T233000Z
+DTEND:20260819T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-08-18
+URL:https://troop3pensacola.org/meeting.html?d=2026-08-18
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-wilderness-survival-jambo@troop3pensacola.org
+DTSTAMP:20260809T212756Z
+DTSTART:20260821T223000Z
+DTEND:20260823T170000Z
+SUMMARY:Wilderness Survival - Jambo
+DESCRIPTION:https://troop3pensacola.org/event.html?e=wilderness-survival-ja
+ mbo
+URL:https://troop3pensacola.org/event.html?e=wilderness-survival-jambo
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-court-of-honor-andrew-yokel@troop3pensacola.org
+DTSTAMP:20260805T015856Z
+DTSTART:20260823T223000Z
+DTEND:20260824T010000Z
+SUMMARY:Eagle Court of Honor - Andrew Yokel
+LOCATION:Trinity Presbyterian Church\, 3400 Bayou Blvd\, Pensacola\, FL 325
+ 03\, USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=eagle-court-of-honor-a
+ ndrew-yokel
+URL:https://troop3pensacola.org/event.html?e=eagle-court-of-honor-andrew-yo
+ kel
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-08-25@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260825T233000Z
+DTEND:20260826T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-08-25
+URL:https://troop3pensacola.org/meeting.html?d=2026-08-25
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2026-08-27@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20260827T223000Z
+DTEND:20260828T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2026-08-27
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2026-08-27
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-court-of-honor@troop3pensacola.org
+DTSTAMP:20260725T231434Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Court of Honor
+DESCRIPTION:https://troop3pensacola.org/event.html?e=court-of-honor
+URL:https://troop3pensacola.org/event.html?e=court-of-honor
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-09-01@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260901T233000Z
+DTEND:20260902T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-09-01
+URL:https://troop3pensacola.org/meeting.html?d=2026-09-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2026-09-03@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20260904T000000Z
+DTEND:20260904T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2026-09-03
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2026-09-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-levi-pommerening@troop3pensacola.org
+DTSTAMP:20260831T022539Z
+DTSTART:20260905T133000Z
+DTEND:20260905T200000Z
+SUMMARY:Eagle Project - Levi Pommerening
+LOCATION:Bayview Park Boat Launch\, 2001 E Lloyd St\, Pensacola\, FL 32503\
+ , USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=eagle-project-levi-pom
+ merening
+URL:https://troop3pensacola.org/event.html?e=eagle-project-levi-pommerening
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2026-09-06@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260907
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2026-09-06
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2026-09-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-09-08@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260908T233000Z
+DTEND:20260909T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-09-08
+URL:https://troop3pensacola.org/meeting.html?d=2026-09-08
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2026-09-08@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20260909T000000Z
+DTEND:20260909T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2026-09-08
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2026-09-
+ 08
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-northern-tier-shakedown-1@troop3pensacola.org
+DTSTAMP:20260722T014039Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260914
+SUMMARY:Northern Tier - Shakedown#1
+LOCATION:Naval Live Oaks Nature Preserve\, 1801 Gulf Breeze Pkwy\, Gulf Bre
+ eze\, FL 32563\, USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=northern-tier-shakedow
+ n-1
+URL:https://troop3pensacola.org/event.html?e=northern-tier-shakedown-1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-09-15@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260915T233000Z
+DTEND:20260916T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-09-15
+URL:https://troop3pensacola.org/meeting.html?d=2026-09-15
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-orienteering-oak-mountain@troop3pensacola.org
+DTSTAMP:20260906T235741Z
+DTSTART:20260918T223000Z
+DTEND:20260920T220000Z
+SUMMARY:Orienteering - Oak Mountain
+LOCATION:Oak Mountain State Park\, 200 Terrace Dr\, Pelham\, AL 35124\, USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=orienteering-oak-mount
+ ain
+URL:https://troop3pensacola.org/event.html?e=orienteering-oak-mountain
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-service-project-assist-with-event-setup@troop3pensacola.org
+DTSTAMP:20260916T215646Z
+DTSTART:20260919T133000Z
+DTEND:20260919T143000Z
+SUMMARY:Service Project - Assist with Event Setup
+LOCATION:St Christopher's Episcopal Church\, 3200 N 12th Ave\, Pensacola\, 
+ FL 32503\, USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=service-project-assist
+ -with-event-setup
+URL:https://troop3pensacola.org/event.html?e=service-project-assist-with-ev
+ ent-setup
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-09-22@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260922T233000Z
+DTEND:20260923T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-09-22
+URL:https://troop3pensacola.org/meeting.html?d=2026-09-22
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2026-09-24@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20260924T223000Z
+DTEND:20260925T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2026-09-24
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2026-09-24
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-pumpkin-unloading@troop3pensacola.org
+DTSTAMP:20260725T231601Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Pumpkin Unloading
+DESCRIPTION:https://troop3pensacola.org/event.html?e=pumpkin-unloading
+URL:https://troop3pensacola.org/event.html?e=pumpkin-unloading
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-09-29@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20260929T233000Z
+DTEND:20260930T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-09-29
+URL:https://troop3pensacola.org/meeting.html?d=2026-09-29
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2026-10-01@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20261002T000000Z
+DTEND:20261002T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2026-10-01
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2026-10-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-service-project-triathlon@troop3pensacola.org
+DTSTAMP:20251008T024938Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Service Project - Triathlon
+DESCRIPTION:https://troop3pensacola.org/event.html?e=service-project-triath
+ lon
+URL:https://troop3pensacola.org/event.html?e=service-project-triathlon
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2026-10-04@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2026-10-04
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2026-10-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-10-06@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261006T233000Z
+DTEND:20261007T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-10-06
+URL:https://troop3pensacola.org/meeting.html?d=2026-10-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-heritage-festival@troop3pensacola.org
+DTSTAMP:20260725T231647Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261012
+SUMMARY:Heritage Festival
+DESCRIPTION:https://troop3pensacola.org/event.html?e=heritage-festival
+URL:https://troop3pensacola.org/event.html?e=heritage-festival
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-10-13@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261013T233000Z
+DTEND:20261014T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-10-13
+URL:https://troop3pensacola.org/meeting.html?d=2026-10-13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2026-10-13@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20261014T000000Z
+DTEND:20261014T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2026-10-13
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2026-10-
+ 13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-10-20@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261020T233000Z
+DTEND:20261021T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-10-20
+URL:https://troop3pensacola.org/meeting.html?d=2026-10-20
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2026-10-22@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20261022T223000Z
+DTEND:20261023T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2026-10-22
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2026-10-22
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-10-27@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261027T233000Z
+DTEND:20261028T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-10-27
+URL:https://troop3pensacola.org/meeting.html?d=2026-10-27
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2026-11-01@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2026-11-01
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2026-11-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-schedule-6-month-event-calendar-due-2026-11-02@troop3pensac
+ ola.org
+DTSTAMP:20161012T023730Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Troop Schedule - 6 month event calendar due
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-schedule-6-month
+ -event-calendar-due-2026-11-02
+URL:https://troop3pensacola.org/event.html?e=troop-schedule-6-month-event-c
+ alendar-due-2026-11-02
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-11-03@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261104T003000Z
+DTEND:20261104T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-11-03
+URL:https://troop3pensacola.org/meeting.html?d=2026-11-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2026-11-05@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20261106T010000Z
+DTEND:20261106T020000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2026-11-05
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2026-11-05
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-flag-placement-avenue-of-flags-2026-11-07@troop3pensacola.org
+DTSTAMP:20260513T024912Z
+DTSTART:20261107T140000Z
+DTEND:20261107T153000Z
+SUMMARY:Flag Placement - Avenue of Flags
+DESCRIPTION:https://troop3pensacola.org/event.html?e=flag-placement-avenue-
+ of-flags-2026-11-07
+URL:https://troop3pensacola.org/event.html?e=flag-placement-avenue-of-flags
+ -2026-11-07
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-11-10@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261111T003000Z
+DTEND:20261111T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-11-10
+URL:https://troop3pensacola.org/meeting.html?d=2026-11-10
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2026-11-10@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20261111T010000Z
+DTEND:20261111T020000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2026-11-10
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2026-11-
+ 10
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-caving-tumbling-rock@troop3pensacola.org
+DTSTAMP:20260816T015502Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:Caving - Tumbling Rock
+LOCATION:Tumbling Rock Cave Preserve\, 3407 Co Rd 111\, Fackler\, AL 35746\
+ , USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=caving-tumbling-rock
+URL:https://troop3pensacola.org/event.html?e=caving-tumbling-rock
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-11-17@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261118T003000Z
+DTEND:20261118T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-11-17
+URL:https://troop3pensacola.org/meeting.html?d=2026-11-17
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-11-24@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261125T003000Z
+DTEND:20261125T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-11-24
+URL:https://troop3pensacola.org/meeting.html?d=2026-11-24
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2026-11-26@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20261126T233000Z
+DTEND:20261127T020000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2026-11-26
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2026-11-26
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-12-01@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261202T003000Z
+DTEND:20261202T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-12-01
+URL:https://troop3pensacola.org/meeting.html?d=2026-12-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-northern-tier-shakedown-2@troop3pensacola.org
+DTSTAMP:20260722T014144Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261207
+SUMMARY:Northern Tier - Shakedown#2
+LOCATION:Naval Live Oaks Nature Preserve\, 1801 Gulf Breeze Pkwy\, Gulf Bre
+ eze\, FL 32563\, USA
+DESCRIPTION:https://troop3pensacola.org/event.html?e=northern-tier-shakedow
+ n-2
+URL:https://troop3pensacola.org/event.html?e=northern-tier-shakedown-2
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2026-12-03@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20261204T010000Z
+DTEND:20261204T020000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2026-12-03
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2026-12-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2026-12-06@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2026-12-06
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2026-12-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-12-08@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261209T003000Z
+DTEND:20261209T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-12-08
+URL:https://troop3pensacola.org/meeting.html?d=2026-12-08
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2026-12-08@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20261209T010000Z
+DTEND:20261209T020000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2026-12-08
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2026-12-
+ 08
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-12-15@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261216T003000Z
+DTEND:20261216T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-12-15
+URL:https://troop3pensacola.org/meeting.html?d=2026-12-15
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-12-22@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261223T003000Z
+DTEND:20261223T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-12-22
+URL:https://troop3pensacola.org/meeting.html?d=2026-12-22
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2026-12-24@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20261224T233000Z
+DTEND:20261225T020000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2026-12-24
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2026-12-24
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2026-12-29@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20261230T003000Z
+DTEND:20261230T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2026-12-29
+URL:https://troop3pensacola.org/meeting.html?d=2026-12-29
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-01-03@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-01-03
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-01-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-01-05@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270106T003000Z
+DTEND:20270106T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-01-05
+URL:https://troop3pensacola.org/meeting.html?d=2027-01-05
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-01-07@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270108T010000Z
+DTEND:20270108T020000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-01-07
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-01-07
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-01-12@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270113T003000Z
+DTEND:20270113T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-01-12
+URL:https://troop3pensacola.org/meeting.html?d=2027-01-12
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-01-12@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270113T010000Z
+DTEND:20270113T020000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-01-12
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-01-
+ 12
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-01-19@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270120T003000Z
+DTEND:20270120T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-01-19
+URL:https://troop3pensacola.org/meeting.html?d=2027-01-19
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-01-26@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270127T003000Z
+DTEND:20270127T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-01-26
+URL:https://troop3pensacola.org/meeting.html?d=2027-01-26
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-01-28@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270128T233000Z
+DTEND:20270129T020000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-01-28
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-01-28
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-schedule-6-month-event-calendar-due-2027-02-01@troop3pensac
+ ola.org
+DTSTAMP:20161012T023730Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Troop Schedule - 6 month event calendar due
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-schedule-6-month
+ -event-calendar-due-2027-02-01
+URL:https://troop3pensacola.org/event.html?e=troop-schedule-6-month-event-c
+ alendar-due-2027-02-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-02-02@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270203T003000Z
+DTEND:20270203T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-02-02
+URL:https://troop3pensacola.org/meeting.html?d=2027-02-02
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-02-04@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270205T010000Z
+DTEND:20270205T020000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-02-04
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-02-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-02-07@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-02-07
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-02-07
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-02-09@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270210T003000Z
+DTEND:20270210T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-02-09
+URL:https://troop3pensacola.org/meeting.html?d=2027-02-09
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-02-09@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270210T010000Z
+DTEND:20270210T020000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-02-09
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-02-
+ 09
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-02-16@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270217T003000Z
+DTEND:20270217T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-02-16
+URL:https://troop3pensacola.org/meeting.html?d=2027-02-16
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-02-23@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270224T003000Z
+DTEND:20270224T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-02-23
+URL:https://troop3pensacola.org/meeting.html?d=2027-02-23
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-02-25@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270225T233000Z
+DTEND:20270226T020000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-02-25
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-02-25
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-03-02@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270303T003000Z
+DTEND:20270303T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-03-02
+URL:https://troop3pensacola.org/meeting.html?d=2027-03-02
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-03-04@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270305T010000Z
+DTEND:20270305T020000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-03-04
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-03-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-03-07@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-03-07
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-03-07
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-03-09@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270310T003000Z
+DTEND:20270310T020000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-03-09
+URL:https://troop3pensacola.org/meeting.html?d=2027-03-09
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-03-09@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270310T010000Z
+DTEND:20270310T020000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-03-09
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-03-
+ 09
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-03-16@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270316T233000Z
+DTEND:20270317T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-03-16
+URL:https://troop3pensacola.org/meeting.html?d=2027-03-16
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-03-23@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270323T233000Z
+DTEND:20270324T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-03-23
+URL:https://troop3pensacola.org/meeting.html?d=2027-03-23
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-03-25@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270325T223000Z
+DTEND:20270326T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-03-25
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-03-25
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-03-30@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270330T233000Z
+DTEND:20270331T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-03-30
+URL:https://troop3pensacola.org/meeting.html?d=2027-03-30
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-04-01@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270402T000000Z
+DTEND:20270402T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-04-01
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-04-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-04-04@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-04-04
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-04-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-04-06@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270406T233000Z
+DTEND:20270407T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-04-06
+URL:https://troop3pensacola.org/meeting.html?d=2027-04-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-04-13@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270413T233000Z
+DTEND:20270414T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-04-13
+URL:https://troop3pensacola.org/meeting.html?d=2027-04-13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-04-13@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270414T000000Z
+DTEND:20270414T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-04-13
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-04-
+ 13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-04-20@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270420T233000Z
+DTEND:20270421T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-04-20
+URL:https://troop3pensacola.org/meeting.html?d=2027-04-20
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-04-22@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270422T223000Z
+DTEND:20270423T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-04-22
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-04-22
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-04-27@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270427T233000Z
+DTEND:20270428T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-04-27
+URL:https://troop3pensacola.org/meeting.html?d=2027-04-27
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-05-02@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-05-02
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-05-02
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-schedule-6-month-event-calendar-due-2027-05-03@troop3pensac
+ ola.org
+DTSTAMP:20161012T023730Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:Troop Schedule - 6 month event calendar due
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-schedule-6-month
+ -event-calendar-due-2027-05-03
+URL:https://troop3pensacola.org/event.html?e=troop-schedule-6-month-event-c
+ alendar-due-2027-05-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-05-04@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270504T233000Z
+DTEND:20270505T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-05-04
+URL:https://troop3pensacola.org/meeting.html?d=2027-05-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-05-06@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270507T000000Z
+DTEND:20270507T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-05-06
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-05-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-05-11@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270511T233000Z
+DTEND:20270512T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-05-11
+URL:https://troop3pensacola.org/meeting.html?d=2027-05-11
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-05-11@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270512T000000Z
+DTEND:20270512T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-05-11
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-05-
+ 11
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-05-18@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270518T233000Z
+DTEND:20270519T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-05-18
+URL:https://troop3pensacola.org/meeting.html?d=2027-05-18
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-05-25@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270525T233000Z
+DTEND:20270526T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-05-25
+URL:https://troop3pensacola.org/meeting.html?d=2027-05-25
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-05-27@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270527T223000Z
+DTEND:20270528T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-05-27
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-05-27
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-06-01@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270601T233000Z
+DTEND:20270602T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-06-01
+URL:https://troop3pensacola.org/meeting.html?d=2027-06-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-06-03@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270604T000000Z
+DTEND:20270604T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-06-03
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-06-03
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-06-06@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-06-06
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-06-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-06-08@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270608T233000Z
+DTEND:20270609T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-06-08
+URL:https://troop3pensacola.org/meeting.html?d=2027-06-08
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-06-08@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270609T000000Z
+DTEND:20270609T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-06-08
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-06-
+ 08
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-06-15@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270615T233000Z
+DTEND:20270616T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-06-15
+URL:https://troop3pensacola.org/meeting.html?d=2027-06-15
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-06-22@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270622T233000Z
+DTEND:20270623T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-06-22
+URL:https://troop3pensacola.org/meeting.html?d=2027-06-22
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-06-24@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270624T223000Z
+DTEND:20270625T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-06-24
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-06-24
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-06-29@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270629T233000Z
+DTEND:20270630T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-06-29
+URL:https://troop3pensacola.org/meeting.html?d=2027-06-29
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-district-roundtable-2027-07-01@troop3pensacola.org
+DTSTAMP:20211203T012937Z
+DTSTART:20270702T000000Z
+DTEND:20270702T010000Z
+SUMMARY:District Roundtable
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd #5720\, Pensaco
+ la\, FL 32514\, USA
+DESCRIPTION:Also accessible remotely via Zoom. Ask the Scoutmaster for the 
+ joining details.\n\nhttps://troop3pensacola.org/event.html?e=district-roun
+ dtable-2027-07-01
+URL:https://troop3pensacola.org/event.html?e=district-roundtable-2027-07-01
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-plc-meeting-2027-07-04@troop3pensacola.org
+DTSTAMP:20250730T024656Z
+DTSTART;VALUE=DATE:20270704
+DTEND;VALUE=DATE:20270705
+SUMMARY:PLC Meeting
+LOCATION:Scout Hut
+DESCRIPTION:https://troop3pensacola.org/event.html?e=plc-meeting-2027-07-04
+URL:https://troop3pensacola.org/event.html?e=plc-meeting-2027-07-04
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-07-06@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270706T233000Z
+DTEND:20270707T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-07-06
+URL:https://troop3pensacola.org/meeting.html?d=2027-07-06
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-07-13@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270713T233000Z
+DTEND:20270714T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-07-13
+URL:https://troop3pensacola.org/meeting.html?d=2027-07-13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-troop-3-committee-mtg-2027-07-13@troop3pensacola.org
+DTSTAMP:20211107T140458Z
+DTSTART:20270714T000000Z
+DTEND:20270714T010000Z
+SUMMARY:Troop 3 Committee Mtg
+DESCRIPTION:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-
+ 2027-07-13
+URL:https://troop3pensacola.org/event.html?e=troop-3-committee-mtg-2027-07-
+ 13
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-07-20@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270720T233000Z
+DTEND:20270721T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-07-20
+URL:https://troop3pensacola.org/meeting.html?d=2027-07-20
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eagle-project-review-board-pensacola-bay-district-2027-07-22@troo
+ p3pensacola.org
+DTSTAMP:20230726T222856Z
+DTSTART:20270722T223000Z
+DTEND:20270723T010000Z
+SUMMARY:Eagle Project Review Board - Pensacola Bay District
+LOCATION:St Luke United Methodist Church\, 1394 E 9 Mile Rd\, Pensacola\, F
+ L 32514\, USA
+DESCRIPTION:Prerequisites: Eagle Scout Service Project Proposal Workbook sh
+ ould be completed and include Beneficiary\, Scoutmaster\, and Troop Commit
+ tee Chair signatures. An email to the District Eagle Project Approval Repr
+ esentative requesting a project review should be submitted no later than t
+ he Sunday prior to the monthly Eagle Project Review Board meeting.\n\nhttp
+ s://troop3pensacola.org/event.html?e=eagle-project-review-board-pensacola-
+ bay-district-2027-07-22
+URL:https://troop3pensacola.org/event.html?e=eagle-project-review-board-pen
+ sacola-bay-district-2027-07-22
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-2027-07-27@troop3pensacola.org
+DTSTAMP:20260704T171038Z
+DTSTART:20270727T233000Z
+DTEND:20270728T010000Z
+SUMMARY:Troop Meeting
+LOCATION:Scout Hut\, Cokesbury UMC
+DESCRIPTION:https://troop3pensacola.org/meeting.html?d=2027-07-27
+URL:https://troop3pensacola.org/meeting.html?d=2027-07-27
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
