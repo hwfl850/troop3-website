@@ -94,13 +94,18 @@
     </p>
     <div class="pill-row" id="cal-subscribe">
       <span style="color:var(--text-muted);font-size:.92rem">
-        Subscription links have not been set up yet. Until then, this page is the calendar.
+        Subscribing needs the site's address in <code>data/site.json</code>. Until that is
+        filled in, this page is the calendar.
       </span>
     </div>
+    <p class="field-hint" style="margin-top:.85rem;color:var(--text-muted);font-size:.88rem">
+      Subscribing is not the same as downloading. A subscription keeps itself current as the
+      troop's schedule changes; a download is a copy of today that will quietly go out of date.
+    </p>
   </section>
 
   <section class="is-hidden" id="cal-embed-wrap" style="margin-top:2.5rem">
-    <h2 class="section-title" style="font-size:1.3rem">Google Calendar</h2>
+    <h2 class="section-title" style="font-size:1.3rem">Embedded calendar</h2>
     <div id="cal-embed" style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden"></div>
   </section>
 </main>
@@ -115,7 +120,7 @@
     <div>
       <h4>Meetings</h4>
       <ul>
-        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:30 PM</li>
+        <li id="slot-meeting-when">Every Tuesday, 6:30&ndash;8:00 PM</li>
         <li id="slot-meeting-where">Scout Hut, Cokesbury UMC</li>
         <li><a href="meetings.html">Program year</a></li>
         <li><a href="calendar.html">Calendar</a></li>
@@ -240,9 +245,9 @@ window.onSiteReady = function () {
     draw();
   }
 
-  /* Subscribe + embed. Both are optional — the page works with neither. All three
-     hrefs are derived from site.calendar.googleCalendarId in site.js, so setting
-     that one field lights up this whole block. */
+  /* Subscribe + embed. Both are optional — the page works with neither. The
+     hrefs are derived from site.url in site.js and point at the troop's own
+     /calendar.ics, so there is nothing to configure for this block to light up. */
   function subscribeLinks() {
     var c = T3.site.calendar || {};
     var out = [];
@@ -251,7 +256,12 @@ window.onSiteReady = function () {
                '" target="_blank" rel="noopener">Add to Google Calendar</a>');
     }
     if (c.icsHref) {
-      out.push('<a class="btn btn-outline btn-sm" href="' + E(T3.safeHref(c.icsHref)) + '">Apple / Outlook (.ics)</a>');
+      out.push('<a class="btn btn-outline btn-sm" href="' + E(T3.safeHref(c.icsHref)) +
+               '">Apple / Outlook</a>');
+    }
+    if (c.downloadHref) {
+      out.push('<a class="btn btn-outline btn-sm" href="' + E(T3.safeHref(c.downloadHref)) +
+               '" download>Download .ics</a>');
     }
     if (out.length) T3.el('cal-subscribe').innerHTML = out.join('');
 

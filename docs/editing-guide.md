@@ -86,27 +86,33 @@ saved until you press Publish.
 
 ---
 
-## The Google Calendar
+## Phones and calendar apps
 
-The troop's Google Calendar and this schedule are the same schedule. You can
-work in whichever one is in front of you.
+This schedule *is* the troop calendar. When you publish, the site rebuilds its
+own calendar file, and every phone subscribed to it picks the change up on its
+own. Families subscribe from the **Put it on your phone** buttons at the bottom
+of the calendar page — Google, Apple and Outlook all work, and there is no
+account to sign in to and nothing for you to set up.
 
-**What crosses over:** the title, the date, the time, the place, and whether
-something is cancelled. A change here reaches the calendar within about fifteen
-minutes. A change made on the calendar comes back here on its own.
+**What crosses over:** the title, the date, the time, the place, a short
+summary, a link back to the page, and whether something is cancelled.
 
-**What does not:** the summary, the patrol tags, the attached files, the
-catch-up notes. A calendar has nowhere to put those, so they live only on the
-site. The description Google shows is written from the site each time — editing
-it there has no effect and will be overwritten.
+**What does not:** the patrol tags, the packing list, the attached files, the
+run of show. A calendar app has nowhere to put those, so they live on the site
+— which is what the link in the calendar entry is for.
 
-**Do not delete events on the Google Calendar.** Deleting there does not remove
-anything here, and the two will disagree until somebody notices. Cancel it
-instead — either mark it cancelled in the editor, or cancel the event in Google
-— and both sides will show it as cancelled, with a line through it on the site.
+**It only runs one way, from here outward.** Nothing anybody does in their own
+calendar app can change this schedule, and their edits get overwritten the next
+time their phone refreshes.
 
-If the same meeting gets edited in both places at once, the later edit wins. So
-if you and somebody else are both fixing the same thing, agree who is doing it.
+**Cancel things, do not delete them.** Marking a meeting cancelled puts a line
+through it on the site and tells every subscribed phone it is off. Deleting the
+record makes it simply disappear, which tells nobody anything. Delete only
+something that should never have been there.
+
+**How fast is it?** A few hours, usually, and up to a day on Google — their
+apps decide when to check, not us. If something has to be known *today*, send a
+message as well. The calendar is for the shape of the year.
 
 ---
 

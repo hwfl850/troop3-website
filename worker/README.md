@@ -44,15 +44,21 @@ new one and re-run `wrangler secret put GITHUB_TOKEN`. Nothing else changes.
 `EDIT_PASSWORD` is the Scoutmaster / committee password. It can edit every
 content file.
 
-`PATROL_PASSWORDS` is optional and lets a patrol leader edit their own patrol
-page and nothing else:
+`PATROL_PASSWORDS` is optional and lets a patrol leader edit patrol pages and
+nothing else. Each value is one slug, a list of slugs, or `"*"` for all of them:
 
 ```json
-{ "some-viper-password": "viper", "some-flaming-arrow-password": "flaming-arrow" }
+{
+  "PLC27!": "*",
+  "some-viper-password": "viper",
+  "a-shared-one": ["viper", "flaming-arrow"]
+}
 ```
 
-A patrol password can only write `data/patrols/<their-slug>.json`. The Worker
-checks that on every request — it is not a UI restriction.
+`PLC27!` is the shared Patrol Leaders' Council password. A patrol password can
+only write `data/patrols/<slug>.json` for a patrol it covers — never the roster
+at `data/patrols/index.json`, and never an upload. The Worker checks that on
+every request; it is not a UI restriction.
 
 If you change `EDIT_PASSWORD`, also update the SHA-256 hash at the top of
 `site/assets/admin.js`, which is what decides whether the browser shows the
@@ -86,11 +92,13 @@ printf '%s' 'the-new-password' | shasum -a 256
 | `POST` | `/save`    | Validate, guard, and commit a content file          |
 | `POST` | `/upload`  | Commit a PDF or image                               |
 
-## Google Calendar
+## The calendar feed
 
-Not wired up. `pushToGoogleCalendar()` in `index.js` is a stub that returns
-immediately. Every meeting and event already carries an empty `gcalEventId`
-field, so when it is switched on the schedule does not have to be re-entered.
+Not here, on purpose. `calendar.ics` is built in GitHub Actions —
+`.github/workflows/ics.yml` runs `scripts/build_ics.py` — from the same
+`data/meetings.json` and `data/events.json` this Worker commits. That keeps the
+Worker to exactly one job and exactly one credential.
 
-When it is built, it belongs **here**, in the Worker, with a Google service
-account — not in the browser, which cannot hold a credential.
+Nothing is required of the Worker for it to work, and there is nothing to turn
+on. A commit the editor makes lands in the repo, the workflow sees the push and
+rewrites the feed. See *The calendar feed* in `docs/operations.md`.

@@ -301,14 +301,13 @@ function encodeBase64(text) {
   return btoa(bin);
 }
 
-/* ───────────────────────────────────────────────── Google Calendar ────── */
+/* ────────────────────────────────────────────────── calendar feed ────── */
 
-/* Deliberately not here. The calendar sync runs in GitHub Actions
-   (`.github/workflows/gcal-sync.yml` → `scripts/gcal_sync.py`), because it has
-   to read as well as write, and it needs a Google service account key. Keeping
-   it out of the Worker means this file has exactly one job and exactly one
-   credential. A commit from the editor lands in the repo, the workflow sees it
-   and reconciles both sides. Nothing to do here. */
+/* Deliberately not here. The published feed is built in GitHub Actions
+   (`.github/workflows/ics.yml` → `scripts/build_ics.py`) from the same JSON
+   this Worker commits, so the Worker has exactly one job and exactly one
+   credential. A commit from the editor lands in the repo, the workflow sees
+   the push and rewrites `calendar.ics`. Nothing to do here. */
 
 /* ────────────────────────────────────────────────────────── plumbing ───── */
 

@@ -65,7 +65,9 @@
   function safeHref(h) {
     if (!h) return '#';
     var s = String(h).trim();
-    if (/^(https?:|mailto:|tel:)/i.test(s)) return s;
+    /* webcal: is how a calendar app is told to *subscribe* rather than to
+       import a snapshot that then goes stale. It is inert in a browser. */
+    if (/^(https?:|mailto:|tel:|webcal:)/i.test(s)) return s;
     if (/^[/#?]/.test(s)) return s;
     if (/^[\w.\-]+\.html(\?|#|$)/.test(s)) return s;
     return '#';
@@ -196,26 +198,31 @@
         out[k] = v;
       }
     }
-    out.calendar = calendarLinks(out.calendar);
+    out.calendar = calendarLinks(out.calendar, out.url);
     return out;
   }
 
-  /* One field switches the calendar on. googleCalendarId is all anyone should
-     have to paste; the embed, the Google subscribe link and the .ics feed are
-     the same id in three shapes. An explicit href in site.json still wins. */
-  function calendarLinks(cal) {
+  /* The troop publishes its own feed at /calendar.ics, built from this site's
+     own JSON. There is no Google calendar behind any of it and nothing here
+     needs an account or a credential — it is one URL in three shapes.
+
+       webcal:   tells a calendar app to SUBSCRIBE, so it keeps itself current
+       https:    plain download, a snapshot that will go stale
+       Google    its own "add by URL" form, pointed at the webcal: one
+
+     An explicit href in site.json still wins. */
+  function calendarLinks(cal, siteUrl) {
     var c = cal || {};
-    var id = String(c.googleCalendarId || '').trim();
-    if (!id) return c;
-    var enc = encodeURIComponent(id);
+    var base = String(siteUrl || '').replace(/\/+$/, '');
+    if (!base) return c;
+    var https = base + '/calendar.ics';
+    var webcal = https.replace(/^https?:/i, 'webcal:');
     return {
-      googleCalendarId: id,
-      embedHref: c.embedHref ||
-        'https://calendar.google.com/calendar/embed?src=' + enc + '&ctz=America%2FChicago',
+      icsHref: c.icsHref || webcal,
+      downloadHref: c.downloadHref || https,
       subscribeHref: c.subscribeHref ||
-        'https://calendar.google.com/calendar/render?cid=' + enc,
-      icsHref: c.icsHref ||
-        'https://calendar.google.com/calendar/ical/' + enc + '/public/basic.ics',
+        'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(webcal),
+      embedHref: c.embedHref || '',
       note: c.note
     };
   }

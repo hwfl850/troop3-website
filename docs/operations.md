@@ -131,14 +131,33 @@ shipped to a browser is not a secret, and is not treated as one here.
 
 ### Patrol passwords
 
-Optional. `PATROL_PASSWORDS` is a JSON map of password → patrol slug:
+Optional. `PATROL_PASSWORDS` is a JSON map of password → what it covers. The
+value is one patrol slug, a list of them, or `"*"` for every patrol:
 
 ```json
-{ "some-password": "viper" }
+{
+  "PLC27!": "*",
+  "some-other-password": "viper",
+  "a-third": ["viper", "flaming-arrow"]
+}
 ```
 
-That password can write `data/patrols/viper.json` and nothing else. Enforced in
-the Worker, not the UI.
+`PLC27!` is the shared Patrol Leaders' Council password: it can write any
+`data/patrols/<slug>.json`, and nothing else — not meetings, not events, not
+the banner, not `data/patrols/index.json` (which decides what patrols exist),
+and it cannot upload files. Enforced in the Worker, not the UI.
+
+Each password also needs its SHA-256 in the `ROLES` array in `assets/admin.js`,
+or the sign-in form rejects it before the Worker ever sees it. A role there
+carries the tabs it may open: the PLC role gets `['patrols', 'help']`.
+
+Setting or changing it:
+
+```bash
+cd worker
+npx wrangler secret put PATROL_PASSWORDS
+# paste the whole JSON map — it replaces the old one entirely
+```
 
 ---
 
@@ -150,10 +169,13 @@ This is why a stylesheet change is never served stale, and why nobody has to
 remember to bump a version number. The `[skip stamp]` marker is what stops it
 triggering itself.
 
-**`gcal-sync.yml`** — reconciles the schedule with the troop's Google Calendar
-every fifteen minutes and after any push touching `data/`. See below. It is off
-until `flags.gcalSync` is true, and skips its own commits by their
-`[calendar sync]` marker.
+**`ics.yml`** — after a push touching `data/meetings.json`,
+`data/events.json`, `data/site.json` or `scripts/build_ics.py`, rebuilds
+`calendar.ics` and commits it if the bytes changed. See below. No schedule, no
+secrets. It skips pushes authored by `github-actions[bot]`, which is who its
+own commits are made as — the guard matches the commit *author* rather than the
+message, so a commit that merely mentions the calendar is not skipped by
+accident.
 
 **`backup.yml`** — nightly, validates every JSON file and copies `data/` onto a
 `content-backup` branch. To recover: browse to that branch on GitHub, open the
@@ -162,85 +184,106 @@ file cannot overwrite a good backup.
 
 ---
 
-## Google Calendar
+## The calendar feed
 
-The site and the troop's Google Calendar are **two way**. An edit in the editor
-reaches the calendar; an edit on the calendar comes back into `data/`. The
-reconcile runs in GitHub Actions, not in the Worker, because it needs to read
-Google as well as write it and it needs a service account key.
+The site publishes **its own** calendar at `/calendar.ics`, built from
+`data/meetings.json` and `data/events.json` by `scripts/build_ics.py`. Families
+subscribe to that address from Google Calendar, Apple Calendar or Outlook and
+their copy keeps itself current.
 
-### What each side owns
+The arrow only points one way. The site has no account on anybody's calendar,
+no key, no token and no write access to anything, so there is nothing to
+configure, nothing to leak, and no way for a bug here to change an event on
+somebody else's phone — only what it shows of ours.
 
-The calendar only knows what a calendar can express: **title, when, where,
-cancelled**. Those four round trip. Everything else — the summary, the patrol
-tags, the attached files, the catch-up notes — lives only on the site, and the
-sync never touches it. The event description on Google is generated from the
-site each time and is not read back; editing it there does nothing.
+### What travels and what does not
 
-**Deleting on Google Calendar does not delete anything here.** The sync never
-deletes a record. To call something off, set its status to cancelled — either in
-the editor or by cancelling the event on Google — and both sides will say
-cancelled. This is on purpose: a calendar app makes deletion one click away, and
-one stray click should not remove a campout from the website.
+A calendar app can hold **title, when, where, a description, a link, and
+cancelled**. Those go out. The patrol tags, the packing lists, the attached
+files and the run of show stay on the site, because a calendar app has nowhere
+to put them; the description carries the summary and a link back to the page
+that does.
 
-If the same entry is edited in both places between runs, **the more recent edit
-wins**, judged by Google's `updated` timestamp against the site's last commit
-time for that file.
+**Cancelled entries stay in the feed**, as `STATUS:CANCELLED`, rather than
+disappearing. A campout that silently vanishes from a phone tells a scout
+nothing; one that says CANCELLED tells them the thing that matters. Delete the
+record only when it should never have existed.
 
-### Turning it on
+Anything a subscriber changes in their own copy is theirs. It never comes back
+here, and the next refresh overwrites it.
 
-1. **Google Cloud.** Create a project, enable the **Google Calendar API**, then
-   create a **service account** under IAM & Admin. Give it no roles. Make a
-   **JSON key** and download it.
-2. **Share the calendar with it.** In Google Calendar → the troop calendar →
-   Settings and sharing → *Share with specific people* → add the service account
-   address (`something@….iam.gserviceaccount.com`) with **Make changes to
-   events**. This is the step everybody forgets; without it every write returns
-   403.
-3. **Make the calendar public** if you want the embed and the subscribe buttons
-   to work for people who are not signed in: same settings page → *Access
-   permissions* → **Make available to public**, "See all event details".
-4. **Two repository secrets** (Settings → Secrets and variables → Actions):
-   - `GCAL_CALENDAR_ID` — from *Integrate calendar → Calendar ID*, ending in
-     `@group.calendar.google.com`.
-   - `GCAL_SA_JSON` — the whole downloaded JSON key file, pasted in as is.
-5. **In the editor**, under *Site details → Google Calendar*: paste the same
-   calendar ID, tick **Keep Google Calendar in step with this schedule**, and
-   publish. That writes `calendar.googleCalendarId` and `flags.gcalSync: true`
-   into `data/site.json`.
+### The subscribe links
 
-The calendar ID is doing double duty: it is also what builds the embed, the
-"Add to Google Calendar" button and the `.ics` link on `calendar.html`. One
-field, four things — see `calendarLinks()` in `assets/site.js`.
+There is nothing to paste. `calendarLinks()` in `assets/site.js` derives all
+three buttons on `calendar.html` from `url` in `data/site.json`:
+
+| Button | Where it points |
+| --- | --- |
+| Add to Google Calendar | `calendar.google.com/calendar/r?cid=` + the `webcal:` address |
+| Apple / Outlook | `webcal://troop3pensacola.org/calendar.ics` |
+| Download .ics | `https://troop3pensacola.org/calendar.ics` |
+
+`webcal:` is what tells a calendar app to **subscribe** rather than to import a
+snapshot; the plain `https:` link downloads a copy of today that then quietly
+goes out of date, which is why it is the third button and not the first.
+`safeHref()` allows `webcal:` for exactly this reason.
+
+Set `icsHref`, `downloadHref`, `subscribeHref` or `embedHref` under `calendar`
+in `data/site.json` only to override one of them.
+
+### When it rebuilds
+
+`ics.yml` runs on any push touching `data/meetings.json`, `data/events.json`,
+`data/site.json` or the build script — so the feed is rewritten within a minute
+or two of anyone publishing from the editor. There is no schedule and no cron,
+because there is nothing to poll.
+
+How quickly a *subscriber* sees it is up to their app. The file asks for a
+twelve-hour refresh (`REFRESH-INTERVAL` and `X-PUBLISHED-TTL`), Apple and
+Outlook roughly honour it, and Google decides for itself — a day is normal.
+**Do not promise anyone fifteen minutes.** If something has to be known today,
+send it; the calendar is for the shape of the year, not for urgent news.
 
 ### Checking it
 
-Actions → **Google Calendar sync** → *Run workflow* has a **dry run** box. Tick
-it and it will print every change it would make and write nothing, to either
-side. Do that first. The unit tests (`scripts/test_gcal_sync.py`, 14 of them)
-run as part of the same job and the sync is skipped if they fail.
+Actions → **Build calendar.ics** → *Run workflow*. The job runs
+`scripts/test_build_ics.py` (22 tests) first and will not build if they fail.
+It commits `calendar.ics` only when the bytes actually changed, so a run that
+finds nothing new leaves no commit.
 
-### Switching it off
+To see it locally:
 
-Untick the box in the editor, or set `flags.gcalSync` to `false` in
-`data/site.json` by hand. The job still runs and immediately exits. Nothing
-already on the calendar is removed; the two sides simply stop talking. Leadership
-can do this without access to GitHub or to Google Cloud, which is the point.
+```bash
+python3 scripts/build_ics.py     # writes calendar.ics, or says it is current
+python3 -m pytest scripts -q
+```
 
-### How it does not loop
+The build is deliberately **byte-for-byte repeatable**: `DTSTAMP` comes from
+each record's own `updated` field rather than from the clock, so running it
+twice produces the same file and the history does not fill up with commits that
+changed nothing.
 
-Two guards. The workflow skips any push whose commit message contains
-`[calendar sync]`, which is the message its own commits carry. And commits made
-by `GITHUB_TOKEN` inside Actions do not trigger workflows at all, so the belt
-and the braces are independent. On top of that each record stores
-`gcalSyncedHash` — a digest of the four shared fields as of the last agreed
-state — so a run that changes nothing writes nothing and makes no commit.
+### Things in the file that look odd but are load-bearing
 
-### `data/` fields the sync owns
+- **All-day `DTEND` is the morning after the last day.** RFC 5545 makes it
+  exclusive. A three-day campout ending the 30th writes `20260831`. Getting
+  this wrong shows every campout a day short.
+- **Everything is written in UTC.** That is why there is no `VTIMEZONE` block.
+  `zoneinfo` picks the right offset per date, so a July meeting lands at
+  `23:30Z` and the same December meeting at `00:30Z` the next day.
+- **Lines fold at 75 *octets*, not characters**, with a single leading space on
+  each continuation, and never in the middle of a multi-byte character. Some
+  clients reject a file that splits one.
+- **The `X-WR-*` properties are not escaped.** They are not RFC properties and
+  clients print them raw, so an escaped comma would show up on screen as
+  `Troop 3 Pensacola\, Florida`.
 
-`gcalEventId` (the Google event id) and `gcalSyncedHash`. Both are written by
-the job and round-tripped by the editor. Do not edit them by hand. Clearing
-`gcalEventId` makes the next run create a **second** copy on the calendar.
+### There is no Google credential
+
+There used to be a two-way sync with a service account key, `gcal_sync.py`. It
+is gone, along with the key, the two repository secrets, the conflict
+resolution, the kill switch and the `gcalEventId` / `gcalSyncedHash` fields on
+every record. If you find a reference to any of those, it is stale — delete it.
 
 ## Things that will look like bugs but are not
 

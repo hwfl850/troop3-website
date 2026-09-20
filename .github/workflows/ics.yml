@@ -1,0 +1,60 @@
+name: Build the calendar feed
+
+# calendar.ics is the troop's schedule in the format calendar apps read. It is
+# generated from data/, never edited by hand, and committed so GitHub Pages can
+# serve it as a plain static file at /calendar.ics.
+#
+# One direction only. This repository is the schedule and subscribers read it.
+# Nothing here holds a credential or writes to anybody else's calendar.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/meetings.json'
+      - 'data/events.json'
+      - 'data/site.json'
+      - 'scripts/build_ics.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ics
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Do not react to the commit this job makes itself.
+    if: github.event_name != 'push' || github.event.head_commit.author.name != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Test the build rules
+        working-directory: scripts
+        run: |
+          pip install --quiet pytest
+          python -m pytest -q
+
+      - name: Build calendar.ics
+        run: python3 scripts/build_ics.py
+
+      - name: Commit it if it moved
+        run: |
+          # --porcelain rather than `git diff`, so a calendar.ics that is not
+          # yet tracked still counts as a change on the very first run.
+          if [ -z "$(git status --porcelain -- calendar.ics)" ]; then
+            echo "The feed already matched the schedule."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add calendar.ics
+          git commit -m "Rebuild calendar.ics"
+          git push

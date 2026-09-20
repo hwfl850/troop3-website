@@ -349,7 +349,6 @@
       if (!m.materials.length) delete m.materials;
       m.patrols = checked('mp-');
       if (!m.patrols.length) delete m.patrols;
-      if (typeof m.gcalEventId !== 'string') m.gcalEventId = '';
 
       files.meetings.data.meetings.sort(function (a, b) { return a.date < b.date ? -1 : 1; });
       touch('meetings');
@@ -386,7 +385,7 @@
      out of the form leaves an empty-titled meeting the editor can delete. */
   function addMeeting() {
     if (!canSave('meetings')) return;
-    var m = { date: nextTuesday(), title: '', gcalEventId: '' };
+    var m = { date: nextTuesday(), title: '' };
     files.meetings.data.meetings.push(m);
     files.meetings.data.meetings.sort(function (a, b) { return a.date < b.date ? -1 : 1; });
     meetingForm(m);
@@ -399,8 +398,6 @@
     var last = list.slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; }).pop();
     var copy = JSON.parse(JSON.stringify(last));
     copy.date = plusDays(last.date, 7);
-    copy.gcalEventId = '';
-    delete copy.gcalSyncedHash;   // a copy is a new event to Google, not an edit of the old one
     delete copy.catchUp;
     delete copy.status;
     list.push(copy);
@@ -546,7 +543,6 @@
       if (!e.packingList.length) delete e.packingList;
       e.materials = pairs(el('g-mats').value);
       if (!e.materials.length) delete e.materials;
-      if (typeof e.gcalEventId !== 'string') e.gcalEventId = '';
 
       files.events.data.events.sort(function (a, b) { return a.date < b.date ? -1 : 1; });
       touch('events');
@@ -558,7 +554,7 @@
 
   function addEvent() {
     if (!canSave('events')) return;
-    var e = { slug: '', title: '', kind: 'campout', date: E.today(), gcalEventId: '' };
+    var e = { slug: '', title: '', kind: 'campout', date: E.today() };
     files.events.data.events.push(e);
     eventForm(e);
   }
@@ -690,15 +686,13 @@
         '<p class="field-hint">These fill in every meeting that does not set its own.</p>' +
       '</div>' +
 
+      /* No settings here: the calendar feed is built from the schedule itself,
+         so there is nothing to connect and nothing that can be misconfigured. */
       '<div class="sidebar-card">' +
-        '<h3>Google Calendar</h3>' +
-        fld('Calendar ID', 's-gcal-id', 'text', (s.calendar || {}).googleCalendarId || '') +
-        '<p class="field-hint">The calendar\'s address, ending in <code>@group.calendar.google.com</code>. ' +
-        'That one line switches on the embed and both subscribe buttons on the calendar page.</p>' +
-        check('Keep Google Calendar in step with this schedule', 's-gcal-sync', !!(s.flags || {}).gcalSync) +
-        '<p class="field-hint">While this is on, changes here appear on the Google Calendar within about ' +
-        'fifteen minutes, and changes made on the Google Calendar come back here. Turning it off stops ' +
-        'both directions; nothing already on the calendar is removed.</p>' +
+        '<h3>Calendar feed</h3>' +
+        '<p class="field-hint">The troop publishes its own feed at <code>/calendar.ics</code>, ' +
+        'rebuilt from this schedule every time you publish. Families subscribe to it from the ' +
+        'calendar page and their copy keeps itself up to date. Nothing to set up here.</p>' +
       '</div>' +
 
       '<div class="pill-row"><button class="btn btn-primary btn-sm" type="button" id="s-save">Stage these changes</button></div>';
@@ -716,10 +710,6 @@
       s.meeting.location = el('s-location').value.trim();
       s.meeting.start = el('s-start').value;
       s.meeting.end = el('s-end').value;
-
-      s.calendar = s.calendar || {};
-      s.calendar.googleCalendarId = el('s-gcal-id').value.trim();
-      s.flags.gcalSync = el('s-gcal-sync').checked;
 
       touch('site');
       flash('Site details staged.');

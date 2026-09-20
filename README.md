@@ -26,17 +26,18 @@ does.
 /            pages          /data     content (JSON)
 /assets      css + js       /files    PDFs
 /worker      write path     /img      logos, emblems, trail images
-/scripts     calendar sync  /.github  stamp, backup, calendar sync
+/scripts     the .ics build /.github  stamp, backup, .ics build
 /docs        the docs
 ```
 
-The schedule is kept in step with the troop's Google Calendar both ways, by a
-GitHub Action rather than by the Worker — `scripts/gcal_sync.py`. Title, date,
-time, place and cancellation cross over; nothing else does, and nothing is ever
-deleted.
+The site publishes its own calendar at `/calendar.ics`, built from the same
+JSON by `scripts/build_ics.py` on every push that touches the schedule.
+Families subscribe to that address from Google, Apple or Outlook. It only runs
+one way, outward, so there is no account to connect, no key to hold and no
+write access to anything.
 
 Everything else — hosting, the custom domain, the Worker, the token, password
-rotation, and setting up the calendar sync — is in
+rotation, and how the calendar feed works — is in
 [`docs/operations.md`](docs/operations.md).
 
 ## Local preview
