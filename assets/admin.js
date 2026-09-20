@@ -16,11 +16,18 @@
 (function () {
   'use strict';
 
-  /* SHA-256 of the leadership password. Changing the password means changing
-     this hash *and* the secret in the Worker — the Worker is the real gate. */
+  /* SHA-256 of each password. Changing one means changing the hash here *and*
+     the matching secret in the Worker — the Worker is the real gate.
+
+       patrols   '*' for every patrol page, or a list of slugs
+       tabs      '*' for the whole console, or the tabs this password opens */
   var ROLES = [
     { hash: '79edbc24996492781064ede4a496c25e8dc5264a195ddfd5ecdbdad93e14de4f',
-      label: 'Scoutmaster / committee', scope: '*' }
+      label: 'Scoutmaster / committee', patrols: '*', tabs: '*' },
+
+    /* Patrol Leaders' Council: every patrol page, and nothing else. */
+    { hash: '64bbfb70f9b9f8a3ca667b9d00bb19be50b9d0d3b7ffcf5a72e45092208e53a9',
+      label: "Patrol Leaders' Council", patrols: '*', tabs: ['patrols', 'help'] }
   ];
 
   var PW_KEY = 't3.admin.pw';        // sessionStorage: cleared when the tab closes
@@ -88,12 +95,30 @@
   }
 
   function unlock(role, password) {
-    session = { label: role.label, scope: role.scope, password: password };
+    session = { label: role.label, patrols: role.patrols, tabs: role.tabs, password: password };
     hide('gate');
     show('console');
     el('who').textContent = role.label;
+    applyTabScope();
     bindConsoleOnce();
     loadEverything();
+  }
+
+  /* Hides the tabs this password has no business in and opens the first one
+     that is left. The Worker refuses the same writes on its own authority;
+     this only keeps the console honest about what the password can do. */
+  function applyTabScope() {
+    if (session.tabs === '*') return;
+    var first = null;
+    document.querySelectorAll('.admin-nav button').forEach(function (b) {
+      var allowed = session.tabs.indexOf(b.getAttribute('data-tab')) >= 0;
+      b.classList.toggle('is-hidden', !allowed);
+      b.setAttribute('aria-current', String(allowed && !first));
+      if (allowed && !first) first = b.getAttribute('data-tab');
+    });
+    document.querySelectorAll('[data-panel]').forEach(function (p) {
+      p.classList.toggle('is-hidden', p.getAttribute('data-panel') !== first);
+    });
   }
 
   /* Handlers that must survive re-renders are bound exactly once. */
@@ -564,7 +589,7 @@
   function renderPatrols() {
     var pick = el('p-pick');
     var ps = ((files.patrolIndex.data || {}).patrols || []).filter(function (p) {
-      return session.scope === '*' || session.scope === p.slug;
+      return session.patrols === '*' || session.patrols.indexOf(p.slug) >= 0;
     });
     if (!ps.length) {
       el('p-form').innerHTML = '<div class="notice notice-error">No patrol is available to edit.</div>';

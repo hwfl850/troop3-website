@@ -14,7 +14,7 @@
    Secrets (wrangler secret put ...)
      GITHUB_TOKEN        a fine-grained PAT with Contents: read & write on the repo
      EDIT_PASSWORD       the leadership password
-     PATROL_PASSWORDS    optional JSON: { "<password>": "<patrol-slug>", ... }
+     PATROL_PASSWORDS    optional JSON: { "<password>": "<slug>" | ["<slug>", ...] | "*" }
 
    Vars (wrangler.toml)
      GITHUB_REPO         "owner/repo"
@@ -83,7 +83,7 @@ function sameSecret(a, b) {
   return diff === 0;
 }
 
-/** → { role: 'admin' } | { role: 'patrol', slug } | null */
+/** → { role: 'admin' } | { role: 'patrol', slugs: '*' | string[] } | null */
 function identify(password, env) {
   if (!password) return null;
   if (env.EDIT_PASSWORD && sameSecret(password, env.EDIT_PASSWORD)) return { role: 'admin' };
@@ -92,19 +92,32 @@ function identify(password, env) {
     let table;
     try { table = JSON.parse(env.PATROL_PASSWORDS); } catch { table = null; }
     if (table) {
-      for (const [pw, slug] of Object.entries(table)) {
-        if (sameSecret(password, pw)) return { role: 'patrol', slug: String(slug) };
+      for (const [pw, scope] of Object.entries(table)) {
+        if (sameSecret(password, pw)) return { role: 'patrol', slugs: patrolScope(scope) };
       }
     }
   }
   return null;
 }
 
+/* A patrol password is worth one patrol ("viper"), several (["viper","hawk"]),
+   or every one of them ("*") — that last is the shared PLC password. */
+function patrolScope(scope) {
+  if (scope === '*') return '*';
+  if (Array.isArray(scope)) return scope.map(String);
+  return [String(scope)];
+}
+
 function mayWrite(who, path) {
   if (!who) return false;
   if (who.role === 'admin') return true;
-  // A patrol leader can edit exactly one file: their own patrol.
-  return path === `data/patrols/${who.slug}.json`;
+
+  // A patrol password writes patrol pages, and only the ones it covers.
+  const m = /^data\/patrols\/([a-z0-9-]{1,40})\.json$/.exec(path);
+  if (!m) return false;
+  // The patrol roster itself decides which patrols exist. Leadership only.
+  if (m[1] === 'index') return false;
+  return who.slugs === '*' || who.slugs.includes(m[1]);
 }
 
 /* ─────────────────────────────────────────────────────────── read ──────── */
