@@ -15,6 +15,7 @@ on:
       - 'data/events.json'
       - 'data/site.json'
       - 'scripts/build_ics.py'
+      - '.github/workflows/ics.yml'
   workflow_dispatch:
 
 permissions:
@@ -42,19 +43,43 @@ jobs:
           pip install --quiet pytest
           python -m pytest -q
 
-      - name: Build calendar.ics
-        run: python3 scripts/build_ics.py
-
-      - name: Commit it if it moved
+      # stamp.yml fires on the same push as this job whenever a commit touches
+      # both a page and the schedule, and it commits too. Whichever job pushes
+      # second used to lose outright. So rather than building once and hoping
+      # main held still, each attempt starts from whatever is on main right
+      # now and regenerates the feed against it. There is no rebase and so no
+      # conflict to resolve: calendar.ics is a pure function of data/, and
+      # rebuilding against the newer tree is not a workaround for the race but
+      # the correct answer to it.
+      - name: Build the feed and commit it if it moved
         run: |
-          # --porcelain rather than `git diff`, so a calendar.ics that is not
-          # yet tracked still counts as a change on the very first run.
-          if [ -z "$(git status --porcelain -- calendar.ics)" ]; then
-            echo "The feed already matched the schedule."
-            exit 0
-          fi
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add calendar.ics
-          git commit -m "Rebuild calendar.ics"
-          git push
+
+          for attempt in 1 2 3 4 5; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+
+            python3 scripts/build_ics.py
+
+            # --porcelain rather than `git diff`, so a calendar.ics that is not
+            # yet tracked still counts as a change on the very first run.
+            if [ -z "$(git status --porcelain -- calendar.ics)" ]; then
+              echo "The feed already matched the schedule."
+              exit 0
+            fi
+
+            git add calendar.ics
+            git commit --quiet -m 'Rebuild calendar.ics'
+
+            if git push --quiet; then
+              echo "Published the feed on attempt ${attempt}."
+              exit 0
+            fi
+
+            echo "main moved while the feed was building; rebuilding against it."
+            sleep $(( attempt * 3 ))
+          done
+
+          echo "::error::Could not publish calendar.ics after 5 attempts."
+          exit 1

@@ -26,20 +26,41 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Rewrite ?v= to the commit SHA
+      # ics.yml fires on the same push as this job whenever a commit touches
+      # both a page and the schedule, and it commits too. A plain push loses
+      # that race outright, so each attempt re-stamps whatever is on main now.
+      # The stamp is a cache-buster keyed to the push that triggered this run,
+      # so re-applying it to a newer tree is still the right value.
+      - name: Rewrite ?v= to the commit SHA and commit it
         run: |
-          SHA="${GITHUB_SHA::8}"
-          find . -name '*.html' -not -path './.git/*' -print0 \
-            | xargs -0 sed -i -E "s/(assets\/[a-z.]+\.(css|js))\?v=[A-Za-z0-9._-]*/\1?v=${SHA}/g"
-
-      - name: Commit if anything changed
-        run: |
-          if git diff --quiet; then
-            echo "Nothing to stamp."
-            exit 0
-          fi
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m "Stamp assets with ${GITHUB_SHA::8} [skip stamp]"
-          git push
+
+          SHA="${GITHUB_SHA::8}"
+
+          for attempt in 1 2 3 4 5; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+
+            find . -name '*.html' -not -path './.git/*' -print0 \
+              | xargs -0 sed -i -E "s/(assets\/[a-z.]+\.(css|js))\?v=[A-Za-z0-9._-]*/\1?v=${SHA}/g"
+
+            if git diff --quiet; then
+              echo "Nothing to stamp."
+              exit 0
+            fi
+
+            git add -A
+            git commit --quiet -m "Stamp assets with ${SHA} [skip stamp]"
+
+            if git push --quiet; then
+              echo "Stamped on attempt ${attempt}."
+              exit 0
+            fi
+
+            echo "main moved while stamping; re-stamping against it."
+            sleep $(( attempt * 3 ))
+          done
+
+          echo "::error::Could not push the asset stamp after 5 attempts."
+          exit 1
