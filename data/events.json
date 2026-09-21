@@ -1,167 +1,765 @@
 {
   "schema": 1,
-  "updated": "2026-08-11T12:00:00Z",
+  "updated": "2026-09-20T00:00:00Z",
   "events": [
     {
-      "slug": "fall-shakedown",
-      "date": "2026-08-28",
-      "endDate": "2026-08-30",
-      "title": "Fall Shakedown Campout",
-      "kind": "campout",
-      "status": "scheduled",
-      "location": "Camp Euchee, Defuniak Springs",
-      "uniform": "activity",
-      "cost": "$25",
-      "signupDeadline": "2026-08-18",
-      "driversNeeded": 4,
-      "summary": "First campout of the program year and the shakedown for everything after it. New scouts camp with their patrol for the first time and earn the troop neckerchief.",
-      "packingList": [
-        "Full Scout uniform for travel",
-        "Sleeping bag and pad",
-        "Mess kit",
-        "Rain gear — it is August in Florida",
-        "Two full water bottles"
-      ],
-      "materials": [
-        {
-          "label": "Outdoor equipment list",
-          "type": "pdf",
-          "href": "/files/outdoor-equipment-list.pdf"
-        }
-      ],
-      "catchUp": "",
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
-    },
-    {
-      "slug": "fort-pickens-campout",
-      "date": "2026-10-02",
-      "endDate": "2026-10-04",
-      "title": "Fort Pickens Campout & Historical Trail",
-      "kind": "campout",
-      "status": "scheduled",
-      "location": "Fort Pickens Group Camp, Gulf Islands National Seashore",
-      "uniform": "activity",
-      "cost": "$30",
-      "signupDeadline": "2026-09-22",
-      "driversNeeded": 6,
-      "summary": "The troop's own trail, hiked by the troop that built it. Seven miles through the batteries and out onto the beach, plus the fort tour on Saturday afternoon.",
-      "packingList": [
-        "Day pack",
-        "Flashlight — the batteries are genuinely dark",
-        "Closed-toe hiking shoes, not sandals",
-        "Sun protection",
-        "Three litres of water capacity"
-      ],
-      "materials": [
-        {
-          "label": "Fort Pickens Historical Trail",
-          "type": "link",
-          "href": "/trail.html?t=fort-pickens"
-        },
-        {
-          "label": "Recreation.gov — Fort Pickens",
-          "type": "link",
-          "href": "https://www.recreation.gov/camping/campgrounds/232488"
-        }
-      ],
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
-    },
-    {
-      "slug": "fall-court-of-honor",
-      "date": "2026-11-03",
-      "title": "Fall Court of Honor",
-      "kind": "court-of-honor",
-      "status": "scheduled",
-      "location": "Cokesbury UMC Fellowship Hall",
+      "slug": "district-roundtable-2026-07-02",
+      "date": "2026-07-02",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "happened",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
       "start": "19:00",
-      "end": "20:30",
-      "uniform": "field",
-      "summary": "Ranks and merit badges earned since May. Families welcome — this one is for them. Dessert afterwards, brought by the patrol on rotation.",
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
     },
     {
-      "slug": "oa-fall-fellowship",
-      "date": "2026-11-13",
-      "endDate": "2026-11-15",
-      "title": "OA Fall Fellowship",
-      "kind": "oa",
+      "slug": "summer-camp-camp-rainey-mtn",
+      "date": "2026-07-03",
+      "endDate": "2026-07-11",
+      "title": "Summer Camp - Camp Rainey Mtn",
+      "kind": "summer-camp",
+      "status": "happened",
+      "location": "Camp Rainey Mountain, 1494 Rainey Mountain Road, Clayton, GA 30525, USA",
+      "updated": "2026-01-07T22:41:14Z"
+    },
+    {
+      "slug": "plc-meeting-2026-07-05",
+      "date": "2026-07-05",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "happened",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2026-07-14",
+      "date": "2026-07-14",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "happened",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "flag-placement-avenue-of-flags-2026-07-18",
+      "date": "2026-07-18",
+      "title": "Flag Placement - Avenue of Flags",
+      "kind": "service",
+      "status": "happened",
+      "start": "08:00",
+      "end": "09:30",
+      "updated": "2026-05-13T02:48:32Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2026-07-23",
+      "date": "2026-07-23",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "happened",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "plc-meeting-2026-08-02",
+      "date": "2026-08-02",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "happened",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-schedule-6-month-event-calendar-due-2026-08-03",
+      "date": "2026-08-03",
+      "title": "Troop Schedule - 6 month event calendar due",
+      "kind": "other",
+      "status": "happened",
+      "updated": "2016-10-12T02:37:30Z"
+    },
+    {
+      "slug": "district-roundtable-2026-08-06",
+      "date": "2026-08-06",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "happened",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "eagle-project-isaac-bailey",
+      "date": "2026-08-08",
+      "title": "Eagle Project - Isaac Bailey",
+      "kind": "service",
+      "status": "happened",
+      "location": "Scout Hut",
+      "start": "10:30",
+      "end": "13:30",
+      "updated": "2026-07-29T02:16:41Z"
+    },
+    {
+      "slug": "patrol-elections",
+      "date": "2026-08-11",
+      "title": "Patrol Elections",
+      "kind": "other",
+      "status": "happened",
+      "updated": "2026-07-29T02:14:16Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2026-08-11",
+      "date": "2026-08-11",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "happened",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "wilderness-survival-jambo",
+      "date": "2026-08-21",
+      "endDate": "2026-08-23",
+      "title": "Wilderness Survival - Jambo",
+      "kind": "campout",
+      "status": "happened",
+      "start": "17:30",
+      "end": "12:00",
+      "updated": "2026-08-09T21:27:56Z"
+    },
+    {
+      "slug": "eagle-court-of-honor-andrew-yokel",
+      "date": "2026-08-23",
+      "title": "Eagle Court of Honor - Andrew Yokel",
+      "kind": "court-of-honor",
+      "status": "happened",
+      "location": "Trinity Presbyterian Church, 3400 Bayou Blvd, Pensacola, FL 32503, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "updated": "2026-08-05T01:58:56Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2026-08-27",
+      "date": "2026-08-27",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "happened",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "court-of-honor",
+      "date": "2026-09-01",
+      "title": "Court of Honor",
+      "kind": "court-of-honor",
+      "status": "happened",
+      "updated": "2026-07-25T23:14:34Z"
+    },
+    {
+      "slug": "district-roundtable-2026-09-03",
+      "date": "2026-09-03",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "happened",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "eagle-project-levi-pommerening",
+      "date": "2026-09-05",
+      "title": "Eagle Project - Levi Pommerening",
+      "kind": "service",
+      "status": "happened",
+      "location": "Bayview Park Boat Launch, 2001 E Lloyd St, Pensacola, FL 32503, USA",
+      "start": "08:30",
+      "end": "15:00",
+      "updated": "2026-08-31T02:25:39Z"
+    },
+    {
+      "slug": "plc-meeting-2026-09-06",
+      "date": "2026-09-06",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "happened",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2026-09-08",
+      "date": "2026-09-08",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "happened",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "northern-tier-shakedown-1",
+      "date": "2026-09-11",
+      "endDate": "2026-09-13",
+      "title": "Northern Tier - Shakedown#1",
+      "kind": "campout",
+      "status": "happened",
+      "location": "Naval Live Oaks Nature Preserve, 1801 Gulf Breeze Pkwy, Gulf Breeze, FL 32563, USA",
+      "updated": "2026-07-22T01:40:39Z"
+    },
+    {
+      "slug": "orienteering-oak-mountain",
+      "date": "2026-09-18",
+      "endDate": "2026-09-20",
+      "title": "Orienteering - Oak Mountain",
+      "kind": "campout",
+      "status": "happened",
+      "location": "Oak Mountain State Park, 200 Terrace Dr, Pelham, AL 35124, USA",
+      "start": "17:30",
+      "end": "17:00",
+      "updated": "2026-09-06T23:57:41Z"
+    },
+    {
+      "slug": "service-project-assist-with-event-setup",
+      "date": "2026-09-19",
+      "title": "Service Project - Assist with Event Setup",
+      "kind": "service",
+      "status": "happened",
+      "location": "St Christopher's Episcopal Church, 3200 N 12th Ave, Pensacola, FL 32503, USA",
+      "start": "08:30",
+      "end": "09:30",
+      "updated": "2026-09-16T21:56:46Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2026-09-24",
+      "date": "2026-09-24",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
       "status": "scheduled",
-      "location": "Gulf Coast Council camp",
-      "summary": "Order of the Arrow members only. Ordeal candidates from this year's election should plan to attend.",
-      "materials": [
-        {
-          "label": "Gulf Coast Council",
-          "type": "link",
-          "href": "https://gulfcoastcouncil.org/"
-        }
-      ],
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
     },
     {
-      "slug": "scouting-for-food",
-      "date": "2026-12-05",
-      "title": "Scouting for Food",
+      "slug": "pumpkin-unloading",
+      "date": "2026-09-29",
+      "title": "Pumpkin Unloading",
       "kind": "service",
       "status": "scheduled",
-      "location": "Neighbourhoods around Cokesbury UMC",
-      "start": "08:00",
-      "end": "12:00",
-      "uniform": "field",
-      "summary": "Bag drop the week before, collection on the Saturday. Counts toward service hours for rank. Meet at the Scout Hut.",
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
+      "updated": "2026-07-25T23:16:01Z"
     },
     {
-      "slug": "blackwater-paddle",
-      "date": "2027-03-12",
-      "endDate": "2027-03-14",
-      "title": "Blackwater River Paddling Trek",
+      "slug": "district-roundtable-2026-10-01",
+      "date": "2026-10-01",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "service-project-triathlon",
+      "date": "2026-10-03",
+      "title": "Service Project - Triathlon",
+      "kind": "service",
+      "status": "scheduled",
+      "updated": "2025-10-08T02:49:38Z"
+    },
+    {
+      "slug": "plc-meeting-2026-10-04",
+      "date": "2026-10-04",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "heritage-festival",
+      "date": "2026-10-09",
+      "endDate": "2026-10-11",
+      "title": "Heritage Festival",
+      "kind": "other",
+      "status": "scheduled",
+      "updated": "2026-07-25T23:16:47Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2026-10-13",
+      "date": "2026-10-13",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2026-10-22",
+      "date": "2026-10-22",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "plc-meeting-2026-11-01",
+      "date": "2026-11-01",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-schedule-6-month-event-calendar-due-2026-11-02",
+      "date": "2026-11-02",
+      "title": "Troop Schedule - 6 month event calendar due",
+      "kind": "other",
+      "status": "scheduled",
+      "updated": "2016-10-12T02:37:30Z"
+    },
+    {
+      "slug": "district-roundtable-2026-11-05",
+      "date": "2026-11-05",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "flag-placement-avenue-of-flags-2026-11-07",
+      "date": "2026-11-07",
+      "title": "Flag Placement - Avenue of Flags",
+      "kind": "service",
+      "status": "scheduled",
+      "start": "08:00",
+      "end": "09:30",
+      "updated": "2026-05-13T02:49:12Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2026-11-10",
+      "date": "2026-11-10",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "caving-tumbling-rock",
+      "date": "2026-11-13",
+      "endDate": "2026-11-15",
+      "title": "Caving - Tumbling Rock",
       "kind": "campout",
       "status": "scheduled",
-      "location": "Blackwater River State Forest",
-      "uniform": "activity",
-      "cost": "$45",
-      "signupDeadline": "2027-02-23",
-      "summary": "Two days on the Blackwater with a sandbar camp in between. Swimmer classification required — get it done at the pool night in February.",
-      "materials": [
-        {
-          "label": "Blackwater paddling guide",
-          "type": "pdf",
-          "href": "/files/blackwater-paddling-guide.pdf"
-        }
-      ],
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
+      "location": "Tumbling Rock Cave Preserve, 3407 Co Rd 111, Fackler, AL 35746, USA",
+      "updated": "2026-08-16T01:55:02Z"
     },
     {
-      "slug": "summer-camp-2027",
-      "date": "2027-06-20",
-      "endDate": "2027-06-26",
-      "title": "Summer Camp 2027",
-      "kind": "summer-camp",
+      "slug": "eagle-project-review-board-pensacola-bay-district-2026-11-26",
+      "date": "2026-11-26",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
       "status": "scheduled",
-      "location": "Southern Appalachians — camp confirmed at the January PLC",
-      "cost": "$425 early, $475 after 1 April",
-      "signupDeadline": "2027-04-01",
-      "summary": "A week of merit badges, a mountain, and the best cooking any patrol does all year. Deposit at the January Court of Honor holds a spot.",
-      "materials": [
-        {
-          "label": "Summer camp checklist",
-          "type": "pdf",
-          "href": "/files/summer-camp-checklist.pdf"
-        },
-        {
-          "label": "Annual health and medical record",
-          "type": "link",
-          "href": "https://www.scouting.org/health-and-safety/ahmr/"
-        }
-      ],
-      "gcalEventId": "",
-      "updated": "2026-08-08T18:02:00Z"
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "district-roundtable-2026-12-03",
+      "date": "2026-12-03",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "northern-tier-shakedown-2",
+      "date": "2026-12-04",
+      "endDate": "2026-12-06",
+      "title": "Northern Tier - Shakedown#2",
+      "kind": "campout",
+      "status": "scheduled",
+      "location": "Naval Live Oaks Nature Preserve, 1801 Gulf Breeze Pkwy, Gulf Breeze, FL 32563, USA",
+      "updated": "2026-07-22T01:41:44Z"
+    },
+    {
+      "slug": "plc-meeting-2026-12-06",
+      "date": "2026-12-06",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2026-12-08",
+      "date": "2026-12-08",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2026-12-24",
+      "date": "2026-12-24",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "plc-meeting-2027-01-03",
+      "date": "2027-01-03",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "district-roundtable-2027-01-07",
+      "date": "2027-01-07",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-01-12",
+      "date": "2027-01-12",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-01-28",
+      "date": "2027-01-28",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "troop-schedule-6-month-event-calendar-due-2027-02-01",
+      "date": "2027-02-01",
+      "title": "Troop Schedule - 6 month event calendar due",
+      "kind": "other",
+      "status": "scheduled",
+      "updated": "2016-10-12T02:37:30Z"
+    },
+    {
+      "slug": "district-roundtable-2027-02-04",
+      "date": "2027-02-04",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "plc-meeting-2027-02-07",
+      "date": "2027-02-07",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-02-09",
+      "date": "2027-02-09",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-02-25",
+      "date": "2027-02-25",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "district-roundtable-2027-03-04",
+      "date": "2027-03-04",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "plc-meeting-2027-03-07",
+      "date": "2027-03-07",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-03-09",
+      "date": "2027-03-09",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-03-25",
+      "date": "2027-03-25",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "district-roundtable-2027-04-01",
+      "date": "2027-04-01",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "plc-meeting-2027-04-04",
+      "date": "2027-04-04",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-04-13",
+      "date": "2027-04-13",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-04-22",
+      "date": "2027-04-22",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "plc-meeting-2027-05-02",
+      "date": "2027-05-02",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-schedule-6-month-event-calendar-due-2027-05-03",
+      "date": "2027-05-03",
+      "title": "Troop Schedule - 6 month event calendar due",
+      "kind": "other",
+      "status": "scheduled",
+      "updated": "2016-10-12T02:37:30Z"
+    },
+    {
+      "slug": "district-roundtable-2027-05-06",
+      "date": "2027-05-06",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-05-11",
+      "date": "2027-05-11",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-05-27",
+      "date": "2027-05-27",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "district-roundtable-2027-06-03",
+      "date": "2027-06-03",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "plc-meeting-2027-06-06",
+      "date": "2027-06-06",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-06-08",
+      "date": "2027-06-08",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-06-24",
+      "date": "2027-06-24",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
+    },
+    {
+      "slug": "district-roundtable-2027-07-01",
+      "date": "2027-07-01",
+      "title": "District Roundtable",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd #5720, Pensacola, FL 32514, USA",
+      "start": "19:00",
+      "end": "20:00",
+      "summary": "Also accessible remotely via Zoom. Ask the Scoutmaster for the joining details.",
+      "updated": "2021-12-03T01:29:37Z"
+    },
+    {
+      "slug": "plc-meeting-2027-07-04",
+      "date": "2027-07-04",
+      "title": "PLC Meeting",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "Scout Hut",
+      "updated": "2025-07-30T02:46:56Z"
+    },
+    {
+      "slug": "troop-3-committee-mtg-2027-07-13",
+      "date": "2027-07-13",
+      "title": "Troop 3 Committee Mtg",
+      "kind": "other",
+      "status": "scheduled",
+      "start": "19:00",
+      "end": "20:00",
+      "updated": "2021-11-07T14:04:58Z"
+    },
+    {
+      "slug": "eagle-project-review-board-pensacola-bay-district-2027-07-22",
+      "date": "2027-07-22",
+      "title": "Eagle Project Review Board - Pensacola Bay District",
+      "kind": "other",
+      "status": "scheduled",
+      "location": "St Luke United Methodist Church, 1394 E 9 Mile Rd, Pensacola, FL 32514, USA",
+      "start": "17:30",
+      "end": "20:00",
+      "summary": "Prerequisites: Eagle Scout Service Project Proposal Workbook should be completed and include Beneficiary, Scoutmaster, and Troop Committee Chair signatures. An email to the District Eagle Project Approval Representative requesting a project review should be submitted no later than the Sunday prior to the monthly Eagle Project Review Board meeting.",
+      "updated": "2023-07-26T22:28:56Z"
     }
   ]
 }
